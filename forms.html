@@ -54,31 +54,68 @@
     <hr>
 
     <!-- Hijacking search -->
-    <div style="background-color: #181818; padding: 20px; margin-top: 20px; border-radius: 15px;">
+    <div style="background-color: #181818; padding: 20px; margin-top: 20px; margin-bottom: 20px; border-radius: 15px;">
 
         <h2 style="margin-top: 0px; color: white;">Hack Lounge</h2>
 
         <h3 style="margin: 0px; color: ghostwhite;">Search Reddit</h3>
         <form action="https://www.reddit.com/search"
-            style="background-color: orange; margin-bottom: 20px; padding: 15px; border-radius: 10px;">
-            <input type="text" name="q">
+            style="background-color: lightsalmon; margin-bottom: 20px; padding: 15px; border-radius: 10px;">
+            <input type="text" name="q" placeholder="Seach anything">
             <button type="submit">Search Reddit</button>
         </form>
 
         <h3 style="margin: 0px; color: ghostwhite;">Search Google</h3>
         <form action="https://www.google.com/search"
-            style="margin-top: 0px; background-color: dodgerblue; margin-bottom: 20px; padding: 15px; border-radius: 10px;">
-            <input type="text" name="q">
+            style="margin-top: 0px; background-color: lightblue; margin-bottom: 20px; padding: 15px; border-radius: 10px;">
+            <input type="text" name="q" placeholder="Seach anything">
             <button type="submit">Search Google</button>
         </form>
 
         <h3 style="margin: 0px; color: ghostwhite;">Search Youtube</h3>
         <form action="https://www.youtube.com/results"
-            style="margin-top: 0px; background-color: orangered; margin-bottom: 20px; padding: 15px; border-radius: 10px;">
-            <input type="text" name="search_query">
+            style="margin-top: 0px; background-color: lightcoral; margin-bottom: 0px; padding: 15px; border-radius: 10px;">
+            <input type="text" name="search_query" placeholder="Seach anything">
             <button type="submit">Search Youtube</button>
         </form>
+    </div>
 
+    <hr>
+
+    <div>
+        <h2 style="margin-top: 0px;">Checkboxes / Radio</h2>
+        <form action="/guitars">
+            <h3>Select your favourite guitar brand</h3>
+            <p style="margin: 0px;">
+                <label for="fender">Fender</label>
+                <input type="radio" name="guitar" id="fender" value="fender" checked>
+
+                <label for="gibson">Gibson</label>
+                <input type="radio" name="guitar" id="gibson" value="gibson">
+
+                <label for="ibanez">Ibanez</label>
+                <input type="radio" name="guitar" id="ibanez" value="ibanez">
+
+                <label for="reverend">Reverend</label>
+                <input type="radio" name="guitar" id="reverend" value="reverend">
+            </p>
+
+            <div style="margin-top: 20px; margin-bottom: 20px;">
+                <label for="amp" style="font-weight: bold;">Select your favourite amp brand</label>
+                <select name="amp" id="amp">
+                    <option value="fender" selected>Fender</option>
+                    <option value="engl">ENGL</option>
+                    <option value="friedman">Friedman</option>
+                    <option value="evh">EVH</option>
+                </select>
+            </div>
+
+            <input type="checkbox" name="agree_tos" id="agree" checked>
+            <label for="agree" style="font-weight: bold;">I agree everything everywhere all at
+                once</label>
+
+            <button>Submit</button>
+        </form>
     </div>
 
 </body>
