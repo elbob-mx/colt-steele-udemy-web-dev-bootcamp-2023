@@ -103,12 +103,23 @@
             <div style="margin-top: 20px; margin-bottom: 20px;">
                 <label for="amp" style="font-weight: bold;">Select your favourite amp brand</label>
                 <select name="amp" id="amp">
-                    <option value="fender" selected>Fender</option>
+                    <option value="fender">Fender</option>
                     <option value="engl">ENGL</option>
-                    <option value="friedman">Friedman</option>
+                    <option value="friedman" selected>Friedman</option>
                     <option value="evh">EVH</option>
                 </select>
             </div>
+
+            <p>
+                <label for="gain" style="font-weight: bold;">How much gain (0-11):</label>
+                <input type="range" id="gain" min="0" max="11" value="5" name="gain_level">
+            </p>
+
+            <p>
+                <label for="requests">Any other requests?</label>
+                <textarea name="requests" id="request" cols="50" rows="20"
+                    placeholder="Write in here your requests..."></textarea>
+            </p>
 
             <input type="checkbox" name="agree_tos" id="agree" checked>
             <label for="agree" style="font-weight: bold;">I agree everything everywhere all at
