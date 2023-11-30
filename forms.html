@@ -10,8 +10,13 @@
 <body style="
       font-family: 'Courier New', Courier, monospace;
       background-color: lightgray;
+      margin: 24px;
     ">
     <h1>Forms Demo</h1>
+    <!-- This doesn't work coz "'type:'button'"  and outside form tag-->
+    <button type="button">Useless coz outside the form</button>
+
+    <!-- -----OUTSIDE FORM TAG ----- -->
     <form action="/salmon">
         <p>
             <label for="username">Username: </label>
@@ -23,17 +28,39 @@
             <input type="password" name="password" id="password" placeholder="password" />
         </p>
 
+        <button type="button">*Useless type button</button>
+
         <p>
             <label for="color">Pick your favourite color: </label>
             <input type="color" name="color" id="color" />
         </p>
 
+        <!-- alternative input format (input inside label tag) -->
         <p>
-            <label for="number">Pick your lucky number: </label>
-            <input type="number" name="number" id="number" placeholder="number" min="0" max="1000" />
+            <label>Pick your lucky number:
+                <input type="number" name="number" id="number" placeholder="number" min="0" max="1000" />
+            </label>
         </p>
+
+        <!-- Regular submit button -->
         <button>Submit</button>
+
+        <!-- Input that submits, but not the best practice -->
+        <input type="submit" value="Click me" name="nonSubmit" id="nonSubmit" />
     </form>
+    <hr />
+    <!-- OUTSIDE FORM -->
+    <button type="button">Useless outside form</button>
+    <hr>
+
+    <div style="background-color: lightsalmon; padding: 20px; margin: 50px; border-radius: 15px;">
+        <h2 style="margin-top: 0px;">Hack Lounge</h2>
+        <form action="https://www.reddit.com/search">
+            <input type="text" name="ask">
+            <button type="submit">Search Reddit</button>
+        </form>
+    </div>
+
 </body>
 
 </html>
