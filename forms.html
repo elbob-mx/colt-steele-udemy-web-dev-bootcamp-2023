@@ -38,7 +38,7 @@
         <!-- alternative input format (input inside label tag) -->
         <p>
             <label>Pick your lucky number:
-                <input type="number" name="number" id="number" placeholder="number" min="0" max="1000" />
+                <input type="number" name="number" id="number" placeholder="number" min="0" max="10" />
             </label>
         </p>
 
@@ -53,12 +53,32 @@
     <button type="button">Useless outside form</button>
     <hr>
 
-    <div style="background-color: lightsalmon; padding: 20px; margin: 50px; border-radius: 15px;">
-        <h2 style="margin-top: 0px;">Hack Lounge</h2>
-        <form action="https://www.reddit.com/search">
+    <!-- Hijacking search -->
+    <div style="background-color: #181818; padding: 20px; margin-top: 20px; border-radius: 15px;">
+
+        <h2 style="margin-top: 0px; color: white;">Hack Lounge</h2>
+
+        <h3 style="margin: 0px; color: ghostwhite;">Search Reddit</h3>
+        <form action="https://www.reddit.com/search"
+            style="background-color: orange; margin-bottom: 20px; padding: 15px; border-radius: 10px;">
             <input type="text" name="q">
             <button type="submit">Search Reddit</button>
         </form>
+
+        <h3 style="margin: 0px; color: ghostwhite;">Search Google</h3>
+        <form action="https://www.google.com/search"
+            style="margin-top: 0px; background-color: dodgerblue; margin-bottom: 20px; padding: 15px; border-radius: 10px;">
+            <input type="text" name="q">
+            <button type="submit">Search Google</button>
+        </form>
+
+        <h3 style="margin: 0px; color: ghostwhite;">Search Youtube</h3>
+        <form action="https://www.youtube.com/results"
+            style="margin-top: 0px; background-color: orangered; margin-bottom: 20px; padding: 15px; border-radius: 10px;">
+            <input type="text" name="search_query">
+            <button type="submit">Search Youtube</button>
+        </form>
+
     </div>
 
 </body>
