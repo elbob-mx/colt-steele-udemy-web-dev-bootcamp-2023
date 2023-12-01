@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Registration</title>
+</head>
+
+<body
+    style="font-family: Arial, Helvetica, sans-serif; margin-top: 10%; margin-left: 15%; margin-right: 15%; background-color: #f2f2f2;">
+
+    <h1 style="margin: 0px;">Marathon Registration</h1>
+    <hr>
+    <div>
+        <p style="margin-top: 50px; margin-bottom: 50px;"><strong>Welcome! </strong>Please fill out this so we can get
+            you up and running.
+        </p>
+        <p>
+            <label for="first">First Name: </label>
+            <input type="text" name="first" id="first" required>
+        </p>
+        <p>
+            <label for="last">Last Name: </label>
+            <input type="text" name="last" id="last" required>
+        </p>
+        <h2 style="margin-top: 50px;">Select a race:</h2>
+        <form action="/race-registration">
+            <p>
+                <input type="radio" name="race" id="funrun" checked>
+                <label for="funrun">Fun Run 5k</label>
+            </p>
+            <p>
+                <input type="radio" name="race" id="half">
+                <label for="half">Half Marathon</label>
+            </p>
+            <p>
+                <input type="radio" name="race" id="full">
+                <label for="full">Full Marathon</label>
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" pattern=".+@*\.*" size="30" style="margin-right: 10px;" required>
+                <label for="password">Password (min 8 characters. no special characters): </label>
+                <input type="password" name="password" minlength="8" id="password"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+            </p>
+            <p>
+                <label for="age">Select age group: </label>
+                <select name="age" id="age" required>
+                    <option value="14-17">14-17</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-40">25-40</option>
+                    <option value="41-50">41-50</option>
+                    <option value="51 and forth">51 and forth</option>
+                </select>
+            </p>
+
+            <button>Register</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
