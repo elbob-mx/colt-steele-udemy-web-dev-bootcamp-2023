@@ -13,16 +13,26 @@
     <h1 style="margin: 0px;">Marathon Registration</h1>
     <hr>
     <div>
+
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">// <![CDATA[
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+            }
+            // ]]></script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+            type="text/javascript"></script>
+
         <p style="margin-top: 50px; margin-bottom: 50px;"><strong>Welcome! </strong>Please fill out this so we can get
             you up and running.
         </p>
         <form action="/race-registration">
             <p>
-                <label for="first">First Name: </label>
+                <label for="first"><strong>First Name: </strong></label>
                 <input type="text" name="first" id="first" required>
             </p>
             <p>
-                <label for="last">Last Name: </label>
+                <label for="last"><strong>Last Name: </strong></label>
                 <input type="text" name="last" id="last" required>
             </p>
             <h2 style="margin-top: 50px;">Select a race:</h2>
@@ -40,15 +50,16 @@
                 <label for="full">Full Marathon</label>
             </p>
             <p>
-                <label for="email">Email: </label>
-                <input type="email" pattern=".+@*\.*" size="30" style="margin-right: 10px;" required>
-
-                <label for="password">Password (min 8 characters. no special characters): </label>
+                <label for="email"><strong>Email: </strong></label>
+                <input type="email" id="email" pattern=".+@*\.*" size="30" style="margin-right: 10px;" required>
+            </p>
+            <p>
+                <label for="password"><strong>Password</strong> (min 8 characters. no special characters): </label>
                 <input type="password" name="password" minlength="8" id="password"
                     pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
             </p>
             <p>
-                <label for="age">Select age group: </label>
+                <label for="age"><strong>Select age group: </strong></label>
                 <select name="age" id="age" required>
                     <option value="14-17">14-17</option>
                     <option value="18-24">18-24</option>
@@ -61,6 +72,7 @@
             <button>Register</button>
         </form>
     </div>
+
 
 </body>
 
