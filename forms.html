@@ -116,7 +116,7 @@
 
             <p>
                 <label for="requests">Any other requests?</label>
-                <textarea name="requests" id="request" cols="30" rows="10"
+                <textarea name="requests" id="request" cols="30" rows="3"
                     placeholder="Write in here your requests..."></textarea>
             </p>
 
@@ -150,6 +150,10 @@
                         letra, al menos un número): </span></label>
                 <input type="password" name="password" minlength="8" id="password"
                     pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+            </p>
+            <p>
+                <label for="url">Enter your personal website: </label>
+                <input type="url" name="url" id="url" required>
             </p>
             <button>Submit</button>
         </form>
