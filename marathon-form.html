@@ -16,16 +16,17 @@
         <p style="margin-top: 50px; margin-bottom: 50px;"><strong>Welcome! </strong>Please fill out this so we can get
             you up and running.
         </p>
-        <p>
-            <label for="first">First Name: </label>
-            <input type="text" name="first" id="first" required>
-        </p>
-        <p>
-            <label for="last">Last Name: </label>
-            <input type="text" name="last" id="last" required>
-        </p>
-        <h2 style="margin-top: 50px;">Select a race:</h2>
         <form action="/race-registration">
+            <p>
+                <label for="first">First Name: </label>
+                <input type="text" name="first" id="first" required>
+            </p>
+            <p>
+                <label for="last">Last Name: </label>
+                <input type="text" name="last" id="last" required>
+            </p>
+            <h2 style="margin-top: 50px;">Select a race:</h2>
+
             <p>
                 <input type="radio" name="race" id="funrun" checked>
                 <label for="funrun">Fun Run 5k</label>
@@ -41,6 +42,7 @@
             <p>
                 <label for="email">Email: </label>
                 <input type="email" pattern=".+@*\.*" size="30" style="margin-right: 10px;" required>
+
                 <label for="password">Password (min 8 characters. no special characters): </label>
                 <input type="password" name="password" minlength="8" id="password"
                     pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
