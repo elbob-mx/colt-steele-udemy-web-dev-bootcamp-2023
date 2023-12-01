@@ -48,9 +48,8 @@
         <!-- Input that submits, but not the best practice -->
         <input type="submit" value="Click me" name="nonSubmit" id="nonSubmit" />
     </form>
-    <hr />
     <!-- OUTSIDE FORM -->
-    <button type="button">Useless outside form</button>
+    <button type="button" style="margin-top: 14px;">Useless outside form</button>
     <hr>
 
     <!-- Hijacking search -->
@@ -82,7 +81,7 @@
 
     <hr>
 
-    <div>
+    <div style="margin-bottom: 34px; margin-top: 34px;">
         <h2 style="margin-top: 0px;">Checkboxes / Radio</h2>
         <form action="/guitars">
             <h3>Select your favourite guitar brand</h3>
@@ -125,6 +124,33 @@
             <label for="agree" style="font-weight: bold;">I agree everything everywhere all at
                 once</label>
 
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div style="margin-top: 34px; margin-bottom: 34px;">
+        <h2>Validations Demo</h2>
+        <form action="/demo">
+            <p>
+                <label for="first">Enter first name: </label>
+                <input type="text" name="first" id="first" required>
+            </p>
+            <p>
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username" minlength="3" maxlength="20" required>
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" pattern=".+@*\.*" size="50" required>
+            </p>
+            <p>
+                <label for="password">Password <span style="font-weight:bold ;">(mínimo 8 caracteres, al menos una
+                        letra, al menos un número): </span></label>
+                <input type="password" name="password" minlength="8" id="password"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+            </p>
             <button>Submit</button>
         </form>
     </div>
