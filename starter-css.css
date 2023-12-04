@@ -46,8 +46,9 @@ span {
   color: yellow;
 }
 
-#login {
-  background-color: dodgerblue;
+/* adjacent selector */
+input + button {
+  background-color: cyan;
   color: black;
 }
 
@@ -61,10 +62,33 @@ span {
   color: yellow;
 }
 
+/* adjacent selector */
+h2 + button {
+  background-color: #181818;
+  color: white;
+}
+
+/* adjacent selector */
+h2 + button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* adjacent selector */
+h2 + button:active {
+  background-color: gray;
+  color: black;
+}
+
 footer a {
   color: grey;
 }
 
 footer a:hover {
   color: white;
+}
+
+/* direct child */
+footer > a {
+  color: lightgreen;
 }
