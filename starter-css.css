@@ -1,0 +1,49 @@
+body {
+  background-color: black;
+  font-family: monospace;
+  color: lightgray;
+}
+
+h1,
+h2 {
+  color: limegreen;
+}
+
+span {
+  color: orange;
+}
+
+.tag {
+  background-color: tomato;
+  color: #f2f2f2;
+}
+
+#signup {
+  background-color: greenyellow;
+  color: black;
+}
+
+#signup:hover {
+  background-color: green;
+  color: white;
+}
+
+#signup:active {
+  background-color: darkgreen;
+  color: yellow;
+}
+
+#login {
+  background-color: dodgerblue;
+  color: black;
+}
+
+#login:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+#login:active {
+  background-color: darkblue;
+  color: grey;
+}
