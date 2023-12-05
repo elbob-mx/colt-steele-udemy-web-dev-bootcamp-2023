@@ -1,32 +1,55 @@
 body {
   background-color: black;
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
   color: lightgray;
+  padding: 25px;
 }
 
 h1,
 h2 {
   color: limegreen;
+  font-weight: bold;
+}
+
+section > h2 {
+  font-size: 1.5rem;
+}
+
+input {
+  border: none;
+  border-radius: 2.15px;
+}
+
+input[type="password"] {
+  color: red;
 }
 
 span {
-  color: ghostwhite;
+  color: white;
+  font-weight: lighter;
 }
 
 .post {
   padding: 15px;
   margin-left: 1.5rem;
+  margin-right: 1.5rem;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .post a {
   color: tomato;
+  text-decoration: none;
+}
+
+.post:nth-of-type(2n) {
+  background-color: #181818;
 }
 
 .tag {
-  background-color: limegreen;
-  color: black;
-  padding: 5px;
+  background-color: purple;
+  color: white;
+  padding: 5 px;
   border-radius: 50px;
   font-size: 10pt;
 }
@@ -69,7 +92,7 @@ h2 + button {
 }
 
 /* adjacent selector */
-h2 + button:hover {
+.post button:hover {
   background-color: white;
   color: black;
 }
@@ -90,5 +113,5 @@ footer a:hover {
 
 /* direct child */
 footer > a {
-  color: lightgreen;
+  color: orange;
 }
