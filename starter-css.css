@@ -49,9 +49,9 @@ span {
 .tag {
   background-color: purple;
   color: white;
-  padding: 5 px;
+  padding: 5px;
   border-radius: 50px;
-  font-size: 10pt;
+  font-size: 12px;
 }
 
 #signup {
