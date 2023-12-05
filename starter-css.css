@@ -1,13 +1,13 @@
 body {
   background-color: black;
   font-family: "Courier New", Courier, monospace;
-  color: lightgray;
+  color: white;
   padding: 25px;
 }
 
 h1,
 h2 {
-  color: limegreen;
+  color: magenta;
   font-weight: bold;
 }
 
@@ -15,18 +15,88 @@ section > h2 {
   font-size: 1.5rem;
 }
 
+h2::first-letter {
+  font-size: 32px;
+  color: cyan;
+}
+
+h2:hover {
+  font-size: 32px;
+  color: white;
+  transition: 700ms;
+}
+
+button {
+  border: none;
+}
+
+#user:hover {
+  color: cyan;
+  letter-spacing: 3px;
+}
+
+#vote {
+  color: black;
+}
+
+#vote:hover {
+  color: black;
+  background-color: cyan;
+  font-size: 21px;
+  transition: 300ms;
+}
+
+#vote:active {
+  color: white;
+  background-color: magenta;
+  font-size: 21px;
+  transition: 300ms;
+}
+
 input {
   border: none;
   border-radius: 2.15px;
+  font-family: monospace;
 }
 
 input[type="password"] {
-  color: red;
+  color: magenta;
 }
 
 span {
   color: white;
   font-weight: lighter;
+}
+
+span[data-descr] {
+  position: relative;
+  text-decoration: underline;
+  color: cyan;
+  cursor: help;
+}
+
+span[data-descr]:hover::after {
+  content: attr(data-descr);
+  position: absolute;
+  left: 0;
+  top: 24px;
+  min-width: 200px;
+  border: 1px #181818 solid;
+  border-radius: 0px;
+  background-color: #f2f2f2;
+  padding: 12px;
+  color: #181818;
+  font-size: 21px;
+  z-index: 1;
+}
+
+#disclaimer {
+  margin-bottom: 100px;
+}
+
+#disclaimer::selection {
+  background-color: #5550a6;
+  color: black;
 }
 
 .post {
@@ -38,7 +108,7 @@ span {
 }
 
 .post a {
-  color: tomato;
+  color: magenta;
   text-decoration: none;
 }
 
@@ -47,7 +117,7 @@ span {
 }
 
 .tag {
-  background-color: purple;
+  background-color: magenta;
   color: white;
   padding: 5px;
   border-radius: 50px;
@@ -55,18 +125,18 @@ span {
 }
 
 #signup {
-  background-color: greenyellow;
+  background-color: cyan;
   color: black;
 }
 
 #signup:hover {
-  background-color: green;
+  background-color: #5550a6;
   color: white;
 }
 
 #signup:active {
-  background-color: darkgreen;
-  color: yellow;
+  background-color: #2f2d5f;
+  color: white;
 }
 
 /* adjacent selector */
@@ -75,19 +145,32 @@ input + button {
   color: black;
 }
 
+input + button:hover {
+  background-color: magenta;
+}
+
+input + button:active {
+  background-color: magenta;
+}
+
+#login {
+  background-color: magenta;
+  color: white;
+}
+
 #login:hover {
-  background-color: lightblue;
-  color: black;
+  background-color: rgb(155, 13, 155);
+  color: white;
 }
 
 #login:active {
-  background-color: darkblue;
-  color: yellow;
+  background-color: #252250;
+  color: white;
 }
 
 /* adjacent selector */
 h2 + button {
-  background-color: #181818;
+  background-color: #black;
   color: white;
 }
 
@@ -103,6 +186,14 @@ h2 + button:active {
   color: black;
 }
 
+form {
+  margin: 50px;
+}
+
+fieldset {
+  padding: 25px;
+}
+
 footer a {
   color: grey;
 }
@@ -113,5 +204,5 @@ footer a:hover {
 
 /* direct child */
 footer > a {
-  color: orange;
+  color: magenta;
 }

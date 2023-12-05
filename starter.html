@@ -28,39 +28,39 @@
     <main>
         <h1>Popular Posts</h1>
         <section class="post">
-            <span>Posted by <a href="#213das">/u/not_funny</a></span>
+            <span>Posted by <a href="#213das" id="user">/u/not_funny</a></span>
             <h2>Lol look at this funny <span class="tag">meme</span></h2>
-            <button>Vote +</button>
+            <button id="vote">Vote +</button>
         </section>
 
         <section class="post">
-            <span>Posted by <a href="#213das">/u/gooner4style</a></span>
+            <span>Posted by <a href="#213das" id="user">/u/gooner4style</a></span>
             <h2>Happy birthday to the strongest <span class="tag">bodyguard</span></h2>
-            <button>Vote +</button>
+            <button id="vote">Vote +</button>
         </section>
 
         <section class="post">
-            <span>Posted by <a href="#213das">/u/dogfan</a></span>
+            <span>Posted by <a href="#213das" id="user">/u/dogfan</a></span>
             <h2>The corgi got some, <span class="tag">lucklily</span></h2>
-            <button>Vote +</button>
+            <button id="vote">Vote +</button>
         </section>
 
         <section class="post">
-            <span>Posted by <a href="#213das">/u/not_funny</a></span>
+            <span>Posted by <a href="#213das" id="user">/u/not_funny</a></span>
             <h2>Lol look at this funny <span class="tag">meme</span></h2>
-            <button>Vote +</button>
+            <button id="vote">Vote +</button>
         </section>
 
         <section class="post">
-            <span>Posted by <a href="#213das">/u/gooner4style</a></span>
+            <span>Posted by <a href="#213das" id="user">/u/gooner4style</a></span>
             <h2>Happy birthday to the strongest <span class="tag">bodyguard</span></h2>
-            <button>Vote +</button>
+            <button id="vote">Vote +</button>
         </section>
 
         <section class="post">
-            <span>Posted by <a href="#213das">/u/dogfan</a></span>
+            <span>Posted by <a href="#213das" id="user">/u/dogfan</a></span>
             <h2>The corgi got some, <span class="tag">lucklily</span></h2>
-            <button>Vote +</button>
+            <button id="vote">Vote +</button>
         </section>
         <hr>
         <footer>
@@ -72,7 +72,21 @@
                     <li><a href="#">Puppies</a></li>
                 </ul>
             </nav>
-            <a href="#">Copyright stuff in here</a>
+
+            <form action="/form" method="get">
+                <fieldset>
+                    <legend>Subscribe!</legend>
+                    <label for="email">Enter mail:</label>
+                    <input type="email" name="email" id="email">
+                    <button id="vote">Send</button>
+                </fieldset>
+            </form>
+
+            <div>
+                <a href="#">Copyright stuff in here</a>
+                <p id="disclaimer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, explicabo with <span
+                        tabindex="0" data-descr="once you hover over them">tooltips!</span></p>
+            </div>
         </footer>
     </main>
 
