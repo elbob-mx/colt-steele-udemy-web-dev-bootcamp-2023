@@ -170,7 +170,7 @@ input + button:active {
 
 /* adjacent selector */
 h2 + button {
-  background-color: #black;
+  background-color: black;
   color: white;
 }
 
