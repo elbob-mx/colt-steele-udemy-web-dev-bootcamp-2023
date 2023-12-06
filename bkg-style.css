@@ -1,0 +1,21 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  width: 80%;
+  height: 800px;
+  margin: auto;
+  background-color: olive;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0px;
+}
