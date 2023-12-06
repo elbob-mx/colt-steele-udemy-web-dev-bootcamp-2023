@@ -42,6 +42,7 @@ button {
 
 #vote {
   color: black;
+  background-color: violet;
 }
 
 #vote:hover {
@@ -183,6 +184,23 @@ h2 + button {
 .post button:hover {
   background-color: white;
   color: black;
+}
+
+footer li a {
+  color: cyan;
+}
+
+footer li a:hover {
+  color: magenta;
+  font-weight: bold;
+}
+
+#copyright {
+  color: white;
+}
+
+#copyright:hover {
+  color: yellow;
 }
 
 /* adjacent selector */
