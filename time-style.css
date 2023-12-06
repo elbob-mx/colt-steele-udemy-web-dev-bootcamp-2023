@@ -26,3 +26,21 @@ h2 {
   width: fit-content;
   font-weight: 100;
 }
+
+section div {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  color: white;
+  margin: 20px;
+  transition: 2s;
+  font-family: monospace;
+}
+
+section:hover div {
+  width: 600px;
+  background-color: black;
+  margin-left: 30%;
+  font-family: monospace;
+  font-size: 3rem;
+}
