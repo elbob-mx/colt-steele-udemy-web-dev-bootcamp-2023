@@ -1,0 +1,45 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #151b29;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+button {
+  font-weight: 700;
+  background: none;
+  color: white;
+  border: 2px solid;
+  padding: 1em 2em;
+  font-size: 1em;
+  transition: 150ms ease-in-out;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button a:hover {
+  text-decoration: none;
+  color: lime;
+}
+
+button:hover {
+  border-color: lime;
+  background-color: #354569;
+  color: lime;
+  box-shadow: 5px 5px 10px 0px rgb(0, 88, 0);
+  transform: translateX(-1.25px);
+  transform: translateY(-3px);
+  transition: 150ms ease-in-out;
+  cursor: pointer;
+}
