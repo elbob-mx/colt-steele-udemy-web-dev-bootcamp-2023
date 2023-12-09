@@ -1,0 +1,28 @@
+#nav {
+  display: grid;
+  grid-auto-flow: row;
+  box-sizing: border-box;
+  font-family: monospace;
+  margin: 40px;
+}
+
+#nav a {
+  font-family: monospace;
+  letter-spacing: 2px;
+  color: black;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+#nav a:hover {
+  font-weight: bold;
+  color: red;
+}
+
+#lessons {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: xx-large;
+  border-right-style: dotted;
+  box-sizing: border-box;
+}

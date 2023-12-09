@@ -52,7 +52,7 @@ section:hover div {
   background-color: black;
   margin-left: 30%;
   font-family: monospace;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 div:nth-of-type(1) {

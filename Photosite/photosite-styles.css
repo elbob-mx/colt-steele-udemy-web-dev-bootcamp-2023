@@ -8,6 +8,24 @@ img {
 }
 
 nav {
+  font-family: monospace;
+  color: lightgreen;
+}
+
+#nav a {
+  font-family: monospace;
+  color: #f2f2f2;
+}
+
+#nav a:hover {
+  color: violet;
+}
+
+#nav a:active {
+  color: lime;
+}
+
+#author {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   color: #f2f2f2;
