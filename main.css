@@ -3,18 +3,22 @@ body {
 }
 
 #nav {
-  display: grid;
-  grid-auto-flow: row;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   box-sizing: border-box;
   font-family: monospace;
   margin: 40px;
+  background-color: lightgray;
+  border-radius: 5px;
 }
 
 #nav a {
+  flex-grow: 2;
+  flex-basis: 1;
   font-size: 16px;
   letter-spacing: 2px;
   color: black;
-  background-color: lightgray;
   padding: 10px;
 }
 
@@ -23,11 +27,23 @@ body {
   color: red;
 }
 
+#container {
+  display: flex;
+  background-color: gray;
+  padding: 10px 5px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
 #lessons {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 26px;
   border-right-style: dotted;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+  align-items: center;
 }
 
 footer {
