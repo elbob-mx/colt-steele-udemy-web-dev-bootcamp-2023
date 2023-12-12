@@ -1,3 +1,7 @@
+body {
+  box-sizing: border-box;
+}
+
 #nav {
   display: grid;
   grid-auto-flow: row;
@@ -7,7 +11,7 @@
 }
 
 #nav a {
-  font-family: monospace;
+  font-size: 16px;
   letter-spacing: 2px;
   color: black;
   background-color: lightgray;
@@ -20,9 +24,12 @@
 }
 
 #lessons {
-  font-family: monospace;
   font-weight: bold;
-  font-size: xx-large;
+  font-size: 32px;
   border-right-style: dotted;
   box-sizing: border-box;
+}
+
+footer {
+  width: 100vw;
 }
