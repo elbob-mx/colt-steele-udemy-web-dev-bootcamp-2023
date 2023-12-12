@@ -8,24 +8,25 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
-<body style="background-color: whitesmoke; font-family: monospace; width: 100%;">
+<body style="font-family: monospace;">
 
     <div id="container">
-        <h2 id="lessons">Lessons Index ></h2>
-        <nav id="nav">
-            <a href="index.html">emmet /</a>
-            <a href="/forms/forms.html">forms /</a>
-            <a href="/marathon-form/marathon-form.html">marathon registration /</a>
-            <a href="/starter-blog/starter.html">starter css /</a>
-            <a href="/timing/time.html">timing /</a>
-            <a href="/transform/transform.html">transform /</a>
-            <a href="/hover/hover.html">hover /</a>
-            <a href="/photosite/photosite.html">photosite /</a>
-            <a href="/media-queries/media-queries.html">media queries /</a>
+        <h2>Lessons Index ></h2>
+        <nav>
+            <a href="index.html">emmet</a>
+            <a href="/forms/forms.html">forms</a>
+            <a href="/marathon-form/marathon-form.html">marathon registration</a>
+            <a href="/starter-blog/starter.html">starter css</a>
+            <a href="/timing/time.html">timing</a>
+            <a href="/transform/transform.html">transform</a>
+            <a href="/hover/hover.html">hover</a>
+            <a href="/photosite/photosite.html">photosite</a>
+            <a href="/media-queries/media-queries.html">media queries</a>
+            <a href="/price-table/price-table.html"></a>
         </nav>
     </div>
 
-    <main style="padding: 2em">
+    <main>
         <h1 style="
           background-color: brown;
           font-family: monospace;
@@ -33,6 +34,7 @@
           padding: 0.5em;
           border-radius: 0.5rem;
           font-size: xx-large;
+          margin: 20px
         ">
             Emmet on VS Code
         </h1>
@@ -52,17 +54,17 @@
 
         <!-- table #1 -->
         <!-- table>tr>td.background-color:lightgray{Animal $}*3 -->
-        <table>
+        <table style="margin: 20px">
             <tr>
-                <td class="background-color:lightgray; padding:10px;">Flora 1</td>
-                <td class="background-color:lightgray; padding:10px;">Flora 2</td>
-                <td class="background-color:lightgray; padding:10px;">Flora 3</td>
+                <td style="background-color:lightgray; padding:10px;">Flora 1</td>
+                <td style="background-color:lightgray; padding:10px;">Flora 2</td>
+                <td style="background-color:lightgray; padding:10px;">Flora 3</td>
             </tr>
 
             <tr>
-                <td class="background-color:lightgray; padding:10px;">Fauna 1</td>
-                <td class="background-color:lightgray; padding:10px;">Fauna 2</td>
-                <td class="background-color:lightgray; padding:10px;">Fauna 3</td>
+                <td style="background-color:lightgray; padding:10px;">Fauna 1</td>
+                <td style="background-color:lightgray; padding:10px;">Fauna 2</td>
+                <td style="background-color:lightgray; padding:10px;">Fauna 3</td>
             </tr>
         </table>
 
@@ -70,7 +72,7 @@
 
         <!-- table #2 -->
         <!-- table>tr>td[style=background-color:lightgray]{Animal $}*4 -->
-        <table>
+        <table style="margin: 20px">
             <tr>
                 <td style="background-color: lightgray">Fauna 1</td>
                 <td style="background-color: lightgray">Fauna 2</td>
@@ -92,8 +94,7 @@
         <table style="
           box-sizing: border-box;
           background-color: black;
-          width: auto;
-          width: 100%;
+          margin: 20px;
         ">
             <caption style="
             font-family: monospace;
