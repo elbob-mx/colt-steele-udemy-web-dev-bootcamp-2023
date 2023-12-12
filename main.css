@@ -53,7 +53,7 @@ body {
 }
 
 #container a:focus {
-  color: white;
+  color: orange;
   background-color: #181818;
 }
 
