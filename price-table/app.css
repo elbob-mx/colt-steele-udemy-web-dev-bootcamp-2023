@@ -127,3 +127,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* own css code */
+
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #559fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  width: 100vw;
+  min-height: auto;
+}
+
+.panel {
+  background-color: whitesmoke;
+}
