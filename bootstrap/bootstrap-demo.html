@@ -10,18 +10,41 @@
     <link rel="stylesheet" href="app.css">
 </head>
 
-<body>
+<body class="bg-secondary-subtle">
 
     <div class="container">
 
-        <h1>Demo Going On!</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex suscipit tenetur dolorem
-            fugit incidunt
-            quasi commodi inventore illo, delectus consequatur est debitis autem, libero recusandae labore esse?
-            Reprehenderit, hic.
-            Ex necessitatibus esse maxime possimus enim culpa tempore? Aperiam placeat recusandae officiis cupiditate
-            exercitationem atque, assumenda magni ex nobis earum alias consectetur odio quae, in voluptate. Iusto
-            accusantium explicabo eum.</p>
+        <h1 class="display-1">Demo Going On!</h1>
+
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <a class="btn btn-primary" href="#" role="button">Link</a>
+        <button type="button" class="btn btn-outline-danger">Danger Outline</button>
+        <button type="button" class="btn btn-secondary btn-lg">Large Secondary button</button>
+        <button type="button" class="btn btn-secondary btn-sm">Small Secondary button</button>
+        <!-- CUSTOM SIZE BUTTON -->
+        <button type="button" class="btn btn-outline-dark"
+            style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 2rem;">
+            Custom button
+        </button>
+        <!-- DISABLED BUTTON -->
+        <button type="button" class="btn btn-warning" disabled>Warning button</button>
+        <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>
+        <!-- BLOCK BUTTON -->
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Button</button>
+        </div>
+        <!-- RESPONSIVE BLOCK BUTTONS -->
+        <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+        </div>
 
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex suscipit tenetur dolorem
             fugit incidunt
@@ -30,6 +53,48 @@
             Ex necessitatibus esse maxime possimus enim culpa tempore? Aperiam placeat recusandae officiis cupiditate
             exercitationem atque, assumenda magni ex nobis earum alias consectetur odio quae, in voluptate. Iusto
             accusantium explicabo eum.</p>
+
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex suscipit tenetur dolorem
+            fugit incidunt
+            quasi commodi inventore illo, delectus consequatur est debitis autem, libero recusandae <mark>labore</mark>
+            esse?
+            Reprehenderit, hic.
+            Ex <s>necessitatibus esse maxime possimus enim culpa tempore?</s> Aperiam placeat recusandae officiis
+            cupiditate
+            exercitationem atque, <del>assumenda magni ex nobis</del> earum alias consectetur odio quae, in voluptate.
+            Iusto
+            <u>accusantium explicabo eum.</u>
+        </p>
+
+        <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+
+    </div>
+
+    <div class="container-sm">
+
+        <h2 class="display-2">Typography Lab</h2>
+        <h3>H3 Heading.</h3>
+
+        <h4>Abbreviatures</h4>
+        <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores doloremque libero ducimus
+            quibusdam similique!</p>
+
+        <h4>Blockquote</h4>
+        <blockquote class="blockquote">
+            <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+
+        <h4>Cite <mark>source</mark></h4>
+        <figure>
+            <blockquote class="blockquote">
+                <p>A well-known quote, contained in a blockquote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Someone famous in <cite title="Source Title">Some Country or something</cite>
+            </figcaption>
+        </figure>
 
     </div>
 
