@@ -2,84 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="app.css">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="app.css" />
 </head>
 
 <body class="bg-secondary-subtle">
-
     <div class="container">
+        <h1 class="display-1 text-center text-primary fw-bold">Demo Going On!</h1>
 
-        <h1 class="display-1">Demo Going On!</h1>
-
-        <button type="button" class="btn btn-dark">Dark</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-light">Light</button>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-        <button type="button" class="btn btn-outline-danger">Danger Outline</button>
-        <button type="button" class="btn btn-secondary btn-lg">Large Secondary button</button>
-        <button type="button" class="btn btn-secondary btn-sm">Small Secondary button</button>
-        <!-- CUSTOM SIZE BUTTON -->
-        <button type="button" class="btn btn-outline-dark"
-            style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 2rem;">
-            Custom button
-        </button>
-        <!-- DISABLED BUTTON -->
-        <button type="button" class="btn btn-warning" disabled>Warning button</button>
-        <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>
-        <!-- BLOCK BUTTON -->
-        <div class="d-grid gap-2">
-            <button class="btn btn-primary" type="button">Button</button>
+        <div class="p-5 m-5">
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+            <button type="button" class="btn btn-outline-danger">
+                Danger Outline
+            </button>
+            <button type="button" class="btn btn-secondary btn-lg">
+                Large Secondary button
+            </button>
+            <button type="button" class="btn btn-secondary btn-sm">
+                Small Secondary button
+            </button>
+            <!-- CUSTOM SIZE BUTTON -->
+            <button type="button" class="btn btn-outline-dark" style="
+          --bs-btn-padding-y: 0.5rem;
+          --bs-btn-padding-x: 2rem;
+          --bs-btn-font-size: 2rem;
+        ">
+                Custom button
+            </button>
+            <!-- DISABLED BUTTON -->
+            <button type="button" class="btn btn-warning" disabled>
+                Warning button
+            </button>
+            <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>
+            <!-- BLOCK BUTTON -->
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button">Button</button>
+            </div>
+            <!-- RESPONSIVE BLOCK BUTTONS -->
+            <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-primary" type="button">Button</button>
+                <button class="btn btn-primary" type="button">Button</button>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">Button</button>
+                <button class="btn btn-primary" type="button">Button</button>
+            </div>
         </div>
-        <!-- RESPONSIVE BLOCK BUTTONS -->
-        <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-primary" type="button">Button</button>
-            <button class="btn btn-primary" type="button">Button</button>
-        </div>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-primary" type="button">Button</button>
-            <button class="btn btn-primary" type="button">Button</button>
-        </div>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex suscipit tenetur dolorem
-            fugit incidunt
-            quasi commodi inventore illo, delectus consequatur est debitis autem, libero recusandae labore esse?
-            Reprehenderit, hic.
-            Ex necessitatibus esse maxime possimus enim culpa tempore? Aperiam placeat recusandae officiis cupiditate
-            exercitationem atque, assumenda magni ex nobis earum alias consectetur odio quae, in voluptate. Iusto
-            accusantium explicabo eum.</p>
+        <p class="m-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex
+            suscipit tenetur dolorem fugit incidunt quasi commodi inventore illo,
+            delectus consequatur est debitis autem, libero recusandae labore esse?
+            Reprehenderit, hic. Ex necessitatibus esse maxime possimus enim culpa
+            tempore? Aperiam placeat recusandae officiis cupiditate exercitationem
+            atque, assumenda magni ex nobis earum alias consectetur odio quae, in
+            voluptate. Iusto accusantium explicabo eum.
+        </p>
 
-        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex suscipit tenetur dolorem
-            fugit incidunt
-            quasi commodi inventore illo, delectus consequatur est debitis autem, libero recusandae <mark>labore</mark>
-            esse?
-            Reprehenderit, hic.
-            Ex <s>necessitatibus esse maxime possimus enim culpa tempore?</s> Aperiam placeat recusandae officiis
-            cupiditate
-            exercitationem atque, <del>assumenda magni ex nobis</del> earum alias consectetur odio quae, in voluptate.
-            Iusto
+        <p class="lead bg-info p-5 m-5 rounded-4 shadow-sm">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex
+            suscipit tenetur dolorem fugit incidunt quasi commodi inventore illo,
+            delectus consequatur est debitis autem, libero recusandae
+            <mark>labore</mark> esse? Reprehenderit, hic. Ex
+            <s>necessitatibus esse maxime possimus enim culpa tempore?</s> Aperiam
+            placeat recusandae officiis cupiditate exercitationem atque,
+            <del>assumenda magni ex nobis</del> earum alias consectetur odio quae,
+            in voluptate. Iusto
             <u>accusantium explicabo eum.</u>
         </p>
 
         <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-
     </div>
 
     <div class="container-sm">
+        <h2 class="display-2 text-center text-info fw-medium mt-5 bg-primary-subtle p-3">Typography Lab</h2>
 
-        <h2 class="display-2">Typography Lab</h2>
-        <h3>H3 Heading.</h3>
+        <h3 class="display-3 my-3">H3 Heading.</h3>
 
         <h4>Abbreviatures</h4>
-        <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+        <p>
+            <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+        </p>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores doloremque libero ducimus
-            quibusdam similique!</p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            dolores doloremque libero ducimus quibusdam similique!
+        </p>
 
         <h4>Blockquote</h4>
         <blockquote class="blockquote">
@@ -88,21 +104,25 @@
 
         <h4>Cite <mark>source</mark></h4>
         <figure>
-            <blockquote class="blockquote">
+            <blockquote class="blockquote text-end">
                 <p>A well-known quote, contained in a blockquote element.</p>
             </blockquote>
 
             <figcaption class="blockquote-footer">
-                Someone famous in <cite title="Source Title">Some Country or something</cite>
+                Someone famous in
+                <cite title="Source Title">Some Country or something</cite>
             </figcaption>
 
-            <blockquote class="blockquote">
+            <blockquote class="blockquote text-center">
                 <p>This text is supposed to be kinda bold</p>
                 <footer class="blockquote-footer">Regular guy.</footer>
             </blockquote>
         </figure>
+    </div>
 
-
+    <div class="container">
+        <h2 class="mt-5 bg-info p-3 text-center">Badges</h2>
+        <h3>Example heading <span class="badge bg-secondary">New</span></h1>
     </div>
 
     <!-- BOOTSTRAP JS -->
