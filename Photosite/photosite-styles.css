@@ -7,6 +7,11 @@ img {
   margin: calc(10% / 6);
 }
 
+img:hover {
+  scale: 105%;
+  transition: 300ms;
+}
+
 nav {
   font-family: monospace;
   color: lightgreen;
