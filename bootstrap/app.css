@@ -1,0 +1,12 @@
+* {
+  font-family: monospace;
+}
+
+a {
+  color: black;
+  padding: 1.5rem;
+}
+
+a:hover {
+  color: orangered;
+}

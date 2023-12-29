@@ -10,8 +10,27 @@
     <link rel="stylesheet" href="app.css" />
 </head>
 
-<body class="bg-secondary-subtle">
-    <div class="container">
+<body class="bg-white">
+
+    <div id="container"
+        class="p-5 shadow-sm fixed-top text-center bg-dark-subtle mb-5 d-flex justify-content-between align-items-center flex-column">
+        <h2 class="fw-bold">Lessons Index ></h2>
+        <nav>
+            <a class="text-decoration-none" href="../index.html">emmet</a>
+            <a class="text-decoration-none" href="../forms/forms.html">forms</a>
+            <a class="text-decoration-none" href="../marathon-form/marathon-form.html">marathon registration</a>
+            <a class="text-decoration-none" href="../starter-blog/starter.html">starter css</a>
+            <a class="text-decoration-none" href="../timing/time.html">timing</a>
+            <a class="text-decoration-none" href="../transform/transform.html">transform</a>
+            <a class="text-decoration-none" href="../hover/hover.html">hover</a>
+            <a class="text-decoration-none" href="../photosite/photosite.html">photosite</a>
+            <a class="text-decoration-none" href="../media-queries/media-queries.html">media queries</a>
+            <a class="text-decoration-none" href="../price-table/price-table.html">price table</a>
+            <a class="text-decoration-none" href="bootstrap-demo.html">bootstrap</a>
+        </nav>
+    </div>
+
+    <div class="container mt-5">
         <h1 class="display-1 text-center text-primary fw-bold">Demo Going On!</h1>
 
         <div class="p-5 m-5">
@@ -43,8 +62,8 @@
             </button>
             <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>
             <!-- BLOCK BUTTON -->
-            <div class="d-grid gap-2">
-                <button class="btn btn-primary" type="button">Button</button>
+            <div class="d-grid">
+                <button class="btn btn-primary m-3" type="button">Button</button>
             </div>
             <!-- RESPONSIVE BLOCK BUTTONS -->
             <div class="d-grid gap-2 d-md-block">
@@ -133,11 +152,11 @@
             Notifications <span class="badge text-bg-light">4</span>
         </button>
 
-        <h3 class="bg-dark-subtle rounded-2 p-3">Button Group
-            <div class="btn-group">
-                <button class="btn btn-primary">Select</button>
-                <button class="btn btn-warning">One</button>
-                <button class="btn btn-success">Already</button>
+        <h3>Button Group
+            <div class="btn-group" role="group" aria-label="Basic Example">
+                <button type="button" class="btn btn-primary">Select</button>
+                <button type="button" class="btn btn-warning">One</button>
+                <button type="button" class="btn btn-success">Already</button>
             </div>
         </h3>
     </div>
