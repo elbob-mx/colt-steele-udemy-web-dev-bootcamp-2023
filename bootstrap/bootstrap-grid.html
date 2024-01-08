@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="app.css" />
+</head>
+
+<body class="bg-white">
+
+    <div id="container"
+        class="p-5 shadow-sm fixed-top text-center bg-dark-subtle mb-5 d-flex justify-content-between align-items-center flex-column">
+        <h2 class="fw-bold">Lessons Index ></h2>
+        <nav>
+            <a class="text-decoration-none" href="../index.html">emmet</a>
+            <a class="text-decoration-none" href="../forms/forms.html">forms</a>
+            <a class="text-decoration-none" href="../marathon-form/marathon-form.html">marathon registration</a>
+            <a class="text-decoration-none" href="../starter-blog/starter.html">starter css</a>
+            <a class="text-decoration-none" href="../time-delay/delay.html">timing</a>
+            <a class="text-decoration-none" href="../transform/transform.html">transform</a>
+            <a class="text-decoration-none" href="../hover/hover.html">hover</a>
+            <a class="text-decoration-none" href="../photo/photo-grid.html">photosite</a>
+            <a class="text-decoration-none" href="../media-queries/media-queries.html">media queries</a>
+            <a class="text-decoration-none" href="../price-table/price-table.html">price table</a>
+            <a class="text-decoration-none" href="bootstrap-demo.html">bootstrap</a>
+            <a class="text-decoration-none" href="bootstrap-demo.html"> bs grid</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                1 out of 3
+            </div>
+            <div class="col-sm">
+                1 out of 3
+            </div>
+            <div class="col-sm">
+                1 out of 3
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP JS -->
+    <script>const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+        const appendAlert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible bg-success border border-2 border-dark" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('')
+
+            alertPlaceholder.append(wrapper)
+        }
+
+        const alertTrigger = document.getElementById('liveAlertBtn')
+        if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                appendAlert('Browser saved passwords erased.')
+            })
+        }</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
