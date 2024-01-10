@@ -10,3 +10,9 @@ a {
 a:hover {
   color: orangered;
 }
+
+@media (max-width: 576px) {
+  #rg1 {
+    margin: 2rem;
+  }
+}
