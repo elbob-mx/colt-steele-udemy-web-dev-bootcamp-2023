@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="app.css" />
 </head>
 
-<body>
+<body class="bg-dark">
 
     <div id="container"
         class="p-5 shadow-sm sticky-top text-center bg-dark-subtle mb-5 d-flex justify-content-between align-items-center flex-column">
@@ -32,7 +32,7 @@
         </nav>
     </div>
 
-    <h1 class="display-5 text-center p-4">Bootstrap Grid System</h1>
+    <h1 class="display-5 text-center p-4 text-white">Bootstrap Grid System</h1>
     <div class="container">
         <div class="row">
             <div class="col bg-dark-subtle">
@@ -59,7 +59,7 @@
         </div>
 
         <!-- RESPONSIVE GRID -->
-        <h2 class="display-5 text-center mt-5">Responsive Grid</h2>
+        <h2 class="display-5 text-center mt-5 text-white">Responsive Grid</h2>
 
         <div id="rg1" class="row bg-dark-subtle rounded-3 p-4">
             <div class="col-md-6 col-xl-3 p-2 p-md-5 bg-success-subtle"><i class="bi bi-1-circle-fill"
@@ -93,7 +93,68 @@
                     alt="dale cooper" title="dale cooper">
             </div>
         </div>
-        <div class="row mt-5 g-3">
+
+        <!-- GRID ALIGMENT -->
+        <h2 class="display-4 text-center mt-5 text-white">Grid Aligment</h2>
+        <div class="row align-items-center">
+            <div class="col-3 bg-danger-subtle align-self-stretch">Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit.
+                Repudiandae,
+                eos sed ab aut vel sequi dolor odio neque alias perferendis!</div>
+            <div class="col-3 bg-info-subtle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae,
+                eos sed ab aut vel sequi dolor odio neque alias perferendis! Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. A natus labore dicta quasi debitis? Distinctio, et minima eos vero eligendi ab
+                consequuntur, animi quae officiis tenetur laboriosam repellendus a dignissimos.
+                Eius neque commodi enim illum. Voluptatum optio quidem totam vel asperiores harum non illum consectetur
+                sunt obcaecati qui id minima aliquam ullam ex neque magnam, quibusdam voluptas excepturi nemo
+                aspernatur?</div>
+            <div class="col-3 bg-success-subtle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae,
+                eos sed ab aut vel sequi dolor odio neque alias perferendis! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ullam, repudiandae recusandae in deserunt error porro veritatis architecto dicta
+                adipisci minus.</div>
+            <div class="col-3 bg-primary-subtle align-self-end">Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Repudiandae,
+                eos sed ab aut vel sequi dolor odio neque alias perferendis!</div>
+        </div>
+
+        <!-- JUSTIFY CONTENT -->
+        <h3 class="text-white text-center display-5 mt-5">Justify Content</h3>
+        <div
+            class="row border-dark-subtle border p-3 justify-content-center justify-content-lg-start justify-content-xl-between">
+            <div class="col-md-4 col-xl-6 bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati
+                tenetur
+                fugit laboriosam modi quam alias magni! Amet ipsa aut voluptatibus!</div>
+            <div class="col-md-4 col-xl-6 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati
+                tenetur
+                fugit laboriosam modi quam alias magni! Amet ipsa aut voluptatibus!</div>
+            <div class="col-md-4 flex-xl-grow-1 bg-info-subtle stre">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+                Obcaecati
+                tenetur
+                fugit laboriosam modi quam alias magni! Amet ipsa aut voluptatibus!</div>
+            <div class="col-md-4 flex-xl-grow-1 bg-success-subtle stre">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+                Obcaecati
+                tenetur
+                fugit laboriosam modi quam alias magni! Amet ipsa aut voluptatibus!</div>
+            <div class="col-md-4 flex-xl-grow-1 bg-warning-subtle stre">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+                Obcaecati
+                tenetur
+                fugit laboriosam modi quam alias magni! Amet ipsa aut voluptatibus!</div>
+            <div class="col-md-4 flex-xl-grow-1 bg-danger-subtle stre">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+                Obcaecati
+                tenetur
+                fugit laboriosam modi quam alias magni! Amet ipsa aut voluptatibus!
+                <button type="button" class="btn btn-primary m-2 fw-medium">Launch</button>
+            </div>
+        </div>
+
+        <!-- IMAGE GRID -->
+        <div class="row mt-5 g-4">
             <div class="col-xl-4 col-md-6">
                 <img class="img-fluid" src="https://i1.sndcdn.com/avatars-000834207607-o56azo-t500x500.jpg"
                     alt="solid snake" title="solid snake">
