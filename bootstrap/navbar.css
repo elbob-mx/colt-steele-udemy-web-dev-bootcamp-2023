@@ -1,8 +1,10 @@
 a {
   color: white;
+  transition: 300ms ease-in-out;
+  font-weight: 500;
 }
 
 a:hover {
-  color: black;
-  rotate: 10deg;
+  color: greenyellow;
+  transition: 300ms ease-in-out;
 }
