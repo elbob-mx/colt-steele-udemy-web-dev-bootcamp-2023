@@ -1,5 +1,5 @@
 * {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 a {
   color: white;
@@ -9,4 +9,14 @@ a {
 a:hover {
   color: lightgreen;
   transition: 300ms ease-in-out;
+}
+p {
+  margin: 0;
+}
+#logo:hover {
+  transform: scale(110%);
+  transition: 500ms ease-in-out;
+}
+#logo {
+  transition: 500ms ease-in-out;
 }
