@@ -16,7 +16,7 @@
 
     <!-- NAVBAR -->
     <div id="container"
-        class="p-5 shadow-sm sticky-top text-center mb-5 d-flex justify-content-between align-items-center flex-column"
+        class="p-5 shadow-sm sticky-top text-center d-flex justify-content-between align-items-center flex-column"
         style="background-color:slategrey;">
         <h2 class="fw-bold">Lessons Index <i id="icon" class="bi bi-hand-index-fill"
                 style="font-size:xx-large; color:lightblue;""></i>
@@ -39,22 +39,19 @@
                 </nav>
     </div>
 
-    <!-- BASIC NAVBAR -->
-    <nav class="navbar navbar-light bg-primary p-5">
-        <a href="none" class="navbar-brand"><span class="h3 fw-bold">Most Excellent Navbar 🤘</span></a>
-    </nav>
-
-    <nav class="navbar navbar-dark bg-info p-5">
-        <a href="none" class="navbar-brand"><span class="h3 fw-bold">Most Excellent Navbar 🤘</span></a>
-    </nav>
 
     <!-- EXPAND TOGGLE BUTTON NAVBAR -->
-    <nav class="navbar navbar-dark bg-dark mt-5 navbar-expand-lg justify-content-around">
-        <a class="navbar-brand m-0" href="#">
-            <img id="logo" src="/bootstrap/img/racoon-svgrepo-com.png" style="width: 100px; margin-right: 20px;"
-                alt="logo">Raccoon City Hall</a>
-
-        <div class="collapse navbar-collapse">
+    <nav class="navbar navbar-dark bg-dark px-lg-5 navbar-expand-lg justify-content-around">
+        <a class="navbar-brand" href="#">
+            <img id="logo" src="/bootstrap/img/racoon-svgrepo-com.png" style="width: 100px; padding-right: 20px;"
+                alt="logo">Raccoon City
+            Hall</a>
+        <!-- NAVBAR CONTENT -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarSections"
+            aria-expanded="false" aria-label="Toggle navigation" aria-controls="navBarSections">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse p-3 p-lg-0 justify-content-end" id="navBarSections">
             <div class="navbar-nav">
                 <a class="nav-link text-light active" href="#">Burrow</a>
                 <a class="nav-link text-light" href="#">Know Us</a>
@@ -71,8 +68,8 @@
 
     <!-- MISC CONTENT -->
     <h1 class="mt-5 text-center">Intro to Raccoons</h1>
-    <div class="container p-5 bg-success-subtle rounded-2 my-lg-5">
-        <h2 class="">Origins</h2>
+    <div class="container p-5 bg-success-subtle rounded-3 my-lg-5">
+        <h2>Origins</h2>
         <div class="row">
             <div class="col-lg-6 my-2">
                 <h3>Lorem, ipsum.</h3>
@@ -96,19 +93,13 @@
                     ipsa
                     natus beatae error earum qui iste delectus vitae praesentium hic ea accusamus explicabo. Animi
                     laudantium eaque id porro dolorum, quae, rem aut dolores error molestiae corporis omnis accusamus
-                    sunt
-                    illum suscipit. Dolorem nisi quae exercitationem facere maiores impedit aliquam sunt sint
-                    perspiciatis
-                    repellat consectetur doloremque, natus distinctio quas ab sequi dolorum soluta!</p>
+                    sunt!</p>
             </div>
             <div class="col-lg-6 my-2">
                 <h3>Lorem.</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur eius,
                     molestiae id, dolor maiores sed sequi dolores exercitationem consequatur consequuntur vero soluta
-                    ipsa
-                    natus beatae error earum qui iste delectus vitae praesentium hic ea accusamus explicabo. Animi
-                    laudantium eaque id porro dolorum, quae, rem aut dolores error molestiae corporis omnis accusamus
-                    sunt</p>
+                    ipsa.</p>
             </div>
         </div>
     </div>
