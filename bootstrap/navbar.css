@@ -20,3 +20,6 @@ p {
 #logo {
   transition: 500ms ease-in-out;
 }
+
+@media screen {
+}
