@@ -24,3 +24,7 @@ p {
   width: 50px;
   height: 3px;
 }
+
+#superText {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
