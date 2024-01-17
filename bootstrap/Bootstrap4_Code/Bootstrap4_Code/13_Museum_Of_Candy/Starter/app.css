@@ -1,7 +1,4 @@
-body {
-  background-color: #f5d9d5;
-}
-
+/* DON'T REMOVE THIS (COURSE LESSONS NAVBAR) */
 #legacyLink {
   color: white;
   font-family: sans-serif;
@@ -17,4 +14,27 @@ body {
 
 #legacyNavbar {
   padding: 20px;
+}
+
+/* CANDY MUSEUM */
+body {
+  background-color: #f5d9d5;
+  font-family: "Nunito", sans-serif;
+}
+
+#mainNavbar .navbar-brand {
+  color: #ea1c2c;
+}
+
+#mainNavbar {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+  color: white;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #ea1c2c;
 }
