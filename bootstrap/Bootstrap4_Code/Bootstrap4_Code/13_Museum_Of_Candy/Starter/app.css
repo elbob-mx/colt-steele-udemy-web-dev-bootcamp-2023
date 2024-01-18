@@ -114,6 +114,24 @@ body {
   }
 }
 
+@media (max-width: 932px) {
+  #headingGroup h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 844px) {
+  #headingGroup h1 {
+    font-size: 1.55rem;
+  }
+}
+
+@media (max-width: 812px) {
+  #headingGroup h1 {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   #headingGroup h1 {
     font-size: 1.4rem;
