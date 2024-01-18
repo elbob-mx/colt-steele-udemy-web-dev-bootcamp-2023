@@ -45,7 +45,7 @@ body {
 
 #headingGroup h1 {
   font-weight: 100;
-  font-size: 4.5rem;
+  font-size: 3.8rem;
 }
 
 @media (max-width: 1600px) {
@@ -54,11 +54,12 @@ body {
   }
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1366px) {
   #headingGroup h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
+
 @media (max-width: 1250px) {
   #headingGroup h1 {
     font-size: 3rem;
@@ -67,6 +68,12 @@ body {
 
 @media (max-width: 1024px) {
   #headingGroup h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #headingGroup h1 {
+    font-size: 1.4rem;
   }
 }
