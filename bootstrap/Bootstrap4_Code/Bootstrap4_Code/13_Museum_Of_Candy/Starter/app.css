@@ -23,8 +23,9 @@ body {
 }
 
 #mainNavbar.scrolled {
-  background-color: rgb(222, 192, 222);
-  transition-duration: 1s;
+  background-color: #6c5b7b;
+  transition-duration: 700ms;
+  color: white;
 }
 
 .copytext h2 {
@@ -69,7 +70,7 @@ body {
 #mainNavbar {
   font-size: 1.5rem;
   font-weight: 100;
-  transition-duration: 1s;
+  transition-duration: 700ms;
 }
 
 #mainNavbar .nav-link {
