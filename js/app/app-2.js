@@ -37,11 +37,27 @@
 //   }
 // }
 
-const dayOfTheWeek = "Sunday";
-if (dayOfTheWeek === "Monday") {
-  console.log("monday, not again...");
-} else if (dayOfTheWeek === "Saturday") {
-  console.log("yeah! saturday!");
-} else if (dayOfTheWeek === "Sunday") {
-  console.log("well... weekend is over...");
+// const dayOfTheWeek = "Sunday";
+// if (dayOfTheWeek === "Monday") {
+//   console.log("monday, not again...");
+// } else if (dayOfTheWeek === "Saturday") {
+//   console.log("yeah! saturday!");
+// } else if (dayOfTheWeek === "Sunday") {
+//   console.log("well... weekend is over...");
+// }
+
+// 0-5 - free
+// 5-10 - child $10
+// 11-65 - adult $20
+// 66+ - senior $10
+
+const age = 64;
+if (age < 5) {
+  console.log("you're a child");
+} else if ((age >= 1, age <= 10)) {
+  console.log("you're a child");
+} else if ((age >= 11, age <= 64)) {
+  console.log("you're an adult");
+} else if (age >= 65) {
+  console.log("you're a senior");
 }
