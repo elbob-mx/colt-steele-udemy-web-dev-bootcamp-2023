@@ -37,13 +37,15 @@
 //   }
 // }
 
-// const dayOfTheWeek = "Sunday";
+// const dayOfTheWeek = "prompt("enter a day of the week")";
 // if (dayOfTheWeek === "Monday") {
 //   console.log("monday, not again...");
 // } else if (dayOfTheWeek === "Saturday") {
 //   console.log("yeah! saturday!");
 // } else if (dayOfTheWeek === "Sunday") {
 //   console.log("well... weekend is over...");
+// } else {
+//   console.log("invalid input");
 // }
 
 // 0-5 - free
@@ -51,13 +53,13 @@
 // 11-65 - adult $20
 // 66+ - senior $10
 
-const age = 64;
+const age = prompt("Enter your age");
 if (age < 5) {
-  console.log("you're a child");
+  console.log("you're a child, you pay $10");
 } else if ((age >= 1, age <= 10)) {
-  console.log("you're a child");
+  console.log("you're a child, you pay $10");
 } else if ((age >= 11, age <= 64)) {
-  console.log("you're an adult");
+  console.log("you're an adult, you pay $20");
 } else if (age >= 65) {
-  console.log("you're a senior");
+  console.log("As a senior, you sir have a 50% discount, you only pay $10");
 }
