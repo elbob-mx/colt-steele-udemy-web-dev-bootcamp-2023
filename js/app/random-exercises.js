@@ -13,3 +13,12 @@ if (num <= 100) {
     }
   }
 }
+
+// TRUTHY FALSY
+const userInput = prompt("Enter random text");
+
+if (userInput) {
+  alert("well done, genius. That's a TRUTHY");
+} else {
+  alert("that doesn't work. That's a FALSY");
+}
