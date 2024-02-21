@@ -48,23 +48,24 @@ p {
   top: 0;
   position: relative;
   justify-content: center;
-  transition: 500ms;
+  transition: 700ms;
 }
 
 #down:hover {
   color: white;
   cursor: pointer;
   top: 15px;
-  transition: top ease-in-out 500ms;
+  transition: top ease-in-out 700ms;
 }
 
 section {
-  margin-top: 2000px;
+  margin-top: 1080px;
   height: 100%;
 }
 
 #below {
-  font-size: 80px;
+  font-size: 64px;
+  color: #181818;
 }
 
 .quote {

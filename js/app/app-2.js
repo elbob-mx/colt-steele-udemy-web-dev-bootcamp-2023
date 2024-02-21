@@ -55,12 +55,19 @@
 // 66+ - senior $10
 
 const age = prompt("Enter your age");
-if (age <= 3) {
-  alert("aww! you're a baby, you're free of charge!");
+
+if (age <= 0) {
+  alert("so... how does it look in there?");
+} else if (age <= 3) {
+  alert(
+    "aww! you're a baby (who knows how to type, awesome), you are free of charge!"
+  );
 } else if ((age >= 4, age <= 10)) {
-  alert("as a child, you only pay $10");
+  alert("you are a child, you only pay $10 kiddo");
 } else if ((age >= 11, age <= 64)) {
-  alert("you are an adult, you pay $20");
-} else if ((age >= 65, age <= 100)) {
-  alert("as a senior, you only pay $10 :)");
+  alert("you're an adult, you pay $20, thanks");
+} else if ((age >= 65, age <= 99)) {
+  alert(
+    "as a senior, you've gt 50% discount off, you only pay $10, thank you :)"
+  );
 } else alert("longevity rules!");
