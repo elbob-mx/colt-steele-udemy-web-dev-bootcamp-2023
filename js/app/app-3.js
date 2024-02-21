@@ -9,6 +9,7 @@ if (password.length >= 6) {
   } else {
     alert("invalid password, try again");
   }
-} else alert("invalid password, try again");
-
+} else {
+  alert("invalid password, try again");
+}
 // no space no password
