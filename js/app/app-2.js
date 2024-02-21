@@ -39,27 +39,28 @@
 
 // const dayOfTheWeek = "prompt("enter a day of the week")";
 // if (dayOfTheWeek === "Monday") {
-//   console.log("monday, not again...");
+//   alert("monday, not again...");
 // } else if (dayOfTheWeek === "Saturday") {
-//   console.log("yeah! saturday!");
+//   alert("yeah! saturday!");
 // } else if (dayOfTheWeek === "Sunday") {
-//   console.log("well... weekend is over...");
+//   alert("well... weekend is over...");
 // } else {
-//   console.log("invalid input");
+//   alert("invalid input");
 // }
 
+// ENTRANCE FEE
 // 0-5 - free
 // 5-10 - child $10
 // 11-65 - adult $20
 // 66+ - senior $10
 
 const age = prompt("Enter your age");
-if (age < 5) {
-  console.log("you're a child, you pay $10");
-} else if ((age >= 1, age <= 10)) {
-  console.log("you're a child, you pay $10");
+if (age <= 3) {
+  alert("aww! you're a baby, you're free of charge!");
+} else if ((age >= 4, age <= 10)) {
+  alert("as a child, you only pay $10");
 } else if ((age >= 11, age <= 64)) {
-  console.log("you're an adult, you pay $20");
-} else if (age >= 65) {
-  console.log("As a senior, you sir have a 50% discount, you only pay $10");
-}
+  alert("you are an adult, you pay $20");
+} else if ((age >= 65, age <= 100)) {
+  alert("as a senior, you only pay $10 :)");
+} else alert("longevity rules!");
