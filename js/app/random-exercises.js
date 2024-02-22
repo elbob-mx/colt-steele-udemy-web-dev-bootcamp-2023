@@ -25,7 +25,14 @@
 // if ("undefined") {
 //   console.log("truthy!");
 // } else {
-//   console.log("falsey!");
+//   console.log("falsy!");
+// }
+
+// FALSY;
+// if (null == 0) {
+//   console.log("it is!");
+// } else {
+//   console.log("it's not...");
 // }
 
 // AND OPERATOR
@@ -47,13 +54,24 @@
 // }
 
 // OR OPERATOR
-const age = 10000000;
-if ((age >= 0 && age <= 5) || (age >= 65 && age <= 100)) {
-  console.log("Free!");
-} else if (age >= 6 && age <= 10) {
-  console.log("$5");
-} else if (age >= 11 && age <= 64) {
-  console.log("$20");
-} else if (age > 101 && age < 200) {
-  console.log("you're strong as an oak!");
-} else console.log("wow!");
+// const age = 157;
+// if ((age >= 0 && age <= 5) || (age >= 65 && age <= 100)) {
+//   console.log("Free!");
+// } else if (age >= 6 && age <= 10) {
+//   console.log("$5");
+// } else if (age >= 11 && age <= 64) {
+//   console.log("$20");
+// } else if (age > 101 && age < 150) {
+//   console.log("you're strong as an oak!");
+// } else console.log("wow!");
+
+// NOT OPERATOR
+// const age = 65;
+
+// if (age === 0 || age <= 3) {
+//   console.log("Error. Try again");
+// } else if (!((age >= 4 && age < 10) || age >= 65)) {
+//   console.log("You'll pay $15.00");
+// } else {
+//   console.log("Free of charge.");
+// }
