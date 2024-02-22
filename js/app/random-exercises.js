@@ -23,8 +23,21 @@
 //   alert("that doesn't work. That's a FALSY");
 // }
 
-if ("undefined") {
-  console.log("truthy!");
+// if ("undefined") {
+//   console.log("truthy!");
+// } else {
+//   console.log("falsey!");
+// }
+
+// AND
+
+// if (1 <= 4 && "abc".length === 3) {
+//   console.log("false, but true indeed");
+// }
+
+const password = "1234 567";
+if (password.length >= 6 && password.indexOf(" ") === -1) {
+  console.log("Valid password.");
 } else {
-  console.log("falsey!");
+  console.log("Invalid password");
 }
