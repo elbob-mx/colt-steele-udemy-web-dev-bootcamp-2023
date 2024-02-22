@@ -35,9 +35,16 @@
 //   console.log("false, but true indeed");
 // }
 
-const password = "1234 567";
-if (password.length >= 6 && password.indexOf(" ") === -1) {
-  console.log("Valid password.");
-} else {
-  console.log("Invalid password");
+// const password = "1234 567";
+// if (password.length >= 6 && password.indexOf(" ") === -1) {
+//   console.log("Valid password.");
+// } else {
+//   console.log("Invalid password");
+// }
+
+const mystery = "PiValue7"; //CHANGE THIS VALUE TO MAKE THE CONDITIONAL BELOW TRUE
+
+// LEAVE THIS CODE ALONE! (pretty please)
+if (mystery[0] === "P" && mystery.length > 5 && mystery.indexOf("7") !== -1) {
+  console.log("YOU GOT IT!!!");
 }
