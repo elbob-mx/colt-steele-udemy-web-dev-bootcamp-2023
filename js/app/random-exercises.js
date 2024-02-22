@@ -65,13 +65,13 @@
 //   console.log("you're strong as an oak!");
 // } else console.log("wow!");
 
-// NOT OPERATOR
-// const age = 65;
+// not operator
+const age = 65;
 
-// if (age === 0 || age <= 3) {
-//   console.log("Error. Try again");
-// } else if (!((age >= 4 && age < 10) || age >= 65)) {
-//   console.log("You'll pay $15.00");
-// } else {
-//   console.log("Free of charge.");
-// }
+if (age === 0 || age <= 3) {
+  console.log("Error. Try again");
+} else if (!((age >= 4 && age < 10) || age >= 65)) {
+  alert("You'll pay $15.00");
+} else {
+  console.log("Free of charge.");
+}
