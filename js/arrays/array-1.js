@@ -29,7 +29,7 @@ console.log(pc[5]);
 
 pc[5] = "100 mbps";
 console.log(pc);
-pc[15] = "screen light bar?"; // ! empty undefined slots
+pc[15] = "screen light bar"; // ! empty undefined slots
 console.log(pc);
 
 let maybeItem = pc.pop(); // ! new variable array
@@ -40,10 +40,20 @@ wishlist.push(maybeItem);
 console.log(wishlist);
 
 if (pc.length === 5) {
-  console.log(pc.length + "pieces nice setup 0");
+  console.log(pc.length + "pieces, nice setup");
 } else {
   console.log(pc.length + " pieces, more than enough eqipment, but maybe...");
 }
 
-let specsQty = pc.length;
-console.log(specsQty + " pieces");
+// ! remove multiple array elements
+
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+function removeItems(arr, item) {
+  for (var i = 0; i < item; i++) {
+    arr.pop();
+  }
+}
+
+removeItems(numbers, 2);
+console.log(numbers);
