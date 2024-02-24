@@ -18,7 +18,7 @@ let specs = pc.length;
 console.log(pc);
 
 if (pc.length === 5) {
-  console.log(pc.length + "pieces nice setup");
+  console.log(pc.length + "pieces nice setup 0");
 } else {
   console.log(pc.length + " pieces, more than enough eqipment, but maybe...");
 }
