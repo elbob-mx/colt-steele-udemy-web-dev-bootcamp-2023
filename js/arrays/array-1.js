@@ -29,13 +29,15 @@ console.log(pc[5]);
 
 pc[5] = "100 mbps";
 console.log(pc);
-pc[15] = "screen light bar"; // ! empty undefined slots
+pc[15] = "screen light bar"; // * empty undefined slots
 console.log(pc);
 
-let maybeItem = pc.pop(); // ! new variable array
+// * new variable array
+let maybeItem = pc.pop();
 console.log(maybeItem);
 
-let wishlist = []; // ! creating a wishlist with not urgent pieces
+// * creating a wishlist with not urgent pieces
+let wishlist = [];
 wishlist.push(maybeItem);
 console.log(wishlist);
 
@@ -45,8 +47,7 @@ if (pc.length === 5) {
   console.log(pc.length + " pieces, more than enough eqipment, but maybe...");
 }
 
-// ! remove multiple array elements
-
+// * remove multiple array elements
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function removeItems(arr, item) {
