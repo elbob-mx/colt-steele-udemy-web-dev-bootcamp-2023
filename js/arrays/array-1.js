@@ -11,6 +11,11 @@ planets.push("Pluto?");
 planets.unshift("Mercury");
 console.log(planets);
 
+planets.join();
+planets.join("");
+planets.push("Neil Tyson 3000", "Sarah Connor");
+console.log(planets.join(" / "));
+
 // * colt's potter array
 
 const leaderboard = ["Harry", "Lua", "Hermione", "Bellatrix"];
