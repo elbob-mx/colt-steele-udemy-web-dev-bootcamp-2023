@@ -1,3 +1,16 @@
+// * colt's planets array
+
+const planets = ["The Moon", "Venus", "Earth", "Mars", "Jupiter"]; //DO NOT TOUCH THIS LINE!
+
+// YOUR CODE GOES BELOW THIS LINE:
+planets.shift();
+planets.push("Saturn");
+planets.push("Uranus");
+planets.push("Neptune");
+planets.push("Pluto?");
+planets.unshift("Mercury");
+console.log(planets);
+
 // * colt's potter array
 
 const leaderboard = ["Harry", "Lua", "Hermione", "Bellatrix"];
@@ -39,6 +52,8 @@ console.log(maybeItem);
 // * creating a wishlist with not urgent pieces
 let wishlist = [];
 wishlist.push(maybeItem);
+console.log(wishlist);
+wishlist.unshift("led strip");
 console.log(wishlist);
 
 if (pc.length === 5) {
