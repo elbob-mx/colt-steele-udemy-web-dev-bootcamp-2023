@@ -2,6 +2,7 @@
 let bands = ["NIN", "Deftones", "Pantera", "Meshuggah", "Isis", "TOOL"];
 // SPLICE
 let joiningBand = bands.splice(6, 0, "Red Fang", "Chevelle");
+let cancelBand = bands.splice(2, 1); // removed second index (Pantera)
 
 // FUNCTIONS
 // add space at beggining of every string on 'bands' array
@@ -12,7 +13,7 @@ for (var i = 0; i < bands.length; i++) {
 // VARIABLES
 let industrialBands = bands.slice(0, 1);
 let proggyBands = bands.slice(3, 6); // starts at index 3 and includes it; ends at index 6 but doesnt include it
-let lastBands = bands.slice(6, 8); // starts at
+let lastBands = bands.slice(6, 8);
 
 // CONSOLE LOGS
 console.log("Tour 2024:" + bands + ": confirmed bands so far.");
