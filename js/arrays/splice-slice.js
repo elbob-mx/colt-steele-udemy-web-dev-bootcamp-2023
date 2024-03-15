@@ -22,3 +22,9 @@ console.log("presenting " + bands.length + " bands");
 console.log(industrialBands + " is an idustrial band.");
 console.log(proggyBands + " are proggy bands.");
 console.log(lastBands + " are the last bands to present.");
+
+let orderedBands = bands.sort();
+console.log(orderedBands); // alphabetized bands
+
+let prices = [100, 180, 250, 50, 500, 850, 1000, 85];
+console.log(prices.sort((a, b) => a - b)); // sorts comparing numeric value (85, 100, 180, 250, 500, 850, 1000)
