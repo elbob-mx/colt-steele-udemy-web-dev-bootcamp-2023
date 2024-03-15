@@ -1,8 +1,9 @@
 // VARIABLES
-let bands = ["NIN", "Deftones", "Pantera", "Meshuggah", "Isis", "TOOL"];
+let bands = ["NIN", "Deftones", "Pantera", "Meshuggah", "Isis", "TOOL"]; // dream tour!
 // SPLICE
-let joiningBand = bands.splice(6, 0, "Red Fang", "Chevelle");
+let joiningBand = bands.splice(6, 0, "Red Fang", "Chevelle"); // added 2 bands without deleting any
 let cancelBand = bands.splice(2, 1); // removed second index (Pantera)
+console.log(cancelBand + " canceled.");
 
 // FUNCTIONS
 // add space at beggining of every string on 'bands' array
