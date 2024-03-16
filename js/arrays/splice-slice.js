@@ -25,11 +25,17 @@ console.log(lastBands + " are the last bands to present.");
 
 let orderedBands = bands.sort();
 console.log(orderedBands.toString() + " (bands alphabetized)."); // array turn to strings and alphabetized
+console.log("=============== PRICES ================="); // nevermind this separator
 
-let prices = [100, 180, 250, 50, 500, 850, 1000, 85];
+// PRICES
+let prices = [100, 180, 250, 50, 500, 850, 1000, 85, 3200]; // un-ordered prices
+prices.sort((a, b) => a - b); // sorts comparing numeric value (85, 100, 180, 250, 500, 850, 1000, 3200)
 
-// add space at beggining of every string on 'bands' array
-for (var i = 0; i < prices.length; i++) {
-  prices[i] = " " + prices[i];
-}
-console.log("available seat prices:" + prices.sort((a, b) => a - b) + " (USD)"); // sorts comparing numeric value (85, 100, 180, 250, 500, 850, 1000)
+console.log(
+  prices.toLocaleString("es-MX", { style: "currency", currency: "MXN" })
+);
+
+// vip ticket
+const vipTicket = 3200;
+let vipUsd = Intl.NumberFormat("es-MX");
+console.log("MX VIP ticket price: " + "$" + vipUsd.format(vipTicket));
