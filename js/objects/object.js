@@ -26,14 +26,22 @@ const product = {
 console.log(
   `Ok😁!, for ${product.name} we have these flavors: ${product.flavors.join(
     ", "
-  )}, and their price is ${product.price} each.`
+  )}. Their price is ${product.price} each.`
 );
 
-// object to array example (credits to: https://stackoverflow.com/users/13555735/akshay-pagare)
+// product name changed
+product.name = "Haribo Gummies";
+console.log(
+  `Ok😁!, for ${product.name} we have these flavors: ${product.flavors.join(
+    ", "
+  )}. Their price is $${product.price} each.`
+);
+
+/* object to array example (credits to: https://stackoverflow.com/users/13555735/akshay-pagare)
 let obj = { x: 1, y: 2, z: 3 };
 let outputArray = [];
 for (let i = 0; i < Object.keys(obj).length; i++) {
   outputArray.push(Object.keys(obj)[i] + " " + Object.values(obj)[i]);
 }
 
-console.log(outputArray);
+console.log(outputArray); */
