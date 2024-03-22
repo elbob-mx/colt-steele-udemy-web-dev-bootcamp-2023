@@ -68,6 +68,6 @@ if (age <= 0) {
   alert("you're an adult, you pay $20, thanks");
 } else if ((age >= 65, age <= 99)) {
   alert(
-    "as a senior, you've gt 50% discount off, you only pay $10, thank you :)"
+    "as a senior, you've got 50% discount off, you only pay $10, thank you :)"
   );
 } else alert("longevity rules!");
