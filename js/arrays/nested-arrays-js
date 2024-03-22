@@ -1,0 +1,10 @@
+// two level arrays
+const brands = [
+  ["fender", "gibson", "esp", "reverend"],
+  ["dw", "mapex", "sonor", "pearl"],
+  ["zildjian", "paiste", "meinl"],
+  ["ibanez", "digitech", "jhs", "boss", "electro-harmonix"],
+];
+console.log(brands);
+// go to the second string on the third array:
+console.log(brands[2][1]);
