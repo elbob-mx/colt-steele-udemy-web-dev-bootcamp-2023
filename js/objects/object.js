@@ -45,3 +45,16 @@ for (let i = 0; i < Object.keys(obj).length; i++) {
 }
 
 console.log(outputArray); */
+
+const midterms = { danielle: 96, thomas: 78 };
+console.log(midterms);
+midterms.thomas = 79; //fix grade typo
+console.log(midterms);
+midterms.thomas = "C+"; // change to letter grades
+console.log(midterms);
+midterms.danielle = "A";
+console.log(midterms);
+midterms.ezra = "B+"; // adding new person with grade
+console.log(midterms);
+midterms["antonio"] = "A-"; // adding new person's grade using brackets
+console.log(midterms);
