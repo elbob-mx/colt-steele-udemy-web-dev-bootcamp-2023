@@ -61,7 +61,7 @@ console.log(outputArray); */
 
 // nesting arrays and objects
 const comments = [
-  { username: "Mary", text: "lol! XD", votes: 9 },
+  { username: "mary88", text: "lol! XD", votes: 9 },
   { username: "elPez", text: "salmon rules", votes: 327 },
 ];
 
