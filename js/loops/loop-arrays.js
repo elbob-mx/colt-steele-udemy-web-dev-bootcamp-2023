@@ -329,12 +329,12 @@
 // }
 
 // almost! XD
-for (let i = 0; i <= 10; i++) {
+for (let i = 1; i <= 4; i++) {
   console.log(`bass + hi-hat is: ${i}`);
   for (let j = 1; j <= 2; j++) {
     console.log(`   hi-hat is: ${j}`);
     if (j == [2]) {
-      console.log(`       hit-hat + snare is: ${j}`);
+      console.log("     hit-hat + snare");
     }
   }
 }
