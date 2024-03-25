@@ -329,12 +329,28 @@
 // }
 
 // almost! XD
-for (let i = 1; i <= 4; i++) {
+/* for (let i = 1; i <= 4; i++) {
   console.log(`bass + hi-hat is: ${i}`);
   for (let j = 1; j <= 2; j++) {
     console.log(`   hi-hat is: ${j}`);
     if (j == [2]) {
       console.log("     hit-hat + snare");
     }
+  }
+} */
+
+const seatingChart = [
+  ["elmo", "bert", "pancho"],
+  ["kramer", "newman", "elaine", "george"],
+  ["geddy", "alex", "neil"],
+  ["chino", "keenan", "jens", "aaron"],
+];
+
+console.log("Weird little classroom:");
+for (i = 0; i < seatingChart.length; i++) {
+  const row = seatingChart[i];
+  console.log(`- Row #${i + 1}:`);
+  for (let j = 0; j < row.length; j++) {
+    console.log(row[j]);
   }
 }
