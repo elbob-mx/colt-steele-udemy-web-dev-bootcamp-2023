@@ -58,5 +58,7 @@ while (parseInt(attempt) !== targetNum) {
 if (attempt === "quit") {
   prompt(`Game over. the number was: ${targetNum}. Better luck next time.`);
 } else {
-  prompt(`alright, alright, alright. Took you ${guesses} guesses.`);
+  prompt(
+    `alright, alright, alright. Took you ${guesses} guesses. Impressive IQ.`
+  );
 }
