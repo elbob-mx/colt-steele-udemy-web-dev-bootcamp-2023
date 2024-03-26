@@ -23,7 +23,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   margin: 16px;
-  border: 1px solid #181818;
+  border: 2px solid #181818;
 }
 
 h1 {
@@ -62,7 +62,13 @@ h3 {
 }
 
 #again:hover {
-  background-color: white;
-  color: purple;
+  background-color: #181818;
+  color: #f2f2f2;
   transition: 300ms;
+}
+
+#quit {
+  font-style: italic;
+  font-weight: 700;
+  color: cyan;
 }
