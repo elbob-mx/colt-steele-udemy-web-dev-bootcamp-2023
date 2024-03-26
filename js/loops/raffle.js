@@ -11,15 +11,15 @@ const randomNames = [
 ];
 
 const randomPrizes = [
-  "tv",
-  "old skateboard",
-  "tuna cans",
+  "plasma tv",
+  "walmart skateboard",
+  "4 tuna cans",
   "7.30 dollars",
   "garden chair",
   "sandwich with no ham",
-  "guitar strings",
+  "nylon guitar strings",
   "yellow cellphone case",
-  "12 nails",
+  "12 sticky nails",
   "evangelion action figure",
   "2005 iMac",
   "nokia 1100",
