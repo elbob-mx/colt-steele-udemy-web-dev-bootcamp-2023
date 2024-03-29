@@ -1,12 +1,12 @@
 let input = prompt("Let's create a toDo list. Add a task:");
-const todos = ["Poop", "Read Nietzsche", "Listen to Meshuggah"];
+const todos = ["Poop", "Read", "Both"];
 while (input !== "quit") {
   if (input === "list") {
     console.log("ᓚᘏᗢ ᓚᘏᗢ ᓚᘏᗢ ᓚᘏᗢ");
     for (let i = 0; i < todos.length; i++) {
       console.log(`${i}: ${todos[i]}`);
+      console.log("ᓚᘏᗢ ᓚᘏᗢ ᓚᘏᗢ ᓚᘏᗢ");
     }
-    console.log("ᓚᘏᗢ ᓚᘏᗢ ᓚᘏᗢ ᓚᘏᗢ");
   } else if (input === "new") {
     const newTodo = prompt("Sure! what would it be the new task?");
     todos.push(newTodo);
