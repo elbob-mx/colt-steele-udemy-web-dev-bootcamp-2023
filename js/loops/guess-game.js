@@ -52,13 +52,13 @@ while (parseInt(attempt) !== targetNum) {
     attempt = prompt("nope. too low. try again:");
     guesses++;
   } else {
-    attempt = prompt("Not valid. Enter a number or 'quit' to end game");
+    attempt = prompt("Not valid. Enter a number or type 'quit' to end game");
   }
 }
 if (attempt === "quit") {
   prompt(`Game over. the number was: ${targetNum}. Better luck next time.`);
 } else {
   prompt(
-    `alright, alright, alright. Took you ${guesses} guesses. Impressive IQ.`
+    `Alright, alright, alright. Took you ${guesses} guesses. Impressive IQ, you should be proud.`
   );
 }
