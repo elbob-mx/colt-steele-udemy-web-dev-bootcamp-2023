@@ -26,7 +26,7 @@ principalSkinner("Lisa", "Simpson"); */
   console.log(text);
 } */
 
-function repeat(text, reps) {
+/* function repeat(text, reps) {
   let result = "";
   for (let i = 1; i <= reps; i++) {
     result += text + "... ";
@@ -34,4 +34,24 @@ function repeat(text, reps) {
   console.log(result);
 }
 
-repeat("alright", 3);
+repeat("alright", 3); */
+
+// define isSnakeEyes below:
+function isSnakeEyes() {
+  let dice1 = Math.floor(Math.random() * 6) + 1;
+  let dice2 = Math.floor(Math.random() * 6) + 1;
+  if (dice1 === 1 && dice2 === 1) {
+    console.log(dice1);
+    console.log(dice2);
+    console.log("Snake Eyes!");
+  } else if (dice1 === dice2) {
+    console.log(dice1);
+    console.log(dice2);
+    console.log("Pair!");
+  } else {
+    console.log(dice1);
+    console.log(dice2);
+    console.log("Not Snake Eyes!");
+  }
+}
+isSnakeEyes();
