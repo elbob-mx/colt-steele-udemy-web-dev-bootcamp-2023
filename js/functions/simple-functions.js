@@ -1,3 +1,6 @@
+/*--------------------------*/
+/*--------------------------*/
+
 // one argument in function
 /* function rant(message) {
   console.log(`${message}`.toUpperCase());
