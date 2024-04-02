@@ -37,7 +37,7 @@ principalSkinner("Lisa", "Simpson"); */
 repeat("alright", 3); */
 
 // define isSnakeEyes below:
-function isSnakeEyes() {
+/* function isSnakeEyes() {
   let dice1 = Math.floor(Math.random() * 6) + 1;
   let dice2 = Math.floor(Math.random() * 6) + 1;
   if (dice1 === 1 && dice2 === 1) {
@@ -54,4 +54,22 @@ function isSnakeEyes() {
     console.log("Not Snake Eyes!");
   }
 }
-isSnakeEyes();
+isSnakeEyes(); */
+
+/* function sum(x, y) {
+  return `${x} + ${y} gives: ${x + y}`; //return stops function
+}
+let add = sum(10, 10);
+console.log(add); */
+
+// DEFINE YOUR FUNCTION BELOW:
+function isShortsWeather(temperature) {
+  if (temperature >= 75) {
+    return `damn hot weather, use some shorts at least...`;
+  } else {
+    return `cargo, jeans, whatever, just put some pants!`;
+  }
+}
+
+let weather = isShortsWeather(82);
+console.log(weather);
