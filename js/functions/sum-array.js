@@ -10,6 +10,9 @@ let array = [1, 2, 3, 5]; // 11
 }
 console.log(sumArray(array)); */
 
+/*--------------------------*/
+/*--------------------------*/
+
 //forEach loop
 /* function sumArray(array) {
   let total = 0;
@@ -21,10 +24,17 @@ console.log(sumArray(array)); */
 
 console.log(sumArray(array)); */
 
+/*--------------------------*/
+/*--------------------------*/
+
 // reduce() loop
 function sumArray(array) {
   let total = array.reduce((accumulator, currentValue) => {
     return accumulator + currentValue;
   }, 0);
+  return total;
 }
 console.log(sumArray(array));
+
+/*--------------------------*/
+/*--------------------------*/
