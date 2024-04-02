@@ -15,4 +15,4 @@ function capitalize(str) {
   let result = splitWord.join(""); /* join array elements to create new word */
   console.log(result); // Anxiety
 }
-capitalize("anxiety");
+capitalize("uppercase");
