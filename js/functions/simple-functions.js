@@ -7,12 +7,18 @@
 
 rant("go!"); */
 
+/*--------------------------*/
+/*--------------------------*/
+
 // two arguments in function
 /* function principalSkinner(firstName, lastName) {
   console.log(`Lets say; "${firstName} ${lastName[0]}".`); // getting the initial using index
   console.log(`No, no, no, lets say, "${firstName[0]}. ${lastName}".`); // getting the initial using index
 }
 principalSkinner("Lisa", "Simpson"); */
+
+/*--------------------------*/
+/*--------------------------*/
 
 // function with prompts asking for arguments
 /* function repeatText(text, reps) {
@@ -26,6 +32,9 @@ principalSkinner("Lisa", "Simpson"); */
   console.log(text);
 } */
 
+/*--------------------------*/
+/*--------------------------*/
+
 /* function repeat(text, reps) {
   let result = "";
   for (let i = 1; i <= reps; i++) {
@@ -35,6 +44,9 @@ principalSkinner("Lisa", "Simpson"); */
 }
 
 repeat("alright", 3); */
+
+/*--------------------------*/
+/*--------------------------*/
 
 // define isSnakeEyes below:
 /* function isSnakeEyes() {
@@ -56,14 +68,20 @@ repeat("alright", 3); */
 }
 isSnakeEyes(); */
 
+/*--------------------------*/
+/*--------------------------*/
+
 /* function sum(x, y) {
   return `${x} + ${y} gives: ${x + y}`; //return stops function
 }
 let add = sum(10, 10);
 console.log(add); */
 
+/*--------------------------*/
+/*--------------------------*/
+
 // DEFINE YOUR FUNCTION BELOW:
-function isShortsWeather(temperature) {
+/* function isShortsWeather(temperature) {
   if (temperature >= 75) {
     return `damn hot weather, use some shorts at least...`;
   } else {
@@ -72,4 +90,4 @@ function isShortsWeather(temperature) {
 }
 
 let weather = isShortsWeather(82);
-console.log(weather);
+console.log(weather); */
