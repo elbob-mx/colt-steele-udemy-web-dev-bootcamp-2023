@@ -92,14 +92,17 @@ console.log(add); */
 let weather = isShortsWeather(82);
 console.log(weather); */
 
-let array = [1, 2, 3];
+/* let array = ["yes", "no", "maybe", "i dunno"];
 
-function lastElement() {
-  if (array.length !== 0) {
-    let length = array.length;
-    return [length];
+function lastElement(array) {
+  if (array.length === 0) {
+    console.log(null);
   } else {
-    return null;
+    console.log(array[array.length - 1]);
   }
 }
-console.log(lastElement());
+
+console.log(lastElement(array)); */
+
+/*--------------------------*/
+/*--------------------------*/
