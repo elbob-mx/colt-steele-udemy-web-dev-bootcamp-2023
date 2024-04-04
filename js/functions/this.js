@@ -27,16 +27,16 @@ cat.fullInfo(); */
 /*-------------------------*/
 /*-------------------------*/
 
-/* const hen = {
+const hen = {
   name: "Helen",
   eggCount: 0,
   layAnEgg() {
     this.eggCount++;
-    return `eggs: ${this.eggCount}`;
+    return `EGG: ${this.eggCount}`;
   },
 };
 
 console.log(hen.layAnEgg()); // EGG 1
 console.log(hen.layAnEgg());
 console.log(hen.layAnEgg());
-console.log(hen.layAnEgg()); */
+console.log(hen.layAnEgg());
