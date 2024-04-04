@@ -29,6 +29,6 @@ for (let i = 25; i >= 0; i -= 5) {
 }
 
 // Print out "Da ba dee da ba daa" 6 times, using a for loop
-for (let i = 0; i <= 5; i++) {
+for (let i = 0; i <= 5; i * 2) {
   console.log("Da ba dee da ba daa");
 }
