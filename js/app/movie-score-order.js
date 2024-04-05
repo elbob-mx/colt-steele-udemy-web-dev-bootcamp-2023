@@ -38,7 +38,7 @@ console.log("");
 
 // descendant order
 function rateDown() {
-  console.log("By Score | Descending order ↓");
+  console.log("By Score | Descending order ↓ :");
   let descend = movies.sort((a, b) => b.score - a.score);
   // console.log(`- ${movies[0].title} | ${movies[0].score} / 100`);
   for (i = 0; i < descend.length; i++) {
@@ -54,7 +54,7 @@ console.log("");
 
 // ascendant order
 function rateUp() {
-  console.log("By Score | Ascending order ↑");
+  console.log("By Score | Ascending order ↑ :");
   let ascend = movies.sort((a, b) => a.score - b.score);
   // console.log(`- ${movies[0].title} | ${movies[0].score} / 100`);
   for (i = 0; i < ascend.length; i++) {
