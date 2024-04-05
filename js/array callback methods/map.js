@@ -76,3 +76,23 @@ console.log(showingToday + "");
 
 /* ---------------------- */
 /* ---------------------- */
+
+const fullNames = [
+  { first: "Jens ", last: "Kidman" },
+  { first: "Mike", last: "Patton" },
+  { first: "Eddie", last: "Vedder" },
+  { first: "Freddie", last: "Mercury" },
+  { first: "Layne", last: "Staley" },
+  { first: "Chris", last: "Cornell" },
+  { first: "Ronnie James", last: "Dio" },
+  { first: "Phil", last: "Anselmo" },
+];
+
+// Write your code here
+const firstNames = fullNames.map(function (item) {
+  return item.last;
+});
+console.log(firstNames);
+
+/* ---------------------- */
+/* ---------------------- */
