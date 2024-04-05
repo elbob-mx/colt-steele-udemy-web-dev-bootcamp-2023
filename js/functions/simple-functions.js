@@ -84,7 +84,7 @@ console.log(add); */
 /*--------------------------*/
 
 // DEFINE YOUR FUNCTION BELOW:
-/* function isShortsWeather(temperature) {
+function isShortsWeather(temperature) {
   if (temperature >= 75) {
     return `damn hot weather, use some shorts at least...`;
   } else {
@@ -93,7 +93,7 @@ console.log(add); */
 }
 
 let weather = isShortsWeather(82);
-console.log(weather); */
+console.log(weather);
 
 /* let array = ["yes", "no", "maybe", "i dunno"];
 
