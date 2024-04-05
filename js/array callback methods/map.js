@@ -94,5 +94,11 @@ const firstNames = fullNames.map(function (item) {
 });
 console.log(firstNames);
 
+// arrow function
+// const firstNames = fullNames.map((item) => {
+//   return item.last;
+// });
+// console.log(firstNames);
+
 /* ---------------------- */
 /* ---------------------- */
