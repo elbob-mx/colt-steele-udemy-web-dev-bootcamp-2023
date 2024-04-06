@@ -33,9 +33,16 @@ console.log(greet("Colt"));
 /* --------------------------- */
 
 // even shorter syntax
-const hey = (name) => `Hey ${name}!`;
-console.log(hey("Colt"));
+const hey = (firstName) => `Hey, ${firstName}...`;
+console.log(hey("Bob")); // hey bob...
 
 // numeric comparison
 const isEven = (num) => num % 2 === 0;
 console.log(isEven(11)); // false
+
+// roll dice
+const roll = () => Math.floor(Math.random() * 6) + 1;
+console.log(roll()); // random num
+
+const sum = (x, y) => x + y;
+console.log(sum(2, 2)); // 4
