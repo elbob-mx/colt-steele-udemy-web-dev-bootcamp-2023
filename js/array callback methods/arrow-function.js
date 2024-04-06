@@ -22,3 +22,20 @@ console.log(rollDice());
 
 /* --------------------------- */
 /* --------------------------- */
+
+const greet = (name) => {
+  return `Hey ${name}!`;
+};
+
+console.log(greet("Colt"));
+
+/* --------------------------- */
+/* --------------------------- */
+
+// even shorter syntax
+const hey = (name) => `Hey ${name}!`;
+console.log(hey("Colt"));
+
+// numeric comparison
+const isEven = (num) => num % 2 === 0;
+console.log(isEven(11)); // false
