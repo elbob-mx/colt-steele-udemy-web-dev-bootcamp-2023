@@ -76,3 +76,8 @@ console.log(classicMovs);
 console.log("genre! ->");
 const westernMovies = movies.filter((m) => m.genre === "western");
 console.log(westernMovies);
+
+// filter then map
+const greatMovies = movies.filter((m) => m.score > 95).map((m) => m.title);
+console.log("great movies ->");
+console.log(greatMovies);
