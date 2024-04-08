@@ -1,6 +1,20 @@
-console.log("");
-console.log("*** / CINEMA RATINGS / ***");
-console.log("");
+const nums = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+const isOdd = nums.filter((n) => {
+  return n % 2 === 1;
+}); /* if callback returns true (division remainder = 1), the number will be added to the new 'isOdd' array.*/
+const isEven = nums.filter((n) => {
+  return n % 2 === 0;
+}); /* if callback returns true (division remainder = 0), the number will be added to the new 'isEven' array.*/
+console.log(isOdd); // [ 9, 7, 5, 3, 1 ]
+console.log(isEven); // [ 8, 6, 4, 2 ]
+
+const lessThan5 = nums.filter((n) => {
+  return n <= 5;
+});
+console.log(lessThan5); // [ 5, 4, 3, 2, 1 ]
+
+/* ------------------------ */
+/* ------------------------ */
 
 const movies = [
   {
@@ -46,35 +60,6 @@ const movies = [
     genre: "drama",
   },
 ];
-
-console.log("According to the latest reviews: ");
-console.log("");
-
-// descendant order
-function rateDown() {
-  console.log("By Score | Descending order ↓ :");
-  let descend = movies.sort((a, b) => b.score - a.score);
-  // console.log(`- ${movies[0].title} | ${movies[0].score} / 100`);
-  for (i = 0; i < descend.length; i++) {
-    console.log(`- ${descend[i].title} | ${descend[i].score} / 100`);
-  }
-}
-rateDown();
-
-console.log("");
-console.log("*** / CINEMA RATINGS / ***");
-console.log("");
-
-// ascendant order
-function rateUp() {
-  console.log("By Score | Ascending order ↑ :");
-  let ascend = movies.sort((a, b) => a.score - b.score);
-  // console.log(`- ${movies[0].title} | ${movies[0].score} / 100`);
-  for (i = 0; i < ascend.length; i++) {
-    console.log(`- ${ascend[i].title} | ${ascend[i].score} / 100`);
-  }
-}
-rateUp();
 
 console.log("best movies ->");
 const bestMovies = movies.filter((m) => m.score >= 95);
