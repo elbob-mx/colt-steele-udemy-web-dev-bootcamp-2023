@@ -89,10 +89,10 @@ const fullNames = [
 ];
 
 // Write your code here
-const firstNames = fullNames.map(function (item) {
+const lastNames = fullNames.map(function (item) {
   return item.last;
 });
-console.log(firstNames);
+console.log(lastNames);
 
 // arrow function
 // const firstNames = fullNames.map((item) => {
