@@ -42,3 +42,6 @@ const movies = [
     genre: "drama",
   },
 ];
+
+let moviesOutdated = movies.some((movie) => movie.year > 2010);
+console.log(moviesOutdated);
