@@ -43,5 +43,5 @@ const movies = [
   },
 ];
 
-let moviesOutdated = movies.some((movie) => movie.year > 2010);
+const moviesOutdated = movies.some((movie) => movie.year > 2010);
 console.log(moviesOutdated);
