@@ -43,11 +43,11 @@ const movies = [
   },
 ];
 
-const bestMovie = movies.genre.reduce((hiScore, current) => {
-  if (current < hiScore) {
+const bestMovie = movies.reduce((hiScore, current) => {
+  if (current.score > hiScore.score) {
     return current;
   }
   return hiScore;
 });
 
-console.log(bestMovie + " / best scored movie this month");
+console.log(bestMovie);
