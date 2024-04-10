@@ -1,48 +1,49 @@
 const movies = [
   {
     title: "Good Will Hunting",
-    score: 100,
+    score: 83,
     year: 1997,
     genre: "drama",
   },
   {
     title: "Interstellar",
-    score: 99,
+    score: 87,
     year: 2014,
     genre: "sci-fi",
   },
   {
     title: "The Shining",
-    score: 97,
+    score: 84,
     year: 1980,
-    genre: "horror",
+    genre: "terror",
   },
   {
     title: "The Godfather",
-    score: 98,
+    score: 92,
     year: 1972,
-    genre: "thriller",
+    genre: "drama",
   },
   {
     title: "Before Sunrise",
-    score: 99,
+    score: 81,
     year: 1995,
     genre: "drama",
   },
   {
     title: "Tombstone",
-    score: 88,
+    score: 78,
     year: 1993,
     genre: "western",
   },
   {
     title: "White Men Can't Jump",
-    score: 89,
+    score: 68,
     year: 1992,
-    genre: "drama",
+    genre: "comedy",
   },
 ];
 
+// highest rated movie on the array
 const bestMovie = movies.reduce((hiScore, current) => {
   if (current.score > hiScore.score) {
     return current;
@@ -51,3 +52,13 @@ const bestMovie = movies.reduce((hiScore, current) => {
 });
 
 console.log(bestMovie);
+
+// lowest rated movie on the array
+const lowestMovie = movies.reduce((hiScore, current) => {
+  if (current.score < hiScore.score) {
+    return current;
+  }
+  return hiScore;
+});
+
+console.log(lowestMovie);
