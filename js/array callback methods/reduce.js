@@ -6,3 +6,19 @@ const arraySum = arr.reduce((accumulator, currentValue) => {
 });
 // 3 + 5 = 8 (first call); 8 + 7 = 15 (second call); 15 + 9 = 24 (third call); 24 + 11 = 35 (fourth / final call);
 console.log(arraySum); // 35
+
+/* --------------- */
+/* --------------- */
+
+// sales average with reduce
+const saleTickets = [9.99, 100.25, 10, 5.5, 9.99];
+console.log(saleTickets);
+
+const total = saleTickets.reduce((total, price) => total + price);
+console.log("$" + total + " / total sales");
+
+const salesAvg = saleTickets.reduce((sum, current) => {
+  return sum + current;
+});
+const grandAvg = salesAvg / saleTickets.length;
+console.log("$" + Math.ceil(grandAvg * 100) / 100 + ": average sale ticket");
