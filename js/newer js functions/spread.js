@@ -10,3 +10,5 @@ console.log(...nums); // turns "nums" array into individual arguments
 const sounds = ["oops", "yeap", "woof", "plop", "bam"];
 
 console.log(...nums, ...sounds); // both arrays joined into one individual arguments
+
+console.log(..."beetlejuice"); // b e e t l e j u i c e
