@@ -11,4 +11,7 @@ const sounds = ["oops", "yeap", "woof", "plop", "bam"];
 
 console.log(...nums, ...sounds); // both arrays joined into one individual arguments
 
+const joined = [...nums, ...sounds, "Drop B"];
+console.log(joined); // spread joins both array into a new array and adds a third element to the new array
+
 console.log(..."beetlejuice"); // b e e t l e j u i c e

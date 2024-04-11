@@ -1,0 +1,14 @@
+const feline = { legs: 4, family: "Felidae" };
+const canine = { family: "Caninae", furry: true };
+
+const dog = { ...canine, isPet: true };
+console.log(dog);
+// { family: 'Caninae', furry: true, isPet: true }
+
+const lion = { ...feline, genus: "Panthera" };
+console.log(lion);
+// { legs: 4, family: 'Felidae', genus: 'Panthera' }
+
+const catDog = { ...feline, ...canine };
+console.log(catDog);
+// { legs: 4, family: 'Caninae', furry: true } (first declared 'family' value gets overwritten by the second called 'family' value)
