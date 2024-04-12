@@ -37,4 +37,4 @@ console.log(minSale + " / lowest sale*");
 
 const evens = [2, 4, 6, 8];
 const evenNum = evens.reduce((sum, num) => sum + num, 100);
-console.log(evenNum); // 20
+console.log(evenNum); // 120
