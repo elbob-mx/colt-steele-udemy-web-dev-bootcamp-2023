@@ -22,11 +22,14 @@
 /* ----------------------- */
 
 const scores = [153489, 713468, 165876, 456679, 348671, 248679, 835798];
+const ranking = scores.sort((a, b) => b - a); // order top score to lower
 
 // const hiScore = scores[0];
 // const secondHiScore = scores[1];
 
-const [gold, silver, bronze] = scores;
+console.log(ranking);
+const [gold, silver, bronze, ...mentions] = scores;
 console.log(gold); // first number in 'scores' array
 console.log(silver); // second number in 'scores' array
 console.log(bronze); // third number in 'scores' array
+console.log(mentions); // all the other scores 'scores' array
