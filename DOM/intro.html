@@ -5,18 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM introduction</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="font-family: Arial, Helvetica, sans-serif">
+<body>
 
-    <section>
+    <section id="intro">
         <h1>DOM: Document Object Model</h1>
         <p>The DOM is a JavaScript representation of a webpage
             It's your JS "window" into the contents of a webpage.</p>
 
-        <p>It's a bunch of objects that you can interact with via JS</p>
+        <p>It's a bunch of objects that you can interact with via JS.</p>
 
         <p>On dev tools; type 'console.dir(document)' to see the objects and properties that make the website.</p>
+    </section>
+
+    <section>
+        <h2>Selecting</h2>
+        <h3>getElementById</h3>
+        <p>Indicate which element you want to select asking the DOM for that ID. <mark>e.g.</mark></p>
+        <p>const banner =
+            document.getElementById("toc")
+        </p>
+        <p>on console type "toc" or <mark>console.dir(toc)</mark> to
+            get the
+            properties like children elements, tag, and so on of such.</p>
+    </section>
+
+    <section>
+        <h2>getElementById Practice</h2>
+        <img src="./DOM_Intro_CODE/img/sample-dom-001.png" alt="sample exercise" id="img-sample">
     </section>
 
 </body>
