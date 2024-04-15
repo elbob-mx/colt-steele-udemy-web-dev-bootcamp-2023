@@ -12,7 +12,6 @@ body {
 #intro {
   background-color: lightblue;
   padding: 25px;
-  margin: 45px;
 }
 
 mark {
@@ -45,6 +44,12 @@ h3 {
   padding: 8px;
 }
 
+h4 {
+  margin-bottom: 10px;
+  width: fit-content;
+  padding: 8px;
+}
+
 p {
   padding-bottom: 10px;
 }
@@ -52,4 +57,19 @@ p {
 #img-sample {
   width: 100%;
   margin-top: 15px;
+}
+
+#practice {
+  background-color: lightblue;
+  padding: 25px;
+  width: fit-content;
+  margin-left: 15px;
+}
+
+.solution {
+  padding: 25px;
+  background-color: #181818;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
 }
