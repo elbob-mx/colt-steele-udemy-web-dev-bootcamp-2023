@@ -59,6 +59,11 @@ h4 {
   padding: 7px;
 }
 
+.warning {
+  background-color: lightcoral;
+  margin-top: 10px;
+}
+
 p {
   padding-bottom: 15px;
   padding-top: 7px;
@@ -67,7 +72,10 @@ p {
 
 ul {
   list-style-position: inside;
-  padding-left: 21px;
+}
+
+.note {
+  color: gray;
 }
 
 #img-sample {
@@ -76,11 +84,12 @@ ul {
 }
 
 #practice {
-  background-color: rgb(226, 226, 226);
-  padding: 21px;
+  border: 1px dashed #181818;
   margin-bottom: 32px;
   margin-left: 21px;
   margin-right: 21px;
+  background-color: bisque;
+  border-radius: 5px;
 }
 
 .preview {
@@ -90,6 +99,7 @@ ul {
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
+  font-family: monospace;
 }
 
 li {

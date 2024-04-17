@@ -45,7 +45,7 @@
     </section>
 
     <section id="practice">
-        <h3>Let's get some practice using getElementById.</h3>
+        <h3>Let's get some practice using <span style="text-decoration: underline;">getElementById.</span></h3>
         <ul>
             <li>Select the image element by its ID and save it to a variable called <strong>image</strong></li>
             <li>Select the <strong>h1</strong> by it's ID and save it to a variable called <strong>heading</strong></li>
@@ -175,16 +175,61 @@
 
         <h2>querySelectorAll()</h2>
         <h3>Returns a collection of all matching elements.</h3>
-        <p>The Document method <strong>querySelectorAll()</strong> returns a static (not live) NodeList representing a
+        <p>The Document method <strong style="text-decoration: underline;">querySelectorAll()</strong> returns a static
+            (not live) NodeList representing a
             list of the document's elements that match the specified group of selectors.</p>
 
         <div class="flexbox">
             <div>
-                <mark>// Finds first element with h1</mark>
-                <p class="preview">document.querySelector(<span class="variable">"h1"</span>)</p>
+                <mark>// Finds ALL "h1" elements</mark>
+                <h4 class="warning">// *Returns a JS object, NOT an array.</h4>
+                <p class="preview">document.querySelectorAll(<span class="variable">"h1"</span>)</p>
+            </div>
+            <div>
+                <mark>// Select all anchor elements within paragraphs</mark>
+                <p class="preview">document.querySelectorAll(<span class="variable">"p a"</span>)</p>
+                <mark>// Returns:</mark>
+                <p class="preview">NodeList(17) {a, a, a, a, a, a, ...}</p>
+                <mark>// We can iterate over them using JS</mark>
+                <p class="preview"><span class="variable">const</span> <span class="declared">links</span> =
+                    document.querySelectorAll(<span class="variable">"p a"</span>)</p>
+                <p class="preview"><span class="variable">for</span> (<span class="func">let</span> <span
+                        class="declared">link</span> of links)
+                    {console.log(<span class="declared">link</span>.href)}</p>
+                <mark>// Returns the src url from each anchor within paragraph</mark>
             </div>
         </div>
+    </section>
 
+    <!-- getElementById Practice -->
+    <section>
+        <h2>querySelector Practice</h2>
+        <img src="./DOM_Intro_CODE/img/sample-dom-002.png" alt="sample exercise" id="img-sample">
+    </section>
+
+    <section id="practice">
+        <h3>Let's get some practice using <span style="text-decoration: underline;">querySelector</span></h3>
+        <ul>
+            <li>Select all elements that have the class of <strong>"done"</strong> and save them in a variable
+                called <strong>doneTodos.</strong>
+            </li>
+            <li>Select the one checkbox and save it in a variable called <strong>checkbox</strong>. Be careful, there is
+                more than one
+                input element on the page! You'll need to select using the type attribute. (if you can't remember the
+                css attribute selector...google it! That's what I would do!)</li>
+        </ul>
+
+        <div class="preview">
+            const checkbox = document.querySelector("#scales");
+
+            <p><mark>// Your code goes in here:</mark></p>
+            <p><span style="color: hotpink;">const</span> <span style="color: lime;">doneTodos</span>
+                </span> = document.querySelectorAll("li.done");</p>
+            <p class="note">// selects all elements within li's</p>
+            <p><span style="color: hotpink;">const</span> <span style="color: lime;">checkbox</span>
+                </span> = document.querySelector("#scales");</p>
+            <p class="note">// selects the element with the id 'scales'</p>
+        </div>
     </section>
 
     <hr>
