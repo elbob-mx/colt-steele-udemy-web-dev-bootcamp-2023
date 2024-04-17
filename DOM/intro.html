@@ -23,36 +23,171 @@
 
     <hr>
 
+    <!-- selecting DOM elements -->
     <section>
-        <h2>Selecting</h2>
-        <h3>getElementById</h3>
+        <h1>Selecting</h1>
+        <h2>getElementById</h2>
         <p>Indicate which element you want to select asking the DOM for that ID. <mark>e.g.</mark></p>
-        <p><mark>const banner =
-                document.getElementById("toc")</mark>
+        <p>document.getElementById<strong>("toc")</strong>
+        <p>You can use it to create a vairble<mark>e.g.</mark></p>
+        <p class="preview"><strong class="variable">const</strong> <span class="declared">content</span> =
+            document.getElementById<strong>("toc")</strong>
         </p>
-        <p>on console type "toc" or <mark>console.dir(toc)</mark> to
+        <p>on console type <strong>"toc"</strong> or <mark>console.dir(toc)</mark> to
             get the
             properties like children elements, tag, and so on of such.</p>
     </section>
 
+    <!-- getElementById Practice -->
     <section>
         <h2>getElementById Practice</h2>
         <img src="./DOM_Intro_CODE/img/sample-dom-001.png" alt="sample exercise" id="img-sample">
     </section>
 
     <section id="practice">
-        <h4>Let's get some practice using getElementById.</h4>
+        <h3>Let's get some practice using getElementById.</h3>
         <ul>
-            <li>Select the image element by its id and save it to a variable called image</li>
-            <li>Select the h1 by its id and save it to a variable called heading</li>
+            <li>Select the image element by its ID and save it to a variable called <strong>image</strong></li>
+            <li>Select the <strong>h1</strong> by it's ID and save it to a variable called <strong>heading</strong></li>
         </ul>
 
-        <div class="solution">
-            <p><mark>// Write your code in here:</mark></p>
-            <p>const image = document.getElementById("unicorn");</p>
-            <p>const heading = document.getElementById("mainheading");</p>
+        <div class="preview">
+            <p><mark>// Write your preview in here:</mark></p>
+            <p><span style="color: hotpink;">const</span> <span style="color: lime;">image</span>
+                </span> = document.getElementById("unicorn");</p>
+            <p><span style="color: hotpink;">const</span> <span style="color: lime;">heading</span>
+                </span> = document.getElementById("mainheading");</p>
         </div>
     </section>
+
+    <hr>
+
+    <!-- selecting DOM elements by tag name -->
+    <section>
+        <h2>getElementsByTagName</h2>
+        <p>The getElementsByTagName method of Document interface returns an HTMLCollection of elements with the given
+            tag name. <mark>e.g.</mark></p>
+
+        <div class="preview">
+            <p>function <span class="func">getAllParaElems()</span> {
+            <p><span class="variable">const</span> <span class="declared">allParas</span> =
+                document.getElementsByTagName("p");</p>
+            <p><span class="variable">const</span> <span class="declared">num</span> = <span
+                    class="declared">allParas</span>.length;</p>
+            <p><span class="variable">alert</span>(`There are ${<span class="declared">num</span>} paragraph in this
+                document`);
+                }</p>
+        </div>
+        <div class="preview">
+            <p><span class="variable">onclick</span> ="<span class="func">getAllParaElems()</span>;"</p>
+            <p>Show all p elements in document</p>
+        </div>
+        <div class="preview">
+            <mark>e.g.</mark>
+            <p>document.getElementsByTagName('img')</p>
+            <p><mark>// returns:</mark></p>
+            <p>HTMLCollection(4)</p>
+            <p>[img#banner, img.square, img.square, img.square, banner:img#banner]</p>
+        </div>
+        <div class="preview">
+            <mark>e.g.</mark>
+            <p><span class="variable">const</span> <span class="declared">allImages</span> =
+                document.getElementsByTagName('img')</p>
+        </div>
+
+        <div class="preview">
+            <mark>e.g.</mark>
+            <p><span class="variable">const</span> <span class="declared">allImages</span> =
+                document.getElementsByTagName('img')</p>
+            <mark>change images source</mark>
+            <p><span class="variable">for</span> (img of images) {
+                img.<span class="link">src</span> = es.wikipedia.org/wiki/Gibson_Les_Paul}</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- selecting DOM elements by class name -->
+    <section>
+        <h2>getElementsByClassName</h2>
+
+        <p>The getElementsByClassName method of Document interface returns an array-like object of all child elements
+            which have all of the given class name(s). <mark>e.g.</mark></p>
+
+        <div class="preview">
+            <span class="variable">const</span> <span class="declared">testElements</span> =
+            document.getElementsByClassName("<span class="func">test</span>");
+        </div>
+
+        <p>We can also use methods of <strong>Array.prototype</strong> on any <strong>HTMLCollection</strong> by passing
+            the
+            HTMLCollection as the
+            method's this value. Here we'll find all <strong>div</strong> elements that have a class of
+            <strong>'test'</strong>: <mark>e.g.</mark>
+        </p>
+
+        <div class="preview">
+            <mark>e.g.</mark>
+            <p><span class="variable">const</span> <span class="declared">squareImages</span> =
+                document.getElementsByClassName('square')</p>
+            <mark>change images source</mark>
+            <p><span class="variable">for</span> (img of <span class="declared">squareImages</span>) {
+                img.<span class="link">src</span> = es.wikipedia.org/wiki/Matisse_paintings}</p>
+        </div>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- selecting using querySelector -->
+    <section>
+        <h2>querySelector()</h2>
+        <h3>a newer all-in-one method to select a single element.</h3>
+        <p>The Document method <strong>querySelector()</strong> returns the first Element within the document that
+            matches the specified
+            selector, or group of selectors. If no matches are found, null is returned.</p>
+
+        <div class="flexbox">
+            <div>
+                <mark>// Finds first element with h1</mark>
+                <p class="preview">document.querySelector(<span class="variable">"h1"</span>)</p>
+            </div>
+            <div>
+                <mark>// Finds first element with ID of 'red'</mark>
+                <p class="preview">document.querySelector(<span class="variable">"#red"</span>)</p>
+            </div>
+            <div>
+                <mark>// Finds first element with CLASS of 'big'</mark>
+                <p class="preview">document.querySelector(<span class="variable">".big"</span>)</p>
+            </div>
+            <div>
+                <mark>// Finds second element with type of 'img'</mark>
+                <p class="preview">document.querySelector(<span class="variable">"img:nth-of-type(2)"</span>)</p>
+            </div>
+            <div>
+                <mark>// Selecting by type and attribute</mark>
+                <p class="preview">document.querySelector(<span class="variable">"a[title='java']"</span>)</p>
+                <mark>// returns the anchor element:</mark>
+                <p class="preview">(a)href="/wiki/Java" title="Java"(/a)</p>
+            </div>
+        </div>
+
+        <h2>querySelectorAll()</h2>
+        <h3>Returns a collection of all matching elements.</h3>
+        <p>The Document method <strong>querySelectorAll()</strong> returns a static (not live) NodeList representing a
+            list of the document's elements that match the specified group of selectors.</p>
+
+        <div class="flexbox">
+            <div>
+                <mark>// Finds first element with h1</mark>
+                <p class="preview">document.querySelector(<span class="variable">"h1"</span>)</p>
+            </div>
+        </div>
+
+    </section>
+
+    <hr>
 
 </body>
 
