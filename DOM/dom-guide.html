@@ -255,6 +255,63 @@
 
     <hr>
 
+    <!-- change content using innerText -->
+    <section>
+        <h2>HTMLElement: innerText property</h2>
+
+        <h3>The innerText property of the HTMLElement interface represents the rendered text content of a node and its
+            descendants.</h3>
+
+        <p>As a getter, it approximates the text the user would get if they highlighted the contents of the element with
+            the cursor and then copied it to the clipboard. As a setter this will replace the element's children with
+            the given value, converting any line breaks into <mark>"br"</mark> elements.</p>
+
+        <p class="warning">* Note: innerText is easily confused with <span
+                style="text-decoration: underline; font-weight: 700;">Node.textContent</span>, but there are important
+            differences between the two. Basically, <span style="font-weight: 700;"><span
+                    style="text-decoration: underline;">innerText is aware</span> of the rendered
+                appearance of text, while <span style="text-decoration: underline;">textContent is not.</span></p>
+
+        <div class="preview">
+            <p><span style="color: hotpink;">const</span> <span style="color: lime;">allLinks</span> =
+                document.querySelectorAll('a');</p>
+            <p><span style="color: hotpink;">for</span> (<span style="color: cyan;">let</span> <span
+                    style="color: lime;">link</span> of allLinks) {
+                <span style="color: lime;">link</span>.innerText = "I am a link! click me!"}
+            </p>
+        </div>
+
+        <p style="background-color: lightgrey; padding: 15px;">// This changes the text shown on every 'a' element to 'I
+            am a link! click me!'</p>
+
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Element: innerHTML property</h2>
+
+        <h3>The Element property innerHTML gets or sets the HTML or XML markup contained within the element.</h3>
+
+        <p class="warning">*To insert the HTML into the document rather than replace the contents of an element, use the
+            method <span style="text-decoration: underline; font-weight: 700;">insertAdjacentHTML().</span></p>
+
+        <p>This example fetches the document's current HTML markup and replaces the "<" characters with the HTML
+                entity "&lt;" , thereby essentially converting the HTML into raw text. This is then wrapped in a "pre"
+                element. Then the value of innerHTML is changed to this new string. As a result, the document contents
+                are replaced with a display of the page's entire source code.</p>
+
+                <p class="preview">document.documentElement.innerHTML = `${document.documentElement.innerHTML.replace(/
+                    < /g, "& l t;" , )}`;</p>
+
+                        <p> // adding a sup to an "h1"</p>
+
+                        <p class="preview">document.querySelector('h1').innerHTML += '"sup" new text "/sup"'</p>
+
+                        <p>// this returns the "h1" with a superior text</p>
+    </section>
+
+
 </body>
 
 </html>
