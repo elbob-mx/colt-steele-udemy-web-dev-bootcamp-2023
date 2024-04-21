@@ -401,6 +401,22 @@
 
     <hr>
 
+    <section>
+        <h2>Changing Styles</h2>
+        <h3>'style': The Style Information element</h3>
+        <p>The 'style' HTML element contains style information for a document, or part of a document. It contains CSS,
+            which is applied to the contents of the document containing the 'style' element.</p>
+        <p>You can declare something like: const h1 = document.querySelector('h1'); and change it to:</p>
+        <p class="warning">This way only works for inline style (which is rarely used)</p>
+        <section class="preview">
+            <p>h1.style.color = 'blue'</p>
+            <p>h1.style.fontSize = '3em'</p>
+            <p>h1.style.border = '2px dashed red'</p>
+            <p><span style="color: cyan;">const links = document.querySelectorAll('a')</span></p>
+            <p>for (let link of links) {link.style.color = 'rgb(0, 108, 134)'}</p>
+        </section>
+    </section>
+
 
 </body>
 
