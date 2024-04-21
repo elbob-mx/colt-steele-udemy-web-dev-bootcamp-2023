@@ -311,6 +311,96 @@
                         <p>// this returns the "h1" with a superior text</p>
     </section>
 
+    <section>
+        <h2>querySelector Practice</h2>
+        <img src="./DOM_Intro_CODE/img/sample-dom-003.png" alt="sample exercise" id="img-sample">
+    </section>
+
+    <section id="practice">
+        <h3>Let's get some practice using <span style="text-decoration: underline;">querySelector</span></h3>
+        <ul>
+            <li>Please use JavaScript to select the 'span' element that currently reads "Delicious".
+            </li>
+            <li>Change its text to read "Disgusting" USING JAVASCRIPT.</li>
+        </ul>
+
+        <div class="preview">
+            <p><span style="color: hotpink;">const</span> <span style="color: lime;">spanText</span> =
+                document.querySelector("span");</p>
+            <p><span style="color: lime;">spanText</span>.innerText = "Disgusting"</p>
+        </div>
+
+        <p>// This returns the span text changed to "Disgusting" as asked.</p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Element: classList property</h2>
+        <p>The <span style="text-decoration: underline; font-weight: 700;">Element.classList</span> is a read-only
+            property that returns a live DOMTokenList collection of the class
+            attributes of the element. <span style="font-weight: 700;">This can then be used to manipulate the class
+                list.</span></p>
+        <section class="preview">
+            // use the classList API to remove and add classes
+            div.classList.remove("foo");
+            div.classList.add("anotherclass");
+        </section>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Element: getAttribute() method</h2>
+        <p>The <span style="text-decoration: underline; font-weight: 700;">getAttribute()</span> method of the Element
+            interface returns the value of a specified attribute on the element.</p>
+        <section class="preview">
+            const exampleAttr = div1.getAttribute("id");
+            //=> "div1"
+        </section>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Element: setAttribute() method</h2>
+        <p>The <span style="text-decoration: underline; font-weight: 700;">setAttribute()</span> method of the Element
+            interface sets the value of an attribute on the specified element. If the attribute already exists, the
+            value is updated; otherwise a new attribute is added with the specified name and value.</p>
+        <section class="preview">
+            const button = document.querySelector("button");
+
+            button.setAttribute("name", "helloButton");
+            button.setAttribute("disabled", "");
+        </section>
+    </section>
+
+    <section>
+        <h2>Manipulating Attributes Practice</h2>
+        <img src="./DOM_Intro_CODE/img/sample-dom-004.png" alt="sample exercise" id="img-sample">
+    </section>
+
+    <section id="practice">
+        <h3>Let's get some practice using <span style="text-decoration: underline;">setAttribute() method</span></h3>
+        <ul>
+            <li>Change its source to this url: "https://devsprouthosting.com/images/chicken.jpg"
+            </li>
+            <li>Change its alt text to be "chicken"</li>
+        </ul>
+
+        <div class="preview">
+            <p><span style="color: hotpink;">const</span> <span style="color: lime;">image</span> =
+                document.querySelector(<span style="color: lime;">"img"</span>);</p>
+
+            <p>image.<span style="color: cyan;">setAttribute</span>(<span style="color: lime;">"src",
+                    "https://devsprouthosting.com/images/chicken.jpg"</span>);</p>
+
+            image.<span style="color: cyan;">setAttribute</span>(<span style="color: lime;">"alt", "chicken"</span>);
+        </div>
+    </section>
+
+    <hr>
+
 
 </body>
 
