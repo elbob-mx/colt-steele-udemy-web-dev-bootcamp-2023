@@ -10,6 +10,34 @@ body {
   width: 100%;
 }
 
+#mdn-info {
+  color: black;
+  background-color: violet;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#mdn-info:hover {
+  color: white;
+  background-color: purple;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
 nav {
   display: flex;
   flex-direction: column;
