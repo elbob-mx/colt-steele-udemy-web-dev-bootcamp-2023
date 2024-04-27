@@ -154,3 +154,8 @@ li {
   gap: 21px;
   flex-basis: 50%;
 }
+
+pre {
+  background-color: #181818;
+  color: white;
+}
