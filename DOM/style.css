@@ -10,6 +10,13 @@ body {
   width: 100%;
 }
 
+@media (min-width: 1366px) {
+  body {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
 #mdn-info {
   color: black;
   background-color: violet;
@@ -47,11 +54,25 @@ nav {
   font-weight: 700;
 }
 
+@media (min-width: 1366px) {
+  nav {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 nav a {
   text-decoration: none;
   color: white;
   padding: 10px;
   width: fit-content;
+}
+
+@media (min-width: 1366px) {
+  nav a {
+    color: black;
+  }
 }
 
 nav a:hover {
@@ -71,7 +92,8 @@ nav a:hover {
 hr {
   height: 4px;
   background-color: dodgerblue;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 mark {
@@ -81,7 +103,7 @@ mark {
 }
 
 section {
-  padding: 21px;
+  padding: 12px;
 }
 
 h1 {
@@ -114,6 +136,8 @@ h4 {
 .warning {
   background-color: lightcoral;
   margin-top: 10px;
+  padding: 12px;
+  width: fit-content;
 }
 
 p {
@@ -145,7 +169,7 @@ ul {
 }
 
 .preview {
-  text-wrap: wrap;
+  overflow-wrap: break-word;
   padding: 10px;
   background-color: #181818;
   color: white;
