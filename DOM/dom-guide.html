@@ -194,6 +194,7 @@
             </div>
         </div>
 
+        <!-- QUERYSELECTORALLQ -->
         <h2>querySelectorAll()</h2>
         <h3>Returns a collection of all matching elements.</h3>
         <p>The Document method <strong style="text-decoration: underline;">querySelectorAll()</strong> returns a static
@@ -289,6 +290,7 @@
 
     <hr>
 
+    <!-- INNERHTML PROPERTY -->
     <section>
         <h2>Element: innerHTML property</h2>
 
@@ -312,6 +314,7 @@
                         <p>// this returns the "h1" with a superior text</p>
     </section>
 
+    <!-- QUERYSELECTOR -->
     <section>
         <h2>querySelector Practice</h2>
         <img src="./img/sample-dom-003.png" alt="sample exercise" id="img-sample">
@@ -336,6 +339,7 @@
 
     <hr>
 
+    <!-- CLASSLIST PROPERTY -->
     <section>
         <h2>Element: classList property</h2>
         <p>The <span style="text-decoration: underline; font-weight: 700;">Element.classList</span> is a read-only
@@ -351,6 +355,7 @@
 
     <hr>
 
+    <!-- GETATTRIBUTE METHOD -->
     <section>
         <h2>Element: getAttribute() method</h2>
         <p>The <span style="text-decoration: underline; font-weight: 700;">getAttribute()</span> method of the Element
@@ -363,6 +368,7 @@
 
     <hr>
 
+    <!-- SETATTRIBUTE METHOD -->
     <section>
         <h2>Element: setAttribute() method</h2>
         <p>The <span style="text-decoration: underline; font-weight: 700;">setAttribute()</span> method of the Element
@@ -376,6 +382,7 @@
         </section>
     </section>
 
+    <!-- MANIPULATING ATTRIBUTES -->
     <section>
         <h2>Manipulating Attributes Practice</h2>
         <img src="./img/sample-dom-004.png" alt="sample exercise" id="img-sample">
@@ -402,6 +409,7 @@
 
     <hr>
 
+    <!-- CHANGING STYLES -->
     <section>
         <h2>Changing Styles</h2>
         <h3>'style': The Style Information element</h3>
@@ -420,6 +428,7 @@
 
     <hr>
 
+    <!-- MAGICAL TREE EXERCISE -->
     <section>
         <h2>Magical Forest Circle Exercise</h2>
         <img src="./img/sample-dom-006.png" alt="sample exercise" id="img-sample">
@@ -451,6 +460,7 @@
 
     <hr>
 
+    <!-- RAINBOW TEXT EXERCISE -->
     <section>
         <h2>Rainbow Text Exercise</h2>
         <img src="./img/sample-dom-007.png" alt="sample exercise" id="img-sample">
@@ -472,6 +482,7 @@
 
     <hr>
 
+    <!-- CLASSLIST -->
     <section>
         <h2>classList property</h2>
         <a id="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">MDN info</a>
@@ -487,6 +498,7 @@
         <img id="img-sample" src="./img/carbon/code-002.png" alt="code preview">
     </section>
 
+    <!-- CLASSLIST PRACTICE -->
     <section>
         <h2>ClassList Practice</h2>
         <img src="./img/sample-dom-008.png" alt="sample exercise" id="img-sample">
@@ -505,6 +517,69 @@
 
         <h3>Result:</h3>
         <img src="./img/sample-dom-009.png" alt="sample exercise" id="img-sample">
+    </section>
+
+    <hr>
+
+    <!-- PARENT ELEMENT -->
+    <section>
+        <h2>Node: parentElement property</h2>
+        <a id="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement">MDN info</a>
+
+        <p>The read-only <span style="font-weight: 700;">parentElement</span> property of Node interface returns the DOM
+            node's parent Element, or null if the node either has no parent, or its parent isn't a DOM Element.</p>
+
+        <div class="preview">if (node.<span style="color: lime;">parentElement</span>) {
+            node.parentElement.style.color = "red";
+            }</div>
+
+        <h2>Element: children property</h2>
+        <a id="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/children">MDN info</a>
+
+        <p>The read-only <span style="font-weight: 700;">children</span> property returns a live HTMLCollection which
+            contains all of the child elements of the element upon which it was called.</p>
+
+        <div class="preview"><span style="color: hotpink;">const</span> <span style="color: lime;">myElement</span> =
+            document.getElementById("foo");
+            for (const child of <span style="color: lime;">myElement</span>.children) {
+            console.log(child.tagName);}</div>
+
+        <div class="preview"><span style="color: hotpink;">const</span> <span
+                style="color: lime;">paragraph</span>firstBold.parentElement <br>
+            <span style="color: lime;">paragraph</span>.children <br>
+            HTML.Collection(8) [a,b,a,a,a,b,a,a] <br>
+            <span style="color: lime;">paragraph</span>.children[1] <br>
+            <span>'b'Silkie'/b'</span>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>nextElementSibling property</h2>
+        <a id="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling">MDN info</a>
+        <p>The <b>Element.nextElementSibling</b> read-only property returns the element immediately following the
+            specified one in its parent's children list, or null if the specified element is the last one in the list.
+        </p>
+
+        <img id="img-sample" src="./img/carbon/code-004.png" alt="code preview">
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Next-sibling combinator</h2>
+        <a id="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator">MDN info</a>
+        <p>The <b>next-sibling combinator</b> <mark>(+)</mark> separates two selectors and matches the second element
+            only if it
+            immediately
+            follows the first element, and both are children of the same parent element.</p>
+        <div class="preview"><span style="color: gray;">/* Paragraphs that come immediately after any image
+                */</span> <br>
+            img + p {
+            font-weight: bold;
+            }</div>
     </section>
 
     <hr>
