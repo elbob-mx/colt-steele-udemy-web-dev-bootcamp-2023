@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM introduction</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <nav>
         <a href="index.html">emmet</a>
         <a href="forms/forms.html">forms</a>
@@ -30,20 +27,14 @@
         <a href="js/loops/index.html">guess game</a>
         <a href="DOM/dom-guide.html">DOM guide</a>
     </nav>
-
     <section id="intro">
         <h1>DOM: Document Object Model</h1>
         <p>The DOM is a JavaScript representation of a webpage
             It's your JS "window" into the contents of a webpage.</p>
-
         <p>It's a bunch of objects that you can interact with via JS.</p>
-
-        <p>On dev tools; type <mark>console.dir(document)</mark> to see the objects and properties that make the
-            website.</p>
+        <p>On dev tools; type <mark>console.dir(document)</mark> to see the objects and properties that make the website.</p>
     </section>
-
     <hr>
-
     <!-- selecting DOM elements -->
     <section>
         <h1>Selecting</h1>
@@ -55,23 +46,19 @@
             document.getElementById<strong>("toc")</strong>
         </p>
         <p>on console type <strong>"toc"</strong> or <mark>console.dir(toc)</mark> to
-            get the
-            properties like children elements, tag, and so on of such.</p>
+            get the properties like children elements, tag, and so on of such.</p>
     </section>
-
     <!-- getElementById Practice -->
     <section>
         <h2>getElementById Practice</h2>
         <img src="./img/sample-dom-001.png" alt="sample exercise" id="img-sample">
     </section>
-
     <section class="practice">
         <h3>Let's get some practice using <span style="text-decoration: underline;">getElementById.</span></h3>
         <ul>
             <li>Select the image element by its ID and save it to a variable called <strong>image</strong></li>
             <li>Select the <strong>h1</strong> by it's ID and save it to a variable called <strong>heading</strong></li>
         </ul>
-
         <div class="preview">
             <p><mark>// Write your preview in here:</mark></p>
             <p><span style="color: hotpink;">const</span> <span style="color: lime;">image</span>
@@ -80,15 +67,11 @@
                 </span> = document.getElementById("mainheading");</p>
         </div>
     </section>
-
     <hr>
-
     <!-- selecting DOM elements by tag name -->
     <section>
         <h2>getElementsByTagName</h2>
-        <p>The getElementsByTagName method of Document interface returns an HTMLCollection of elements with the given
-            tag name. <mark>e.g.</mark></p>
-
+        <p>The getElementsByTagName method of Document interface returns an HTMLCollection of elements with the given tag name. <mark>e.g.</mark></p>
         <div class="preview">
             <p>function <span class="func">getAllParaElems()</span> {
             <p><span class="variable">const</span> <span class="declared">allParas</span> =
@@ -115,7 +98,6 @@
             <p><span class="variable">const</span> <span class="declared">allImages</span> =
                 document.getElementsByTagName('img')</p>
         </div>
-
         <div class="preview">
             <mark>e.g.</mark>
             <p><span class="variable">const</span> <span class="declared">allImages</span> =
@@ -125,28 +107,17 @@
                 img.<span class="link">src</span> = es.wikipedia.org/wiki/Gibson_Les_Paul}</p>
         </div>
     </section>
-
     <hr>
-
     <!-- selecting DOM elements by class name -->
     <section>
         <h2>getElementsByClassName</h2>
-
-        <p>The getElementsByClassName method of Document interface returns an array-like object of all child elements
-            which have all of the given class name(s). <mark>e.g.</mark></p>
-
+        <p>The getElementsByClassName method of Document interface returns an array-like object of all child elements which have all of the given class name(s). <mark>e.g.</mark></p>
         <div class="preview">
             <span class="variable">const</span> <span class="declared">testElements</span> =
             document.getElementsByClassName("<span class="func">test</span>");
         </div>
-
-        <p>We can also use methods of <strong>Array.prototype</strong> on any <strong>HTMLCollection</strong> by passing
-            the
-            HTMLCollection as the
-            method's this value. Here we'll find all <strong>div</strong> elements that have a class of
-            <strong>'test'</strong>: <mark>e.g.</mark>
+        <p>We can also use methods of <strong>Array.prototype</strong> on any <strong>HTMLCollection</strong> by passing the HTMLCollection as the  method's this value. Here we'll find all <strong>div</strong> elements that have a class of<strong>'test'</strong>: <mark>e.g.</mark>
         </p>
-
         <div class="preview">
             <mark>e.g.</mark>
             <p><span class="variable">const</span> <span class="declared">squareImages</span> =
@@ -156,19 +127,13 @@
                 img.<span class="link">src</span> = es.wikipedia.org/wiki/Matisse_paintings}</p>
         </div>
         </div>
-
     </section>
-
     <hr>
-
     <!-- selecting using querySelector -->
     <section>
         <h2>querySelector()</h2>
         <h3>a newer all-in-one method to select a single element.</h3>
-        <p>The Document method <strong>querySelector()</strong> returns the first Element within the document that
-            matches the specified
-            selector, or group of selectors. If no matches are found, null is returned.</p>
-
+        <p>The Document method <strong>querySelector()</strong> returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.</p>
         <div class="flexbox">
             <div>
                 <mark>// Finds first element with h1</mark>
@@ -193,14 +158,10 @@
                 <p class="preview">(a)href="/wiki/Java" title="Java"(/a)</p>
             </div>
         </div>
-
         <!-- QUERYSELECTORALLQ -->
         <h2>querySelectorAll()</h2>
         <h3>Returns a collection of all matching elements.</h3>
-        <p>The Document method <strong style="text-decoration: underline;">querySelectorAll()</strong> returns a static
-            (not live) NodeList representing a
-            list of the document's elements that match the specified group of selectors.</p>
-
+        <p>The Document method <strong style="text-decoration: underline;">querySelectorAll()</strong> returns a static (not live) NodeList representing a list of the document's elements that match the specified group of selectors.</p>
         <div class="flexbox">
             <div>
                 <mark>// Finds ALL "h1" elements</mark>
@@ -222,29 +183,21 @@
             </div>
         </div>
     </section>
-
     <!-- querySelector & querySelectorAll Practice -->
     <section>
         <h2>querySelector Practice</h2>
         <img src="./img/sample-dom-002.png" alt="sample exercise" id="img-sample">
-
     </section>
-
     <section class="practice">
         <h3>Let's get some practice using <span style="text-decoration: underline;">querySelector</span></h3>
         <ul>
             <li>Select all elements that have the class of <strong>"done"</strong> and save them in a variable
                 called <strong>doneTodos.</strong>
             </li>
-            <li>Select the one checkbox and save it in a variable called <strong>checkbox</strong>. Be careful, there is
-                more than one
-                input element on the page! You'll need to select using the type attribute. (if you can't remember the
-                css attribute selector...google it! That's what I would do!)</li>
+            <li>Select the one checkbox and save it in a variable called <strong>checkbox</strong>. Be careful, there is more than one input element on the page! You'll need to select using the type attribute. (if you can't remember the css attribute selector...google it! That's what I would do!)</li>
         </ul>
-
         <div class="preview">
             const checkbox = document.querySelector("#scales");
-
             <p><mark>// Your code goes in here:</mark></p>
             <p><span style="color: hotpink;">const</span> <span style="color: lime;">doneTodos</span>
                 </span> = document.querySelectorAll("li.done");</p>
@@ -254,26 +207,15 @@
             <p class="note">// selects the element with the id 'scales'</p>
         </div>
     </section>
-
     <hr>
-
     <!-- change content using innerText -->
     <section>
         <h2>HTMLElement: innerText property</h2>
-
-        <h3>The innerText property of the HTMLElement interface represents the rendered text content of a node and its
-            descendants.</h3>
-
-        <p>As a getter, it approximates the text the user would get if they highlighted the contents of the element with
-            the cursor and then copied it to the clipboard. As a setter this will replace the element's children with
-            the given value, converting any line breaks into <mark>"br"</mark> elements.</p>
-
-        <p class="warning">* Note: innerText is easily confused with <span
-                style="text-decoration: underline; font-weight: 700;">Node.textContent</span>, but there are important
-            differences between the two. Basically, <span style="font-weight: 700;"><span
+        <h3>The innerText property of the HTMLElement interface represents the rendered text content of a node and its descendants.</h3>
+        <p>As a getter, it approximates the text the user would get if they highlighted the contents of the element with the cursor and then copied it to the clipboard. As a setter this will replace the element's children with the given value, converting any line breaks into <mark>"br"</mark> elements.</p>
+        <p class="warning">* Note: innerText is easily confused with <span style="text-decoration: underline; font-weight: 700;">Node.textContent</span>, but there are important differences between the two. Basically, <span style="font-weight: 700;"><span
                     style="text-decoration: underline;">innerText is aware</span> of the rendered
                 appearance of text, while <span style="text-decoration: underline;">textContent is not.</span></p>
-
         <div class="preview">
             <p><span style="color: hotpink;">const</span> <span style="color: lime;">allLinks</span> =
                 document.querySelectorAll('a');</p>
@@ -282,44 +224,29 @@
                 <span style="color: lime;">link</span>.innerText = "I am a link! click me!"}
             </p>
         </div>
-
         <p style="background-color: lightgrey; padding: 15px;">// This changes the text shown on every 'a' element to 'I
             am a link! click me!'</p>
-
     </section>
-
     <hr>
-
     <!-- INNERHTML PROPERTY -->
     <section>
         <h2>Element: innerHTML property</h2>
-
         <h3>The Element property innerHTML gets or sets the HTML or XML markup contained within the element.</h3>
-
         <p class="warning">*To insert the HTML into the document rather than replace the contents of an element, use the
             method <span style="text-decoration: underline; font-weight: 700;">insertAdjacentHTML().</span></p>
-
-        <p>This example fetches the document's current HTML markup and replaces the "<" characters with the HTML
-                entity "&lt;" , thereby essentially converting the HTML into raw text. This is then wrapped in a "pre"
-                element. Then the value of innerHTML is changed to this new string. As a result, the document contents
+        <p>This example fetches the document's current HTML markup and replaces the "<" characters with the HTML entity "&lt;" , thereby essentially converting the HTML into raw text. This is then wrapped in a "pre" element. Then the value of innerHTML is changed to this new string. As a result, the document contents
                 are replaced with a display of the page's entire source code.</p>
-
                 <p class="preview">document.documentElement.innerHTML = `${document.documentElement.innerHTML.replace(/
                     < /g, "& l t;" , )}`;</p>
-
                         <p> // adding a sup to an "h1"</p>
-
                         <p class="preview">document.querySelector('h1').innerHTML += '"sup" new text "/sup"'</p>
-
                         <p>// this returns the "h1" with a superior text</p>
     </section>
-
     <!-- QUERYSELECTOR -->
     <section>
         <h2>querySelector Practice</h2>
         <img src="./img/sample-dom-003.png" alt="sample exercise" id="img-sample">
     </section>
-
     <section class="practice">
         <h3>Let's get some practice using <span style="text-decoration: underline;">querySelector</span></h3>
         <ul>
@@ -327,18 +254,14 @@
             </li>
             <li>Change its text to read "Disgusting" USING JAVASCRIPT.</li>
         </ul>
-
         <div class="preview">
             <p><span style="color: hotpink;">const</span> <span style="color: lime;">spanText</span> =
                 document.querySelector("span");</p>
             <p><span style="color: lime;">spanText</span>.innerText = "Disgusting"</p>
         </div>
-
         <p>// This returns the span text changed to "Disgusting" as asked.</p>
     </section>
-
     <hr>
-
     <!-- CLASSLIST PROPERTY -->
     <section>
         <h2>Element: classList property</h2>
@@ -352,9 +275,7 @@
             div.classList.add("anotherclass");
         </section>
     </section>
-
     <hr>
-
     <!-- GETATTRIBUTE METHOD -->
     <section>
         <h2>Element: getAttribute() method</h2>
@@ -365,9 +286,7 @@
             //=> "div1"
         </section>
     </section>
-
     <hr>
-
     <!-- SETATTRIBUTE METHOD -->
     <section>
         <h2>Element: setAttribute() method</h2>
@@ -376,18 +295,15 @@
             value is updated; otherwise a new attribute is added with the specified name and value.</p>
         <section class="preview">
             const button = document.querySelector("button");
-
             button.setAttribute("name", "helloButton");
             button.setAttribute("disabled", "");
         </section>
     </section>
-
     <!-- MANIPULATING ATTRIBUTES -->
     <section>
         <h2>Manipulating Attributes Practice</h2>
         <img src="./img/sample-dom-004.png" alt="sample exercise" id="img-sample">
     </section>
-
     <section class="practice">
         <h3>Let's get some practice using <span style="text-decoration: underline;">setAttribute() method</span></h3>
         <ul>
@@ -395,28 +311,25 @@
             </li>
             <li>Change its alt text to be "chicken"</li>
         </ul>
-
         <div class="preview">
             <p><span style="color: hotpink;">const</span> <span style="color: lime;">image</span> =
                 document.querySelector(<span style="color: lime;">"img"</span>);</p>
-
             <p>image.<span style="color: cyan;">setAttribute</span>(<span style="color: lime;">"src",
                     "https://devsprouthosting.com/..."</span>);</p>
-
             image.<span style="color: cyan;">setAttribute</span>(<span style="color: lime;">"alt", "chicken"</span>);
         </div>
     </section>
-
     <hr>
-
     <!-- CHANGING STYLES -->
     <section>
         <h2>Changing Styles</h2>
         <h3>'style': The Style Information element</h3>
-        <p>The 'style' HTML element contains style information for a document, or part of a document. It contains CSS,
-            which is applied to the contents of the document containing the 'style' element.</p>
+        <p>The 'style' HTML element contains style information for a document, or part of a document. It contains CSS, which is applied to the contents of the document containing the 'style' element.</p>
+
         <p>You can declare something like: const h1 = document.querySelector('h1'); and change it to:</p>
+
         <p class="warning">This way only works for inline style (which is rarely used)</p>
+
         <section class="preview">
             <p>h1.style.color = 'blue'</p>
             <p>h1.style.fontSize = '3em'</p>
@@ -425,15 +338,12 @@
             <p>for (let link of links) {link.style.color = 'rgb(0, 108, 134)'}</p>
         </section>
     </section>
-
     <hr>
-
     <!-- MAGICAL TREE EXERCISE -->
     <section>
         <h2>Magical Forest Circle Exercise</h2>
         <img src="./img/sample-dom-006.png" alt="sample exercise" id="img-sample">
     </section>
-
     <section class="practice">
         <h3>Let's get some practice using <span style="text-decoration: underline;">style, querySelector and some
                 attributes:</span></h3>
@@ -441,150 +351,114 @@
             <li>Select the div with the id of container. Using JavaScript, set it's text alignment to 'center'</li>
             <li>Select the image and use JavaScript to give it a width of 150px and a border radius of 50%</li>
         </ul>
-
         <div class="preview">
             <p><span style="color: hotpink;">const</span> <span style="color: lime;">container</span> =
                 document.querySelector(<span style="color: lime;">"#container"</span>);</p>
             <p><span style="color: hotpink;">const</span> <span style="color: lime;">image</span> =
                 document.querySelector(<span style="color: lime;">"img"</span>);</p>
-
             <p>container.<span style="color: tomato;">style</span>.<span style="color: tomato;">textAlign</span> = <span
                     style="color: lightgreen;">"center"</span></p>
             <p>container.<span style="color: tomato;">style</span>.width = <span
                     style="color: lightgreen;">"150px"</span></p>
             <p>container.<span style="color: tomato;">style</span>.borderRadius = <span
                     style="color: lightgreen;">"50%"</span></p>
-
         </div>
     </section>
-
     <hr>
-
     <!-- RAINBOW TEXT EXERCISE -->
     <section>
         <h2>Rainbow Text Exercise</h2>
         <img src="./img/sample-dom-007.png" alt="sample exercise" id="img-sample">
     </section>
-
     <section class="practice">
-        <h3>Let's get some practice using <span style="text-decoration: underline;">style, querySelector and some
-                other methods:</span></h3>
+        <h3>Let's get some practice using <span style="text-decoration: underline;">style, querySelector and some other methods:</span></h3>
         <ul>
             <li>Please write some JavaScript to make them rainbow-colored! </li>
-            <li>In app.js you'll find an array of color names called colors. It looks like: ['red', 'orange', 'yellow',
-                'green', 'blue', 'indigo', 'violet'].</li>
+            <li>In app.js you'll find an array of color names called colors. It looks like: ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'].</li>
             <li>Your task is to select all spans, iterate over them, and assign them each one of the colors from the
                 colors array. The first span should be red, the second should be orange, etc.</li>
         </ul>
-
         <img id="img-sample" src="./img/carbon/code-001.png" alt="code preview">
     </section>
-
     <hr>
-
     <!-- CLASSLIST -->
     <section>
         <h2>classList property</h2>
         <a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">MDN info</a>
-
         <p>The <span style="font-weight: 700;">Element.classList</span> is a read-only property that returns a live
             DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the
             class list.</p>
-
         <p>Using classList is a convenient alternative to <span style="text-decoration: underline;">accessing an
                 element's list of classes</span> as a space-delimited
             string via element.className. <mark>e.g.</mark></p>
-
         <img id="img-sample" src="./img/carbon/code-002.png" alt="code preview">
     </section>
-
     <!-- CLASSLIST PRACTICE -->
     <section>
         <h2>ClassList Practice</h2>
         <img src="./img/sample-dom-008.png" alt="sample exercise" id="img-sample">
     </section>
-
     <section class="practice">
-        <h3>Let's get some practice using <span style="text-decoration: underline;">getElementsByTagName, classList and
-                some iteration applying <span style="text-decoration: underline;">toggle </span>to each iterated element
-                to add/remove the 'highlight' class</span></h3>
+        <h3>Let's get some practice using <span style="text-decoration: underline;">getElementsByTagName, classList and some iteration applying <span style="text-decoration: underline;">toggle </span>to each iterated element to add/remove the 'highlight' class</span></h3>
         <ul>
             <li>Please use JavaScript and the classList property to invert which elements have the highlight class.</li>
             <li>Basically iterate over all the elements and toggle the class of 'highlight' on each one.</>
         </ul>
-
         <img id="img-sample" src="./img/carbon/code-003.png" alt="code preview">
-
         <h3>Result:</h3>
         <img src="./img/sample-dom-009.png" alt="sample exercise" id="img-sample">
     </section>
-
     <hr>
-
     <!-- PARENT ELEMENT -->
     <section>
         <h2>Node: parentElement property</h2>
         <a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement">MDN info</a>
-
-        <p>The read-only <span style="font-weight: 700;">parentElement</span> property of Node interface returns the DOM
-            node's parent Element, or null if the node either has no parent, or its parent isn't a DOM Element.</p>
-
+        <p>The read-only <span style="font-weight: 700;">parentElement</span> property of Node interface returns the DOM node's parent Element, or null if the node either has no parent, or its parent isn't a DOM Element.</p>
         <div class="preview">if (node.<span style="color: lime;">parentElement</span>) {
             node.parentElement.style.color = "red";
             }</div>
-
         <h2>Element: children property</h2>
         <a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/children">MDN info</a>
-
         <p>The read-only <span style="font-weight: 700;">children</span> property returns a live HTMLCollection which
             contains all of the child elements of the element upon which it was called.</p>
-
         <div class="preview"><span style="color: hotpink;">const</span> <span style="color: lime;">myElement</span> =
             document.getElementById("foo");
             for (const child of <span style="color: lime;">myElement</span>.children) {
             console.log(child.tagName);}</div>
-
         <div class="preview"><span style="color: hotpink;">const</span> <span
                 style="color: lime;">paragraph</span>firstBold.parentElement <br>
             <span style="color: lime;">paragraph</span>.children <br>
             HTML.Collection(8) [a,b,a,a,a,b,a,a] <br>
             <span style="color: lime;">paragraph</span>.children[1] <br>
             <span>'b'Silkie'/b'</span>
-
         </div>
     </section>
-
     <hr>
-
     <section>
         <h2>nextElementSibling property</h2>
         <a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling">MDN
             info</a>
-        <p>The <b>Element.nextElementSibling</b> read-only property returns the element immediately following the
-            specified one in its parent's children list, or null if the specified element is the last one in the list.
+        <p>The <b>Element.nextElementSibling</b> read-only property returns the element immediately following the specified one in its parent's children list, or null if the specified element is the last one in the list.
         </p>
-
         <img id="img-sample" src="./img/carbon/code-004.png" alt="code preview">
     </section>
-
     <hr>
-
     <section>
         <h2>Next-sibling combinator</h2>
         <a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator">MDN info</a>
-        <p>The <b>next-sibling combinator</b> <mark>(+)</mark> separates two selectors and matches the second element
-            only if it
-            immediately
-            follows the first element, and both are children of the same parent element.</p>
-        <div class="preview"><span style="color: gray;">/* Paragraphs that come immediately after any image
-                */</span> <br>
+        <p>The <b>next-sibling combinator</b> <mark>(+)</mark> separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.</p>
+        <div class="preview"><span style="color: gray;">/* Paragraphs that come immediately after any image */</span> <br>
             img + p {
             font-weight: bold;
             }</div>
     </section>
-
     <hr>
-
+    <section>
+        <h2>createElement() method</h2>
+        <a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement">MDN info</a>
+        <p>In a <b>HTML</b> document the <mark>document.createElement()</mark> method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.</p>
+        <div class="preview"><span style="color: gray;">/* Paragraphs that come immediately after any image */</span><br>img + p {font-weight: bold;}</div>
+    </section>
+    <hr>
 </body>
-
 </html>
