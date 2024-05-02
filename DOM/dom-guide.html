@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM introduction</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <nav>
         <a href="index.html">emmet</a>
         <a href="forms/forms.html">forms</a>
@@ -33,7 +36,9 @@
         <p>It's a bunch of objects that you can interact with via JS.</p>
         <p>On dev tools; type <mark>console.dir(document)</mark> to see the objects and properties that make the website.</p>
     </section>
+
     <hr>
+
     <!-- selecting DOM elements -->
     <section>
         <h1>Selecting</h1>
@@ -47,6 +52,7 @@
         <p>on console type <strong>"toc"</strong> or <mark>console.dir(toc)</mark> to
             get the properties like children elements, tag, and so on of such.</p>
     </section>
+
     <!-- getElementById Practice -->
     <section>
         <h2>getElementById Practice</h2>
@@ -66,7 +72,9 @@
                 </span> = document.getElementById("mainheading");</p>
         </div>
     </section>
+
     <hr>
+    
     <!-- selecting DOM elements by tag name -->
     <section>
         <h2>getElementsByTagName</h2>
@@ -106,7 +114,9 @@
                 img.<span class="link">src</span> = es.wikipedia.org/wiki/Gibson_Les_Paul}</p>
         </div>
     </section>
+
     <hr>
+
     <!-- selecting DOM elements by class name -->
     <section>
         <h2>getElementsByClassName</h2>
@@ -127,7 +137,9 @@
         </div>
         </div>
     </section>
+
     <hr>
+
     <!-- selecting using querySelector -->
     <section>
         <h2>querySelector()</h2>
@@ -157,6 +169,7 @@
                 <p class="preview">(a)href="/wiki/Java" title="Java"(/a)</p>
             </div>
         </div>
+
         <!-- QUERYSELECTORALLQ -->
         <h2>querySelectorAll()</h2>
         <h3>Returns a collection of all matching elements.</h3>
@@ -182,6 +195,7 @@
             </div>
         </div>
     </section>
+
     <!-- querySelector & querySelectorAll Practice -->
     <section>
         <h2>querySelector Practice</h2>
@@ -206,7 +220,9 @@
             <p class="note">// selects the element with the id 'scales'</p>
         </div>
     </section>
+
     <hr>
+
     <!-- change content using innerText -->
     <section>
         <h2>HTMLElement: innerText property</h2>
@@ -226,7 +242,9 @@
         <p style="background-color: lightgrey; padding: 15px;">// This changes the text shown on every 'a' element to 'I
             am a link! click me!'</p>
     </section>
+
     <hr>
+
     <!-- INNERHTML PROPERTY -->
     <section>
         <h2>Element: innerHTML property</h2>
@@ -241,6 +259,7 @@
                         <p class="preview">document.querySelector('h1').innerHTML += '"sup" new text "/sup"'</p>
                         <p>// this returns the "h1" with a superior text</p>
     </section>
+    
     <!-- QUERYSELECTOR -->
     <section>
         <h2>querySelector Practice</h2>
@@ -260,7 +279,9 @@
         </div>
         <p>// This returns the span text changed to "Disgusting" as asked.</p>
     </section>
+
     <hr>
+
     <!-- CLASSLIST PROPERTY -->
     <section>
         <h2>Element: classList property</h2>
@@ -274,7 +295,9 @@
             div.classList.add("anotherclass");
         </section>
     </section>
+
     <hr>
+
     <!-- GETATTRIBUTE METHOD -->
     <section>
         <h2>Element: getAttribute() method</h2>
@@ -285,7 +308,9 @@
             //=> "div1"
         </section>
     </section>
+
     <hr>
+
     <!-- SETATTRIBUTE METHOD -->
     <section>
         <h2>Element: setAttribute() method</h2>
@@ -298,6 +323,7 @@
             button.setAttribute("disabled", "");
         </section>
     </section>
+
     <!-- MANIPULATING ATTRIBUTES -->
     <section>
         <h2>Manipulating Attributes Practice</h2>
@@ -318,7 +344,9 @@
             image.<span style="color: cyan;">setAttribute</span>(<span style="color: lime;">"alt", "chicken"</span>);
         </div>
     </section>
+
     <hr>
+
     <!-- CHANGING STYLES -->
     <section>
         <h2>Changing Styles</h2>
@@ -337,7 +365,9 @@
             <p>for (let link of links) {link.style.color = 'rgb(0, 108, 134)'}</p>
         </section>
     </section>
+
     <hr>
+
     <!-- MAGICAL TREE EXERCISE -->
     <section>
         <h2>Magical Forest Circle Exercise</h2>
@@ -363,7 +393,9 @@
                     style="color: lightgreen;">"50%"</span></p>
         </div>
     </section>
+
     <hr>
+
     <!-- RAINBOW TEXT EXERCISE -->
     <section>
         <h2>Rainbow Text Exercise</h2>
@@ -379,7 +411,9 @@
         </ul>
         <img id="img-sample" src="./img/carbon/code-001.png" alt="code preview">
     </section>
+
     <hr>
+
     <!-- CLASSLIST -->
     <section>
         <h2>classList property</h2>
@@ -392,6 +426,7 @@
             string via element.className. <mark>e.g.</mark></p>
         <img id="img-sample" src="./img/carbon/code-002.png" alt="code preview">
     </section>
+
     <!-- CLASSLIST PRACTICE -->
     <section>
         <h2>ClassList Practice</h2>
@@ -447,6 +482,8 @@
         <img id="img-sample" src="./img/carbon/code-004.png" alt="code preview">
     </section>
     <hr>
+
+    <!-- NEXT SIBLING -->
     <section>
         <h2>Next-sibling combinator</h2>
         <a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator">MDN info</a>
@@ -456,7 +493,10 @@
             font-weight: bold;
             }</div>
     </section>
+
     <hr>
+
+    <!-- CREATEELEMENT METHOD -->
     <section>
         <h2>createElement() method</h2>
         <a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement">MDN info</a>
@@ -464,5 +504,6 @@
         <div class="preview"><span style="color: gray;">/* Paragraphs that come immediately after any image */</span><br>img + p {font-weight: bold;}</div>
     </section>
     <hr>
+
 </body>
 </html>
