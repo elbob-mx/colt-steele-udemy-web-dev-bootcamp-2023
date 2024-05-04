@@ -46,7 +46,7 @@
 		<h1>Selecting</h1>
 		<h2>getElementById</h2>
 		<p>Indicate which element you want to select asking the DOM for that ID. <mark>e.g.</mark></p>
-		<p>document.getElementById<strong>("toc")</strong>
+		<p>document.getElementById<strong>("toc")</strong></p>
 		<p>You can use it to create a vairble<mark>e.g.</mark></p>
 		<p class="preview"><strong class="variable">const</strong> <span class="declared">content</span> = document.getElementById<strong>("toc")</strong></p>
 		<p>on console type <strong>"toc"</strong> or <mark>console.dir(toc)</mark> to get the properties like children elements, tag, and so on of such.</p>
@@ -57,6 +57,7 @@
 		<h2>getElementById Practice</h2>
 		<img src="./img/sample-dom-001.png" alt="sample exercise" class="img-sample">
 	</section>
+
 	<section class="practice">
 		<h3>Let's get some practice using <span style="text-decoration: underline;">getElementById.</span></h3>
 		<ul>
@@ -66,8 +67,7 @@
 		<div class="preview">
 			<p><mark>// Write your preview in here:</mark></p>
 			<p><span style="color: hotpink;">const</span> <span style="color: lime;">image</span> = document.getElementById("unicorn");</p>
-			<p><span style="color: hotpink;">const</span> <span style="color: lime;">heading</span>
-				</span> = document.getElementById("mainheading");</p>
+			<p><span style="color: hotpink;">const</span> <span style="color: lime;">heading</span> = document.getElementById("mainheading");</p>
 		</div>
 	</section>
 
@@ -77,19 +77,21 @@
 	<section>
 		<h2>getElementsByTagName</h2>
 		<p>The getElementsByTagName method of Document interface returns an HTMLCollection of elements with the
-			given tag name. <mark>e.g.</mark>
-		</p>
+			given tag name. <mark>e.g.</mark></p>
+
 		<div class="preview">
 			<p>function <span class="func">getAllParaElems()</span> {
 			<p><span class="variable">const</span> <span class="declared">allParas</span> = document.getElementsByTagName("p");</p>
 			<p><span class="variable">const</span> <span class="declared">num</span> = <span class="declared">allParas</span>.length;</p>
-			<p><span class="variable">alert</span>(`There are ${<span class="declared">num</span>} paragraph in this
-				document`);}</p>
+			<p><span class="variable">alert</span>(`There are ${<span class="declared">num</span>} paragraph in this document`);}</p>
+			</p>
 		</div>
+
 		<div class="preview">
 			<p><span class="variable">onclick</span> ="<span class="func">getAllParaElems()</span>;"</p>
 			<p>Show all p elements in document</p>
 		</div>
+
 		<div class="preview">
 			<mark>e.g.</mark>
 			<p>document.getElementsByTagName('img')</p>
@@ -97,10 +99,12 @@
 			<p>HTMLCollection(4)</p>
 			<p>[img#banner, img.square, img.square, img.square, banner:img#banner]</p>
 		</div>
+
 		<div class="preview">
 			<mark>e.g.</mark>
 			<p><span class="variable">const</span> <span class="declared">allImages</span> = document.getElementsByTagName('img')</p>
 		</div>
+
 		<div class="preview">
 			<mark>e.g.</mark>
 			<p><span class="variable">const</span> <span class="declared">allImages</span> = document.getElementsByTagName('img')</p>
@@ -108,6 +112,7 @@
 			<p><span class="variable">for</span> (img of images) {
 				img.<span class="link">src</span> = es.wikipedia.org/wiki/Gibson_Les_Paul}</p>
 		</div>
+
 	</section>
 
 	<hr>
@@ -126,7 +131,6 @@
 			<p><span class="variable">const</span> <span class="declared">squareImages</span> = document.getElementsByClassName('square')</p>
 			<mark>change images source</mark>
 			<p><span class="variable">for</span> (img of <span class="declared">squareImages</span>) {img.<span class="link">src</span> = es.wikipedia.org/wiki/Matisse_paintings}</p>
-		</div>
 		</div>
 	</section>
 
@@ -204,8 +208,7 @@
 			<p><mark>// Your code goes in here:</mark></p>
 			<p><span style="color: hotpink;">const</span> <span style="color: lime;">doneTodos</span> = document.querySelectorAll("li.done");</p>
 			<p class="note">// selects all elements within li's</p>
-			<p><span style="color: hotpink;">const</span> <span style="color: lime;">checkbox</span>
-				</span> = document.querySelector("#scales");</p>
+			<p><span style="color: hotpink;">const</span> <span style="color: lime;">checkbox</span> = document.querySelector("#scales");</p>
 			<p class="note">// selects the element with the id 'scales'</p>
 		</div>
 
@@ -288,7 +291,7 @@
 			interface returns the value of a specified attribute on the element.</p>
 		<section class="preview">
 			const exampleAttr = div1.getAttribute("id");
-			//=> "div1"
+			// => "div1"
 		</section>
 	</section>
 
@@ -429,7 +432,7 @@
 		<ul>
 			<li>Please use JavaScript and the classList property to invert which elements have the highlight class.
 			</li>
-			<li>Basically iterate over all the elements and toggle the class of 'highlight' on each one.</>
+			<li>Basically iterate over all the elements and toggle the class of 'highlight' on each one.</li>
 		</ul>
 		<img class="img-sample" src="./img/carbon/code-003.png" alt="code preview">
 		<h3>Result:</h3>
