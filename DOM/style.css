@@ -1,238 +1,209 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
-
 body {
-	background-color: #e6e6e6;
-	font-family: Arial, Helvetica, sans-serif;
-	width: 100%;
+   background-color: #e6e6e6;
+   font-family: Arial, Helvetica, sans-serif;
+   width: 100%;
 }
-
 .mdn-info {
-	color: black;
-	background-color: violet;
-	text-decoration: none;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	padding-left: 30px;
-	padding-right: 30px;
-	display: inline-block;
-	width: fit-content;
-	margin-bottom: 20px;
-	font-weight: 700;
+   background-color: violet;
+   color: black;
+   display: inline-block;
+   font-weight: 700;
+   margin-bottom: 20px;
+   padding-bottom: 8px;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 8px;
+   text-decoration: none;
+   width: fit-content;
 }
-
 #mdn-info:hover {
-	color: white;
-	background-color: purple;
-	text-decoration: none;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	padding-left: 30px;
-	padding-right: 30px;
-	display: inline-block;
-	width: fit-content;
-	margin-bottom: 20px;
-	font-weight: 700;
+   background-color: purple;
+   color: white;
+   display: inline-block;
+   font-weight: 700;
+   margin-bottom: 20px;
+   padding-bottom: 8px;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 8px;
+   text-decoration: none;
+   width: fit-content;
 }
-
 nav {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	gap: 20px;
-	background-color: #4b6776;
-	padding: 25px;
-	font-weight: 700;
+   background-color: #4b6776;
+   display: flex;
+   flex-direction: column;
+   font-weight: 700;
+   gap: 20px;
+   padding: 25px;
+   width: 100%;
 }
-
 @media (min-width: 1366px) {
-	nav {
-		background-color: #181818;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		flex-wrap: wrap;
-		gap: 20px;
-		padding-top: 3rem;
-		padding-bottom: 3rem;
-	}
+   nav {
+      background-color: #181818;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding-bottom: 3rem;
+      padding-top: 3rem;
+   }
 }
-
 nav a {
-	text-decoration: none;
-	color: white;
-	padding: 10px;
-	width: fit-content;
+   color: white;
+   padding: 10px;
+   text-decoration: none;
+   width: fit-content;
 }
-
 @media (min-width: 1366px) {
-	nav a {
-		color: #f2f2f2;
-	}
+   nav a {
+      color: #f2f2f2;
+   }
 }
-
 nav a:hover {
-	background-color: lime;
-	text-decoration: none;
-	color: #181818;
-	padding: 10px;
-	width: fit-content;
+   background-color: lime;
+   color: #181818;
+   padding: 10px;
+   text-decoration: none;
+   width: fit-content;
 }
-
 .intro {
-	background-color: lightblue;
-	padding: 21px;
-	width: 100%;
+   background-color: lightblue;
+   padding: 21px;
+   width: 100%;
 }
-
 hr {
-	height: 2px;
-	border: none;
-	background-color: gray;
-	margin-bottom: 40px;
-	margin-top: 40px;
+   background-color: gray;
+   border: none;
+   height: 2px;
+   margin-bottom: 40px;
+   margin-top: 40px;
 }
-
 hr:first-of-type {
-	margin-top: 0px;
+   margin-top: 0px;
 }
-
 mark {
-	font-weight: 700;
-	padding: 4px;
-	background-color: lime;
+   background-color: lime;
+   font-weight: 700;
+   padding: 4px;
 }
-
 section {
-	padding-left: 12px;
-	padding-right: 12px;
+   padding-left: 12px;
+   padding-right: 12px;
 }
-
 @media (min-width: 1366px) {
-	section {
-		padding-left: 12rem;
-		padding-right: 12rem;
-	}
+   section {
+      padding-left: 12rem;
+      padding-right: 12rem;
+   }
 }
-
 h1 {
-	font-size: 36px;
-	text-decoration: underline;
-	margin-bottom: 21px;
-	width: fit-content;
+   font-size: 36px;
+   margin-bottom: 21px;
+   text-decoration: underline;
+   width: fit-content;
 }
-
 h2 {
-	background-color: lightskyblue;
-	margin-bottom: 15px;
-	width: fit-content;
-	padding: 7px;
+   background-color: lightskyblue;
+   margin-bottom: 15px;
+   padding: 7px;
+   width: fit-content;
 }
-
 h3 {
-	margin-bottom: 6px;
-	margin-top: 6px;
-	width: fit-content;
-	background-color: coral;
-	padding: 7px;
-	color: #181818;
+   background-color: coral;
+   color: #181818;
+   margin-bottom: 6px;
+   margin-top: 6px;
+   padding: 7px;
+   width: fit-content;
 }
-
 h4 {
-	margin-bottom: 9px;
-	width: fit-content;
-	padding: 7px;
+   margin-bottom: 9px;
+   padding: 7px;
+   width: fit-content;
 }
-
 .warning {
-	background-color: lightcoral;
-	margin-top: 10px;
-	padding: 12px;
-	width: fit-content;
+   background-color: lightcoral;
+   margin-top: 10px;
+   padding: 12px;
+   width: fit-content;
 }
-
 p {
-	padding-bottom: 15px;
-	padding-top: 7px;
-	line-height: 1.5rem;
+   line-height: 1.5rem;
+   padding-bottom: 15px;
+   padding-top: 7px;
 }
-
 ul {
-	list-style-position: inside;
+   list-style-position: inside;
+   background-color: lightblue;
+   padding: 12px;
+   border-top: 1px solid black;
+   margin-bottom: 6px;
 }
-
 .note {
-	color: gray;
+   color: gray;
 }
-
 .img-sample {
-	width: 100%;
-	margin-top: 15px;
+   margin-top: 15px;
+   width: 100%;
 }
-
 .practice {
-	border: 1px dashed #181818;
-	margin-bottom: 32px;
-	margin-left: 12px;
-	margin-right: 12px;
-	background-color: bisque;
-	border-radius: 5px;
+   background-color: bisque;
+   border: 1px dashed #181818;
+   border-radius: 5px;
+   margin-bottom: 32px;
+   margin-left: 12px;
+   margin-right: 12px;
 }
-
 @media (min-width: 1366px) {
-	.practice {
-		border: 1px dashed #181818;
-		margin-bottom: 32px;
-		margin-left: 12rem;
-		margin-right: 12rem;
-		background-color: bisque;
-		border-radius: 5px;
-	}
+   .practice {
+      background-color: bisque;
+      border: 1px dashed #181818;
+      border-radius: 5px;
+      margin-bottom: 32px;
+      margin-left: 12rem;
+      margin-right: 12rem;
+   }
 }
-
 .preview {
-	overflow-wrap: break-word;
-	padding: 10px;
-	background-color: #181818;
-	color: white;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border-radius: 5px;
-	font-family: monospace;
+   background-color: #181818;
+   border-radius: 5px;
+   color: white;
+   font-family: monospace;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   overflow-wrap: break-word;
+   padding: 10px;
 }
-
 li {
-	padding-bottom: 15px;
+   padding-bottom: 15px;
 }
-
 .variable {
-	color: hotpink;
+   color: hotpink;
 }
-
 .declared {
-	color: lime;
+   color: lime;
 }
-
 .func {
-	color: cyan;
+   color: cyan;
 }
-
 .link {
-	color: cyan;
+   color: cyan;
 }
-
 .flexbox {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 21px;
-	flex-basis: 50%;
+   display: flex;
+   flex-basis: 50%;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 21px;
 }
-
 pre {
-	background-color: #181818;
-	color: white;
+   background-color: #181818;
+   color: white;
 }
