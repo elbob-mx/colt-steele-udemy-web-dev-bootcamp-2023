@@ -30,7 +30,7 @@
         <a href="js/loops/index.html">guess game</a>
         <a href="DOM/dom-guide.html">DOM guide</a>
     </nav>
-    <section id="intro">
+    <section class="intro">
         <h1>DOM: Document Object Model</h1>
         <p>The DOM is a JavaScript representation of a webpage It's your JS "window" into the contents of a webpage.</p>
         <p>It's a bunch of objects that you can interact with via JS.</p>
@@ -56,7 +56,7 @@
     <!-- getElementById Practice -->
     <section>
         <h2>getElementById Practice</h2>
-        <img src="./img/sample-dom-001.png" alt="sample exercise" id="img-sample">
+        <img src="./img/sample-dom-001.png" alt="sample exercise" class="img-sample">
     </section>
     <section class="practice">
         <h3>Let's get some practice using <span style="text-decoration: underline;">getElementById.</span></h3>
@@ -199,7 +199,7 @@
     <!-- querySelector & querySelectorAll Practice -->
     <section>
         <h2>querySelector Practice</h2>
-        <img src="./img/sample-dom-002.png" alt="sample exercise" id="img-sample">
+        <img src="./img/sample-dom-002.png" alt="sample exercise" class="img-sample">
     </section>
     <section class="practice">
         <h3>Let's get some practice using <span style="text-decoration: underline;">querySelector</span></h3>
@@ -263,7 +263,7 @@
     <!-- QUERYSELECTOR -->
     <section>
         <h2>querySelector Practice</h2>
-        <img src="./img/sample-dom-003.png" alt="sample exercise" id="img-sample">
+        <img src="./img/sample-dom-003.png" alt="sample exercise" class="img-sample">
     </section>
     <section class="practice">
         <h3>Let's get some practice using <span style="text-decoration: underline;">querySelector</span></h3>
@@ -327,7 +327,7 @@
     <!-- MANIPULATING ATTRIBUTES -->
     <section>
         <h2>Manipulating Attributes Practice</h2>
-        <img src="./img/sample-dom-004.png" alt="sample exercise" id="img-sample">
+        <img src="./img/sample-dom-004.png" alt="sample exercise" class="img-sample">
     </section>
     <section class="practice">
         <h3>Let's get some practice using <span style="text-decoration: underline;">setAttribute() method</span></h3>
@@ -371,7 +371,7 @@
     <!-- MAGICAL TREE EXERCISE -->
     <section>
         <h2>Magical Forest Circle Exercise</h2>
-        <img src="./img/sample-dom-006.png" alt="sample exercise" id="img-sample">
+        <img src="./img/sample-dom-006.png" alt="sample exercise" class="img-sample">
     </section>
     <section class="practice">
         <h3>Let's get some practice using <span style="text-decoration: underline;">style, querySelector and some
@@ -399,7 +399,7 @@
     <!-- RAINBOW TEXT EXERCISE -->
     <section>
         <h2>Rainbow Text Exercise</h2>
-        <img src="./img/sample-dom-007.png" alt="sample exercise" id="img-sample">
+        <img src="./img/sample-dom-007.png" alt="sample exercise" class="img-sample">
     </section>
     <section class="practice">
         <h3>Let's get some practice using <span style="text-decoration: underline;">style, querySelector and some other methods:</span></h3>
@@ -409,7 +409,7 @@
             <li>Your task is to select all spans, iterate over them, and assign them each one of the colors from the
                 colors array. The first span should be red, the second should be orange, etc.</li>
         </ul>
-        <img id="img-sample" src="./img/carbon/code-001.png" alt="code preview">
+        <img class="img-sample" src="./img/carbon/code-001.png" alt="code preview">
     </section>
 
     <hr>
@@ -424,13 +424,13 @@
         <p>Using classList is a convenient alternative to <span style="text-decoration: underline;">accessing an
                 element's list of classes</span> as a space-delimited
             string via element.className. <mark>e.g.</mark></p>
-        <img id="img-sample" src="./img/carbon/code-002.png" alt="code preview">
+        <img class="img-sample" src="./img/carbon/code-002.png" alt="code preview">
     </section>
 
     <!-- CLASSLIST PRACTICE -->
     <section>
         <h2>ClassList Practice</h2>
-        <img src="./img/sample-dom-008.png" alt="sample exercise" id="img-sample">
+        <img src="./img/sample-dom-008.png" alt="sample exercise" class="img-sample">
     </section>
     <section class="practice">
         <h3>Let's get some practice using <span style="text-decoration: underline;">getElementsByTagName, classList and some iteration applying <span style="text-decoration: underline;">toggle </span>to each iterated element to add/remove the 'highlight' class</span></h3>
@@ -438,9 +438,9 @@
             <li>Please use JavaScript and the classList property to invert which elements have the highlight class.</li>
             <li>Basically iterate over all the elements and toggle the class of 'highlight' on each one.</>
         </ul>
-        <img id="img-sample" src="./img/carbon/code-003.png" alt="code preview">
+        <img class="img-sample" src="./img/carbon/code-003.png" alt="code preview">
         <h3>Result:</h3>
-        <img src="./img/sample-dom-009.png" alt="sample exercise" id="img-sample">
+        <img src="./img/sample-dom-009.png" alt="sample exercise" class="img-sample">
     </section>
     
     <hr>
@@ -479,9 +479,22 @@
             info</a>
         <p>The <b>Element.nextElementSibling</b> read-only property returns the element immediately following the specified one in its parent's children list, or null if the specified element is the last one in the list.
         </p>
-        <img id="img-sample" src="./img/carbon/code-004.png" alt="code preview">
+        <img class="img-sample" src="./img/carbon/code-004.png" alt="code preview">
     </section>
+
     <hr>
+
+        <!-- PREVIOUSELEMENTSIBLING -->
+        <section>
+            <h2>previousElementSibling property</h2>
+            <a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling">MDN
+                info</a>
+            <p>The <b>Element.previousElementSibling</b> read-only property returns the Element immediately prior to the specified one in its parent's children list, or null if the specified element is the first one in the list.
+            </p>
+            <img class="img-sample" src="./img/carbon/code-005.png" alt="code preview">
+        </section>
+
+        <hr>
 
     <!-- NEXT SIBLING -->
     <section>
@@ -501,8 +514,24 @@
         <h2>createElement() method</h2>
         <a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement">MDN info</a>
         <p>In a <b>HTML</b> document the <mark>document.createElement()</mark> method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.</p>
-        <div class="preview"><span style="color: gray;">/* Paragraphs that come immediately after any image */</span><br>img + p {font-weight: bold;}</div>
+        
+        <img class="img-sample" src="./img/carbon/code-006.png" alt="code preview">
+
+        <h3>Basic Example</h3>
+        <p><b>This creates a new 'div'</b> and inserts it before the element with the ID "div1".</p>
+        <img class="img-sample" src="./img/carbon/code-007.png" alt="code preview">
+
+        <h3>Javascript</h3>
+        <img class="img-sample" src="./img/carbon/code-008.png" alt="code preview">
+
+        <h3>Web component example</h3>
+        <p>The following example snippet is taken from our <mark>expanding-list-web-component</mark> example (see it live also). In this case, our custom element extends the <mark>HTMLUListElement</mark>, which represents the 'ul' element.</p>
+        <img class="img-sample" src="./img/carbon/code-009.png" alt="code preview">
+        <h3>Javascript</h3>
+        <p>If we wanted to create an instance of this element <mark>programmatically</mark>, we'd use a call along the following lines:</p>
+        <img class="img-sample" src="./img/carbon/code-010.png" alt="code preview">
     </section>
+
     <hr>
 
 </body>
