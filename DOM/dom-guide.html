@@ -591,14 +591,70 @@
 			<img class="img-sample" src="./img/carbon/code-015.png" alt="code preview">
 		</div>
 
+		<!-- ELEMENT PREPREND -->
 		<div>
 			<h2>Element: prepend() method</h2>
 			<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend">MDN info 📚</a>
-			<p>The Element.prepend() method inserts a set of Node objects or string objects before the first child of the Element. String objects are inserted as equivalent Text nodes.</p>
+			<p><b>The Element.prepend()</b> method inserts a set of Node objects or string objects before the first child of the Element. <b>String objects are inserted as equivalent Text nodes.</b></p>
+			<img class="img-sample" src="./img/carbon/code-016.png" alt="code preview">
+		</div>
+
+		<div>
+			<h3>Prepending an element</h3>
+			<img class="img-sample" src="./img/carbon/code-017.png" alt="code preview">
+		</div>
+
+		<div>
+			<h3>Prepending an element and text</h3>
+			<img class="img-sample" src="./img/carbon/code-018.png" alt="code preview">
+		</div>
+
+		<div>
+			<h3 class="warning">The prepend method is unscopable</h3>
+			<img class="img-sample" src="./img/carbon/code-019.png" alt="code preview">
 		</div>
 	</section>
 
 	<hr>
+
+	<section>
+		<h2>Element: insertAdjacentHTML() method</h2>
+		<p>The <strong>insertAdjacentHTML() method</strong> of the Element interface parses the specified text as HTML or XML and <mark>inserts the resulting nodes into the DOM tree at a specified position.</mark></p>
+
+		<h3>Syntax</h3>
+		<p class="preview">insertAdjacentHTML(position, text)</p>
+
+		<h3>Parameters</h3>
+		<h4>position</h4>
+		<p>A string representing the position <strong>relative to the element</strong>. Must be one of the following strings:</p>
+		<ul>
+			<li>"beforebegin"</li>
+			<li>"afterbegin"</li>
+			<li>"beforeend"</li>
+			<li>"afterend"</li>
+		</ul>
+
+		<h4>text</h4>
+		<p>The string to be parsed as HTML or XML and <strong>inserted into the tree</strong>.</p>
+
+		<h4 class="warning">Exceptions</h4>
+		<p>This method <strong>may raise a DOMException</strong> of one of the following types:</p>
+
+		<h4>NoModificationAllowedError</h4>
+		<p>Thrown if position is "beforebegin" or "afterend" and <strong>the element either does not have a parent or its parent is the Document object</strong>.</p>
+
+		<h4>SyntaxError</h4>
+		<p>Thrown if position is <strong>not one of the four listed values</strong>.</p>
+
+		<h4 class="warning">Security considerations</h4>
+		<p>When inserting HTML into a page by using insertAdjacentHTML(), be careful not to use user input that hasn't been escaped.</p>
+		<p>You should not use insertAdjacentHTML() when inserting plain text. Instead, use the Node.textContent property or the Element.insertAdjacentText() method. This doesn't interpret the passed content as HTML, but instead inserts it as raw text.</p>
+
+		<h3>Javascript :</h3>
+		<img class="img-sample" src="./img/carbon/code-020.png" alt="code preview">
+		<h4>Result :</h4>
+		<img class="img-sample" src="./img/sample-dom-010.png" alt="code preview">
+	</section>
 
 </body>
 

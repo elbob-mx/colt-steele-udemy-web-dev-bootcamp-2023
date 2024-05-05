@@ -119,19 +119,19 @@ h2 {
 h3 {
     background-color: coral;
     color: #181818;
-    margin-bottom: 6px;
     margin-top: 6px;
     padding: 7px;
     width: fit-content;
 }
 h4 {
     padding: 7px;
-    width: 100%;
+    width: fit-content;
     background-color: lightsteelblue;
     margin-top: 15px;
 }
 .warning {
-    background-color: lightcoral;
+    background-color: darkred;
+    color: white;
     margin-top: 12px;
     padding: 12px;
     width: fit-content;
@@ -153,6 +153,8 @@ ul {
 }
 .img-sample {
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 .practice {
     background-color: bisque;
