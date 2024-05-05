@@ -410,7 +410,7 @@
 	<!-- CLASSLIST -->
 	<section>
 		<h2>classList property</h2>
-		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">MDN info</a>
+		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">MDN info 📚</a>
 		<p>The <span style="font-weight: 700;">Element.classList</span> is a read-only property that returns a live
 			DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the
 			class list.</p>
@@ -444,14 +444,14 @@
 	<!-- PARENT ELEMENT -->
 	<section>
 		<h2>Node: parentElement property</h2>
-		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement">MDN info</a>
+		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement">MDN info 📚</a>
 		<p>The read-only <span style="font-weight: 700;">parentElement</span> property of Node interface returns the
 			DOM
 			node's parent Element, or null if the node either has no parent, or its parent isn't a DOM Element.</p>
 		<div class="preview">if (node.<span style="color: lime;">parentElement</span>) {
 			node.parentElement.style.color = "red";}</div>
 		<h2>Element: children property</h2>
-		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/children">MDN info</a>
+		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/children">MDN info 📚</a>
 		<p>The read-only <span style="font-weight: 700;">children</span> property returns a live HTMLCollection
 			which contains all of the child elements of the element upon which it was called.</p>
 		<div class="preview"><span style="color: hotpink;">const</span> <span style="color: lime;">myElement</span>
@@ -472,8 +472,7 @@
 	<!-- NEXTELEMENTSIBLING -->
 	<section>
 		<h2>nextElementSibling property</h2>
-		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling">MDN
-			info</a>
+		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling">MDN info 📚</a>
 		<p>The <b>Element.nextElementSibling</b> read-only property returns the element immediately following the
 			specified one in its parent's children list, or null if the specified element is the last one in the
 			list.
@@ -487,8 +486,7 @@
 	<!-- PREVIOUSELEMENTSIBLING -->
 	<section>
 		<h2>previousElementSibling property</h2>
-		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling">MDN
-			info</a>
+		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling">MDN info 📚</a>
 		<p>The <b>Element.previousElementSibling</b> read-only property returns the Element immediately prior to the
 			specified one in its parent's children list, or null if the specified element is the first one in the
 			list.
@@ -501,12 +499,10 @@
 	<!-- NEXT SIBLING -->
 	<section>
 		<h2>Next-sibling combinator</h2>
-		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator">MDN
-			info</a>
+		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator">MDN info 📚</a>
 		<p>The <b>next-sibling combinator</b> <mark>(+)</mark> separates two selectors and matches the second element
 			only if it immediately follows the first element, and both are children of the same parent element.</p>
-		<div class="preview"><span style="color: gray;">/* Paragraphs that come immediately after any image
-				*/</span>
+		<div class="preview"><span style="color: gray;">/* Paragraphs that come immediately after any image*/</span>
 			<br>
 			img + p {
 			font-weight: bold;
@@ -519,7 +515,7 @@
 	<!-- CREATEELEMENT METHOD -->
 	<section>
 		<h2>createElement() method</h2>
-		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement">MDN info</a>
+		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement">MDN info 📚</a>
 		<p>In a <b>HTML</b> document the <mark>document.createElement()</mark> method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.</p>
 
 		<img class="img-sample" src="./img/carbon/code-006.png" alt="code preview">
@@ -546,13 +542,12 @@
 	<!-- APPEND METHOD -->
 	<section>
 		<h2>append() method</h2>
-		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/append">MDN
-			info</a>
+		<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/append">MDN info 📚</a>
 
 		<p>In a <b>HTML</b> document the <mark>document.createElement()</mark> method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.</p>
 
 		<div>
-			<h3>Differences from Node.appendChild()</h3>
+			<h3>Differences from Node.appendChild() :</h3>
 
 			<ul>
 				<li>Element.append() allows you to also append string objects, whereas Node.appendChild() only accepts Node objects.</li>
@@ -560,6 +555,46 @@
 				<li>Element.append() can append several nodes and strings, whereas Node.appendChild() can only append one node.</li>
 			</ul>
 
+		</div>
+
+		<div>
+			<h3>Javascript:</h3>
+			<img class="img-sample" src="./img/carbon/code-011.png" alt="code preview">
+		</div>
+
+		<div style="padding-top: 6px;">
+			<b>param1, …, paramN</b><br>
+			A set of Node or string objects to insert.
+		</div>
+
+		<div>
+			<h3>Appending an element</h3>
+			<h4>Javascript:</h4>
+			<img class="img-sample" src="./img/carbon/code-012.png" alt="code preview">
+		</div>
+
+		<div>
+			<h3>Appending an element and text</h3>
+			<h4>Javascript:</h4>
+			<img class="img-sample" src="./img/carbon/code-013.png" alt="code preview">
+		</div>
+
+		<div>
+			<h3>The append method is unscopable</h3>
+			<div class="warning"><b>The append() method is not scoped into the with statement.</b> See <b>Symbol.unscopables</b> for more information.</div>
+			<h4>Javascript:</h4>
+			<img class="img-sample" src="./img/carbon/code-014.png" alt="code preview">
+		</div>
+
+		<div>
+			<h3>Javascript:</h3>
+			<img class="img-sample" src="./img/carbon/code-015.png" alt="code preview">
+		</div>
+
+		<div>
+			<h2>Element: prepend() method</h2>
+			<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend">MDN info 📚</a>
+			<p>The Element.prepend() method inserts a set of Node objects or string objects before the first child of the Element. String objects are inserted as equivalent Text nodes.</p>
 		</div>
 	</section>
 
