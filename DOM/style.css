@@ -91,7 +91,7 @@ hr:first-of-type {
     margin-top: 0px;
 }
 mark {
-    background-color: lime;
+    background-color: #67f0b1;
     font-weight: 700;
     padding: 4px;
 }
@@ -119,7 +119,7 @@ h2 {
     width: fit-content;
 }
 h3 {
-    background-color: coral;
+    background-color: #f2be5f;
     color: #181818;
     margin-top: 6px;
     padding: 7px;
@@ -132,8 +132,8 @@ h4 {
     margin-top: 15px;
 }
 .warning {
-    background-color: darkred;
-    color: white;
+    background-color: tomato;
+    color: #181818;
     margin-top: 12px;
     padding: 12px;
     width: fit-content;
@@ -148,6 +148,7 @@ ul {
     background-color: lightblue;
     padding: 12px;
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
     margin-bottom: 6px;
 }
 .note {
