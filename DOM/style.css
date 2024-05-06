@@ -20,8 +20,9 @@ body {
     padding-top: 8px;
     text-decoration: none;
     width: fit-content;
+    transition: 500ms;
 }
-#mdn-info:hover {
+.mdn-info:hover {
     background-color: purple;
     color: white;
     display: inline-block;
@@ -33,6 +34,7 @@ body {
     padding-top: 8px;
     text-decoration: none;
     width: fit-content;
+    transition: 500ms;
 }
 nav {
     background-color: #4b6776;
