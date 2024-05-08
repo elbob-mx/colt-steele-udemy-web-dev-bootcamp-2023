@@ -19,8 +19,8 @@
 // }
 
 function canDrinkResponse(age) {
-    if (age < 18) return console.log("Nope");
-    if (age < 21) return console.log("Not in the US.");
+    if (age < 18) return console.log("Nope 👶");
+    if (age < 21) return console.log("Not yet 🍼");
     return console.log("Yes 🍻");
 }
 
