@@ -10,18 +10,17 @@ function padRow(rowNumber, rowCount) {
     );
 }
 
-//* @param  TODO: use a different type of loop
-/* for (let i = 1; i <= count; i++) {
-    rows.push(padRow(i, count));
-} */
+//* TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
 
 let continueLoop = false;
 let done = 0;
 
-while (continueLoop) {
+while (done !== count) {
     done++;
-    if (done == count) {
-    }
+    rows.push(padRow(done, count));
 }
 
 let result = "";
