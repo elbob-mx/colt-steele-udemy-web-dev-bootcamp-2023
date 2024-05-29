@@ -20,12 +20,12 @@
 
 function canDrinkResponse(age) {
     if (age < 18) return console.log("Nope 👶");
-    if (age < 21) return console.log("Not yet 🍼");
+    if (age < 21) return console.log("Not yet 🍼🍼🍼");
     return console.log("Yes 🍻");
 }
 
 const p = {
-    age: 20,
+    age: 18,
 };
 
 canDrinkResponse(p.age);
