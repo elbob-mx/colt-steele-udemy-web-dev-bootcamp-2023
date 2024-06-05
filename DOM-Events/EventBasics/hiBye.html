@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey there!</title>
+</head>
+
+<body>
+    <h1>Click These Buttons</h1>
+    <p>And Prepare To Have Your Mind Blown</p>
+    <button id="hello">Hello</button>
+    <button id="goodbye">Goodbye</button>
+
+    <script>
+        // FUNCTIONS
+        function hello() {
+            alert("hi there!")
+        };
+        function goodbye() {
+            alert("see ya!")
+        };
+
+        // VARIABLES
+        const helloBtn = document.querySelector("#hello");
+        const byeBtn = document.querySelector("#goodbye");
+
+        // ADDEVENTLISTENERS
+        helloBtn.addEventListener("click", hello);
+        byeBtn.addEventListener("click", goodbye);
+    </script>
+
+</body>
+
+</html>
