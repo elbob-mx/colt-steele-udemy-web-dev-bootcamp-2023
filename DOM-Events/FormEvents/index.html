@@ -5,21 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Basics</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>Form Events</h1>
 
-    <form action="/dogs" id="tweetForm">
+    <form action="/random" id="tweetForm">
         <input type="text" name="username" placeholder="username">
         <input type="text" name="tweet" placeholder="tweet">
         <button>Post Tweet</button>
     </form>
 
-    <h2>Tweets:</h2>
-    <ul id="tweets">
+    <div>
+        <h2>Tweets:</h2>
+        <ul id="tweets">
 
-    </ul>
+        </ul>
+    </div>
+
+    <div>
+        <p class="warning">Data won't be saved.</p>
+    </div>
 
     <script src="app.js"></script>
 </body>
