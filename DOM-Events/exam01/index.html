@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Lista del super</title>
+    <title>Lista de compras</title>
     <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
 </head>
 
-<body>
-    <h1>Anótale!</h1>
+<body style="background-color: lightcyan; display: flex; flex-direction: column; align-items: center; height: 100vh; justify-content: center;">
+    <h1>¡Anótale!</h1>
 
-    <form action="/nowhere" id="form">
-        <label for="product">producto</label>
+    <form action="/nowhere" id="form" style="display: flex; flex-direction: column; gap: 20px;">
+        <label for="product" style="font-weight: 700;">producto</label>
         <input type="text" id="product" name="product">
 
-        <label for="qty">¿cuantos?</label>
+        <label for="qty" style="font-weight: 700;">¿cuantos?</label>
         <input type="number" id="qty" name="qty">
         <button>Submit</button>
     </form>

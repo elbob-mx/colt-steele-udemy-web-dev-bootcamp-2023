@@ -6,16 +6,15 @@ form.addEventListener("submit", function (e) {
 
     const qtyInput = form.elements.qty;
     const productInput = form.elements.product;
-    addProduct(productInput.value, qtyInput.value);
-    productInput.value = "";
+    addProduct(qtyInput.value, productInput.value);
     qtyInput.value = "";
+    productInput.value = "";
 });
 
-const addProduct = (product, qty) => {
+const addProduct = (qty, product) => {
     const newProduct = document.createElement("li");
     const productName = document.createElement("b");
     productName.append(product);
-    newProduct.append(productName);
-    newProduct.append(`${product} ${qty}`);
+    newProduct.append(`${qty} ${product}`);
     formContainer.append(newProduct);
 };
