@@ -1,13 +1,14 @@
 const button = document.querySelector("#changeColor");
 const container = document.querySelector("#container");
 
-button.addEventListener("click", function (e) {
+button.addEventListener("click", function (stop) {
     container.style.backgroundColor = makeRandColor();
-    e.stopPropagation();
+    stop.stopPropagation();
 });
 container.addEventListener("click", function () {
     document.querySelector("#container").style.fontFamily = "monospace";
     document.querySelector("#container").style.backgroundColor = "lightcyan";
+    container.classList.toggle("hide");
 });
 
 const makeRandColor = () => {
