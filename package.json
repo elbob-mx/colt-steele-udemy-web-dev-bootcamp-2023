@@ -1,6 +1,20 @@
 {
-  "dependencies": {
-    "bootstrap": "^5.3.2",
-    "bootstrap-icons": "^1.11.3"
-  }
+    "dependencies": {
+        "bootstrap": "^5.3.2",
+        "bootstrap-icons": "^1.11.3"
+    },
+    "name": "elbob-mx",
+    "version": "1.0.0",
+    "description": "Thanks for stoping by 😎",
+    "main": "index.js",
+    "devDependencies": {
+        "tailwindcss": "^3.4.4"
+    },
+    "scripts": {
+        "build": "tailwindcss -i ./src/input.css -o ./public/style.css --build",
+        "watch": "tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }
