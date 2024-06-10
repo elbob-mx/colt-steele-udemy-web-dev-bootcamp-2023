@@ -20,5 +20,6 @@ const addTweet = (username, tweet) => {
 
 // target nodeName in uppercase Because nodeName returns an uppercase string, and uppercase letters are not equal to their lowercase counterparts.
 tweetsContainer.addEventListener("click", function (e) {
+    alert("you will erase this. click 'Accept'");
     e.target.nodeName === "LI" && e.target.remove();
 });
