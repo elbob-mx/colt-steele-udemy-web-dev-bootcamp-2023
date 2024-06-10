@@ -6,9 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Keeper</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../public/style.css">
 </head>
 
 <body>
+
+    <!-- burger menu -->
+    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-slate-700 hover:bg-slate-500 focus:ring-4 focus:outline-none focus:ring-slate-300 font-semibold text-base font-mono px-5 py-5 mb-10 text-center inline-flex items-center w-full" type="button">Lessons menu<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+        </svg>
+    </button>
+
+    <!-- Dropdown menu -->
+    <div id="dropdown" class="z-10 font-mono hidden bg-slate-800 shadow w-full">
+        <ul class="py-4 text-base text-slate-200" aria-labelledby="dropdownDefaultButton">
+            <li><a href="../../../index.html" class="block px-4 py-2 hover:bg-slate-600 font-medium">Intro / Emmet</a></li>
+            <li><a href="../../../forms/forms.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Forms</a></li>
+            <li><a href="../../../marathon-form/marathon-form.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Marathon registration</a></li>
+            <li><a href="../../../starter-blog/starter.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Starter blog</a></li>
+            <li><a href="../../../time-delay/delay.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Timing</a></li>
+            <li><a href="../../../hover/hover.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Hover</a></li>
+            <li><a href="../../../photo/photo-grid.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Photosite</a></li>
+            <li><a href="../../../media-queries/media-queries.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Media queries</a></li>
+            <li><a href="../../../price-table/price-table.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Price table</a></li>
+            <li><a href="../../../bootstrap/bootstrap-demo.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Bootstrap</a></li>
+            <li><a href="../../../bootstrap/bootstrap-grid.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Bootstrap grid</a></li>
+            <li><a href="../../../bootstrap/bootstrap-forms.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Bootstrap forms</a></li>
+            <li><a href="../../../bootstrap/bootstrap-navbar.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Bootstrap navbar</a></li>
+            <li><a href="../../../bootstrap/Bootstrap4_Code/Bootstrap4_Code/13_Museum_Of_Candy/Starter/index.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Bootstrap Museum of Candy</a></li>
+            <li><a href="../../../js/loops/index.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Guess game</a></li>
+            <li><a href="../../../DOM/dom-guide.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">DOM guide</a></li>
+            <li><a href="../../../DOM/poke/index.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">pokeGallery JS</a></li>
+            <li><a href="../../../DOM-Events/RandomColors/index.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Random color generator</a></li>
+            <li><a href="../../../DOM-Events/exam01/index.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">List creator</a></li>
+            <li><a href="../ScoreKeeper/index.html" class="block px-4 py-2 hover:bg-gray-600 font-medium">Score keeper</a></li>
+        </ul>
+    </div>
+
+    <!-- END Dropdown menu -->
+
     <section class="section">
         <div class="container">
             <div class="columns">
@@ -16,8 +53,7 @@
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-2by1">
-                                <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80"
-                                    alt="">
+                                <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80" alt="">
                             </figure>
                         </div>
                         <header class="card-header">
@@ -64,6 +100,7 @@
 
 
     <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
 </html>
