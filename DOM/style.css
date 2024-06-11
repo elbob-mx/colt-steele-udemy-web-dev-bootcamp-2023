@@ -126,6 +126,8 @@ h1 {
     margin-bottom: 21px;
     text-decoration: underline;
     width: fit-content;
+    padding-bottom: 10px;
+    font-weight: 700;
 }
 h2 {
     background-color: lightskyblue;
@@ -133,6 +135,7 @@ h2 {
     margin-top: 20px;
     padding: 7px;
     width: fit-content;
+    font-weight: 700;
 }
 h3 {
     background-color: #f2be5f;
@@ -140,12 +143,14 @@ h3 {
     margin-top: 6px;
     padding: 7px;
     width: fit-content;
+    font-weight: 700;
 }
 h4 {
     padding: 7px;
     width: fit-content;
     background-color: lightsteelblue;
     margin-top: 15px;
+    font-weight: 700;
 }
 .warning {
     background-color: tomato;
@@ -180,8 +185,6 @@ ul {
     border: 1px dashed #181818;
     border-radius: 5px;
     margin-bottom: 32px;
-    margin-left: 12px;
-    margin-right: 12px;
 }
 @media (min-width: 1366px) {
     .practice {
@@ -189,8 +192,6 @@ ul {
         border: 1px dashed #181818;
         border-radius: 5px;
         margin-bottom: 32px;
-        margin-left: 12rem;
-        margin-right: 12rem;
     }
 }
 .preview {

@@ -9,9 +9,9 @@
 	<link rel="stylesheet" href="../public/style.css">
 </head>
 
-<body class="bg-[#f2f2f2]">
+<body class="bg-gray-400">
 
-	<nav>
+	<nav id="menuxl">
 		<a href="../index.html">emmet</a>
 		<a href="../forms/forms.html">forms</a>
 		<a href="../marathon-form/marathon-form.html">marathon registration</a>
@@ -36,13 +36,13 @@
 		<a href="../DOM-Events/Delegation/index.html">delegation</a>
 	</nav>
 
-	<a href="#intro" id="arrowup" style="text-decoration: none;">↑</a>
+	<a href="#menuxl" id="arrowup" style="text-decoration: none;">↑</a>
 
 	<main class="w-11/12 mx-auto 2xl:w-4/6">
 
 		<!-- DOM INTRO -->
 		<section class="my-10 intro" id="intro">
-			<h1>DOM: Document Object Model</h1>
+			<h1 class="font-bold">DOM: Document Object Model</h1>
 			<p>The DOM is a JavaScript representation of a webpage It's your JS "window" into the contents of a webpage.</p>
 			<p>It's a bunch of objects that you can interact with via JS.</p>
 			<p>On dev tools; type <mark>console.dir(document)</mark> to see the objects and properties that make the website.</p>
@@ -52,9 +52,9 @@
 		<hr>
 
 		<!-- selecting DOM elements -->
-		<section>
-			<h1>Selecting</h1>
-			<h2>getElementById</h2>
+		<section class="p-6 my-20 bg-slate-200">
+			<h1 class="font-bold">Selecting</h1>
+			<h2 class="mb-6 font-bold">getElementById</h2>
 			<p>Indicate which element you want to select asking the DOM for that ID. <mark>e.g.</mark></p>
 			<p>document.getElementById<strong>("toc")</strong></p>
 			<p>You can use it to create a vairble<mark>e.g.</mark></p>
@@ -63,13 +63,13 @@
 		</section>
 
 		<!-- getElementById Practice -->
-		<section>
-			<h2>getElementById Practice</h2>
+		<section class="p-6 my-20 bg-slate-300">
+			<h2 class="mb-6 font-bold">getElementById Practice</h2>
 			<img src="./img/sample-dom-001.png" alt="sample exercise" class="img-sample">
 		</section>
 
-		<section class="practice">
-			<h3>Let's get some practice using <span style="text-decoration: underline;">getElementById.</span></h3>
+		<section class="p-6 my-20 bg-slate-200">
+			<h3 class="mb-6 font-bold">Let's get some practice using <span style="text-decoration: underline;">getElementById.</span></h3>
 			<ul>
 				<li>Select the image element by its ID and save it to a variable called <strong>image</strong></li>
 				<li>Select the <strong>h1</strong> by it's ID and save it to a variable called <strong>heading</strong></li>
@@ -84,8 +84,8 @@
 		<hr>
 
 		<!-- selecting DOM elements by tag name -->
-		<section>
-			<h2>getElementsByTagName</h2>
+		<section class="p-6 my-20 bg-slate-300">
+			<h2 class="mb-6 font-bold">getElementsByTagName</h2>
 			<p>The getElementsByTagName method of Document interface returns an HTMLCollection of elements with the
 				given tag name. <mark>e.g.</mark></p>
 
@@ -128,8 +128,8 @@
 		<hr>
 
 		<!-- selecting DOM elements by class name -->
-		<section>
-			<h2>getElementsByClassName</h2>
+		<section class="p-6 my-20 bg-slate-200">
+			<h2 class="mb-6 font-bold">getElementsByClassName</h2>
 			<p>The getElementsByClassName method of Document interface returns an array-like object of all child elements which have all of the given class name(s). <mark>e.g.</mark></p>
 			<div class="preview">
 				<span class="variable">const</span> <span class="declared">testElements</span> =
@@ -147,8 +147,8 @@
 		<hr>
 
 		<!-- selecting using querySelector -->
-		<section>
-			<h2>querySelector()</h2>
+		<section class="p-6 my-20 bg-slate-300">
+			<h2 class="mb-6 font-bold">querySelector()</h2>
 			<h3>a newer all-in-one method to select a single element.</h3>
 			<p>The Document method <strong>querySelector()</strong> returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.</p>
 			<div class="flexbox">
@@ -176,9 +176,9 @@
 				</div>
 			</div>
 
-			<!-- QUERYSELECTORALLQ -->
-			<h2>querySelectorAll()</h2>
-			<h3>Returns a collection of all matching elements.</h3>
+			<!-- QUERYSELECTORALL -->
+			<h2 class="mb-6 font-bold">querySelectorAll()</h2>
+			<h3 class="mb-6 font-bold">Returns a collection of all matching elements.</h3>
 			<p>The Document method <strong style="text-decoration: underline;">querySelectorAll()</strong> returns a static (not live) NodeList representing a list of the document's elements that match the specified group of selectors.</p>
 			<div class="flexbox">
 				<div>
@@ -200,12 +200,12 @@
 		</section>
 
 		<!-- querySelector & querySelectorAll Practice -->
-		<section>
-			<h2>querySelector Practice</h2>
+		<section class="p-6 my-20 bg-slate-200">
+			<h2 class="mb-6 font-bold">querySelector Practice</h2>
 			<img src="./img/sample-dom-002.png" alt="sample exercise" class="img-sample">
 		</section>
-		<section class="practice">
-			<h3>Let's get some practice using <span style="text-decoration: underline;">querySelector</span></h3>
+		<section class="p-6 my-20 bg-slate-300 practice">
+			<h3 class="mb-6 font-bold">Let's get some practice using <span style="text-decoration: underline;">querySelector</span></h3>
 
 			<ul>
 				<li>Select all elements that have the class of <strong>"done"</strong> and save them in a variable called <strong>doneTodos.</strong></li>
@@ -227,10 +227,10 @@
 		<hr>
 
 		<!-- change content using innerText -->
-		<section>
-			<h2>HTMLElement: innerText property</h2>
+		<section class="p-6 my-20 bg-slate-300">
+			<h2 class="mb-6 font-bold">HTMLElement: innerText property</h2>
 
-			<h3>The innerText property of the HTMLElement interface represents the rendered text content of a node and its descendants.</h3>
+			<h3 class="mb-6 font-bold">The innerText property of the HTMLElement interface represents the rendered text content of a node and its descendants.</h3>
 
 			<p>As a getter, it approximates the text the user would get if they highlighted the contents of the element with the cursor and then copied it to the clipboard. As a setter this will replace the element's children with the given value, converting any line breaks into <mark>"br"</mark> elements.</p>
 
@@ -249,9 +249,9 @@
 		<hr>
 
 		<!-- INNERHTML PROPERTY -->
-		<section>
-			<h2>Element: innerHTML property</h2>
-			<h3>The Element property innerHTML gets or sets the HTML or XML markup contained within the element.</h3>
+		<section class="p-6 my-20 bg-slate-200">
+			<h2 class="mb-6 font-bold">Element: innerHTML property</h2>
+			<h3 class="mb-6 font-bold">The Element property innerHTML gets or sets the HTML or XML markup contained within the element.</h3>
 			<p class="warning">*To insert the HTML into the document rather than replace the contents of an element, use the method <span style="text-decoration: underline; font-weight: 700;">insertAdjacentHTML().</span></p>
 			<p>This example fetches the document's current HTML markup and replaces the "<" characters with the HTML entity "&lt;" , thereby essentially converting the HTML into raw text. This is then wrapped in a "pre" element. Then the value of innerHTML is changed to this new string. As a result, the document contents are replaced with a display of the page's entire source code.</p>
 					<p class="preview">document.documentElement.innerHTML = `${document.documentElement.innerHTML.replace(/< /g, "& l t;" , )}`;</p>
@@ -261,12 +261,13 @@
 		</section>
 
 		<!-- QUERYSELECTOR -->
-		<section>
-			<h2>querySelector Practice</h2>
+		<section class="p-6 my-20 bg-slate-300">
+			<h2 class="mb-6 font-bold">querySelector Practice</h2>
 			<img src="./img/sample-dom-003.png" alt="sample exercise" class="img-sample">
 		</section>
-		<section class="practice">
-			<h3>Let's get some practice using <span style="text-decoration: underline;">querySelector</span></h3>
+
+		<section class="p-6 my-20 bg-slate-200">
+			<h3 class="mb-6 font-bold">Let's get some practice using <span style="text-decoration: underline;">querySelector</span></h3>
 			<ul>
 				<li>Please use JavaScript to select the 'span' element that currently reads "Delicious".</li>
 				<li>Change its text to read "Disgusting" USING JAVASCRIPT.</li>
@@ -281,8 +282,8 @@
 		<hr>
 
 		<!-- CLASSLIST PROPERTY -->
-		<section>
-			<h2>Element: classList property</h2>
+		<section class="p-6 my-20 bg-slate-200">
+			<h2 class="mb-6 font-bold">Element: classList property</h2>
 			<p>The <span style="text-decoration: underline; font-weight: 700;">Element.classList</span> is a read-only property that returns a live DOMTokenList collection of the class attributes of the element. <span style="font-weight: 700;">This can then be used to manipulate the class list.</span></p>
 			<section class="preview">
 				// use the classList API to remove and add classes
@@ -294,12 +295,12 @@
 		<hr>
 
 		<!-- GETATTRIBUTE METHOD -->
-		<section>
-			<h2>Element: getAttribute() method</h2>
+		<section class="p-6 my-20 bg-slate-300">
+			<h2 class="mb-6 font-bold">Element: getAttribute() method</h2>
 			<p>The <span style="text-decoration: underline; font-weight: 700;">getAttribute()</span> method of the
 				Element
 				interface returns the value of a specified attribute on the element.</p>
-			<section class="preview">
+			<section class="p-6 my-20 bg-slate-200">
 				const exampleAttr = div1.getAttribute("id");
 				// => "div1"
 			</section>
@@ -308,13 +309,13 @@
 		<hr>
 
 		<!-- SETATTRIBUTE METHOD -->
-		<section>
-			<h2>Element: setAttribute() method</h2>
+		<section class="p-6 my-20 bg-slate-300">
+			<h2 class="mb-6 font-bold">Element: setAttribute() method</h2>
 			<p>The <span style="text-decoration: underline; font-weight: 700;">setAttribute()</span> method of the
 				Element
 				interface sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
 			</p>
-			<section class="preview">
+			<section class="p-6 my-20 bg-slate-200">
 				const button = document.querySelector("button");
 				button.setAttribute("name", "helloButton");
 				button.setAttribute("disabled", "");
@@ -322,12 +323,12 @@
 		</section>
 
 		<!-- MANIPULATING ATTRIBUTES -->
-		<section>
-			<h2>Manipulating Attributes Practice</h2>
+		<section class="p-6 my-20 bg-slate-300">
+			<h2 class="mb-6 font-bold">Manipulating Attributes Practice</h2>
 			<img src="./img/sample-dom-004.png" alt="sample exercise" class="img-sample">
 		</section>
-		<section class="practice">
-			<h3>Let's get some practice using <span style="text-decoration: underline;">setAttribute() method</span>
+		<section class="p-6 my-20 bg-slate-200">
+			<h3 class="mb-6 font-bold">Let's get some practice using <span style="text-decoration: underline;">setAttribute() method</span>
 			</h3>
 			<ul>
 				<li>Change its source to this url: "https://devsprouthosting.com/..."
@@ -347,9 +348,9 @@
 		<hr>
 
 		<!-- CHANGING STYLES -->
-		<section>
-			<h2>Changing Styles</h2>
-			<h3>'style': The Style Information element</h3>
+		<section class="p-6 my-20 bg-slate-200">
+			<h2 class="mb-6 font-bold">Changing Styles</h2>
+			<h3 class="mb-6 font-bold">'style': The Style Information element</h3>
 			<p>The 'style' HTML element contains style information for a document, or part of a document. It contains CSS, which is applied to the contents of the document containing the 'style' element.
 			</p>
 			<p>You can declare something like: const h1 = document.querySelector('h1'); and change it to:</p>
@@ -368,12 +369,12 @@
 		<hr>
 
 		<!-- MAGICAL TREE EXERCISE -->
-		<section>
+		<section class="p-6 my-20 bg-slate-300">
 			<h2>Magical Forest Circle Exercise</h2>
 			<img src="./img/sample-dom-006.png" alt="sample exercise" class="img-sample">
 		</section>
-		<section class="practice">
-			<h3>Let's get some practice using <span style="text-decoration: underline;">style, querySelector and some
+		<section class="p-6 my-20 bg-slate-200">
+			<h3 class="mb-6 font-bold">Let's get some practice using <span style="text-decoration: underline;">style, querySelector and some
 					attributes:</span></h3>
 			<ul>
 				<li>Select the div with the id of container. Using JavaScript, set it's text alignment to 'center'</li>
@@ -396,12 +397,12 @@
 		<hr>
 
 		<!-- RAINBOW TEXT EXERCISE -->
-		<section>
-			<h2>Rainbow Text Exercise</h2>
+		<section class="p-6 my-20 bg-slate-200">
+			<h2 class="mb-6 font-bold">Rainbow Text Exercise</h2>
 			<img src="./img/sample-dom-007.png" alt="sample exercise" class="img-sample">
 		</section>
-		<section class="practice">
-			<h3>Let's get some practice using <span style="text-decoration: underline;">style, querySelector and some
+		<section class="p-6 my-20 bg-slate-300">
+			<h3 class="mb-6 font-bold">Let's get some practice using <span style="text-decoration: underline;">style, querySelector and some
 					other
 					methods:</span></h3>
 			<ul>
@@ -418,8 +419,8 @@
 		<hr>
 
 		<!-- CLASSLIST -->
-		<section>
-			<h2>classList property</h2>
+		<section class="p-6 my-20 bg-slate-300">
+			<h2 class="mb-6 font-bold">classList property</h2>
 			<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">MDN info 📚</a>
 			<p>The <span style="font-weight: 700;">Element.classList</span> is a read-only property that returns a live
 				DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the
@@ -431,12 +432,12 @@
 		</section>
 
 		<!-- CLASSLIST PRACTICE -->
-		<section>
-			<h2>ClassList Practice</h2>
+		<section class="p-6 my-20 bg-slate-200">
+			<h2 class="mb-6 font-bold">ClassList Practice</h2>
 			<img src="./img/sample-dom-008.png" alt="sample exercise" class="img-sample">
 		</section>
-		<section class="practice">
-			<h3>Let's get some practice using <span style="text-decoration: underline;">getElementsByTagName, classList
+		<section class="p-6 my-20 bg-slate-300">
+			<h3 class="mb-6 font-bold">Let's get some practice using <span style="text-decoration: underline;">getElementsByTagName, classList
 					and some iteration applying <span style="text-decoration: underline;">toggle </span>to each iterated
 					element to add/remove the 'highlight' class</span></h3>
 			<ul>
@@ -445,22 +446,22 @@
 				<li>Basically iterate over all the elements and toggle the class of 'highlight' on each one.</li>
 			</ul>
 			<img class="img-sample" src="./img/carbon/code-003.png" alt="code preview">
-			<h3>Result:</h3>
+			<h3 class="mb-6 font-bold">Result:</h3>
 			<img src="./img/sample-dom-009.png" alt="sample exercise" class="img-sample">
 		</section>
 
 		<hr>
 
 		<!-- PARENT ELEMENT -->
-		<section>
-			<h2>Node: parentElement property</h2>
+		<section class="p-6 my-20 bg-slate-200">
+			<h2 class="mb-6 font-bold">Node: parentElement property</h2>
 			<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement">MDN info 📚</a>
 			<p>The read-only <span style="font-weight: 700;">parentElement</span> property of Node interface returns the
 				DOM
 				node's parent Element, or null if the node either has no parent, or its parent isn't a DOM Element.</p>
 			<div class="preview">if (node.<span style="color: lime;">parentElement</span>) {
 				node.parentElement.style.color = "red";}</div>
-			<h2>Element: children property</h2>
+			<h2 class="mb-6 font-bold">Element: children property</h2>
 			<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/children">MDN info 📚</a>
 			<p>The read-only <span style="font-weight: 700;">children</span> property returns a live HTMLCollection
 				which contains all of the child elements of the element upon which it was called.</p>
@@ -480,8 +481,8 @@
 		<hr>
 
 		<!-- NEXTELEMENTSIBLING -->
-		<section>
-			<h2>nextElementSibling property</h2>
+		<section class="p-6 my-20 bg-slate-300">
+			<h2 class="mb-6 font-bold">nextElementSibling property</h2>
 			<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling">MDN info 📚</a>
 			<p>The <b>Element.nextElementSibling</b> read-only property returns the element immediately following the
 				specified one in its parent's children list, or null if the specified element is the last one in the
@@ -494,7 +495,7 @@
 
 
 		<!-- PREVIOUSELEMENTSIBLING -->
-		<section>
+		<section class="p-6 my-20 bg-slate-200">
 			<h2>previousElementSibling property</h2>
 			<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling">MDN info 📚</a>
 			<p>The <b>Element.previousElementSibling</b> read-only property returns the Element immediately prior to the
@@ -507,8 +508,8 @@
 		<hr>
 
 		<!-- NEXT SIBLING -->
-		<section>
-			<h2>Next-sibling combinator</h2>
+		<section class="p-6 my-20 bg-slate-300">
+			<h2 class="mb-6 font-bold">Next-sibling combinator</h2>
 			<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator">MDN info 📚</a>
 			<p>The <b>next-sibling combinator</b> <mark>(+)</mark> separates two selectors and matches the second element
 				only if it immediately follows the first element, and both are children of the same parent element.</p>
@@ -523,8 +524,8 @@
 		<hr>
 
 		<!-- CREATEELEMENT METHOD -->
-		<section>
-			<h2>createElement() method</h2>
+		<section class="p-6 my-20 bg-slate-200">
+			<h2 class="mb-6 font-bold">createElement() method</h2>
 			<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement">MDN info 📚</a>
 			<p>In a <b>HTML</b> document the <mark>document.createElement()</mark> method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.</p>
 
@@ -534,15 +535,15 @@
 			<p><b>This creates a new 'div'</b> and inserts it before the element with the ID "div1".</p>
 			<img class="img-sample" src="./img/carbon/code-007.png" alt="code preview">
 
-			<h3>Javascript</h3>
+			<h3 class="mb-6 font-bold">Javascript</h3>
 			<img class="img-sample" src="./img/carbon/code-008.png" alt="code preview">
 
-			<h3>Web component example</h3>
+			<h3 class="mb-6 font-bold">Web component example</h3>
 			<p>The following example snippet is taken from our <mark>expanding-list-web-component</mark> example (see it live also). In this case, our custom element extends the
 				<mark>HTMLUListElement</mark>, which represents the 'ul' element.
 			</p>
 			<img class="img-sample" src="./img/carbon/code-009.png" alt="code preview">
-			<h3>Javascript</h3>
+			<h3 class="mb-6 font-bold">Javascript</h3>
 			<p>If we wanted to create an instance of this element <mark>programmatically</mark>, we'd use a call along the following lines:</p>
 			<img class="img-sample" src="./img/carbon/code-010.png" alt="code preview">
 		</section>
@@ -550,14 +551,14 @@
 		<hr>
 
 		<!-- APPEND METHOD -->
-		<section>
+		<section class="p-6 my-20 bg-slate-300">
 			<h2>append() method</h2>
 			<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/append">MDN info 📚</a>
 
 			<p>In a <b>HTML</b> document the <mark>document.createElement()</mark> method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.</p>
 
 			<div>
-				<h3>Differences from Node.appendChild() :</h3>
+				<h3 class="mb-6 font-bold">Differences from Node.appendChild() :</h3>
 
 				<ul>
 					<li>Element.append() allows you to also append string objects, whereas Node.appendChild() only accepts Node objects.</li>
@@ -568,7 +569,7 @@
 			</div>
 
 			<div>
-				<h3>Javascript:</h3>
+				<h3 class="mb-6 font-bold">Javascript:</h3>
 				<img class="img-sample" src="./img/carbon/code-011.png" alt="code preview">
 			</div>
 
@@ -578,21 +579,21 @@
 			</div>
 
 			<div>
-				<h3>Appending an element</h3>
+				<h3 class="mb-6 font-bold">Appending an element</h3>
 				<h4>Javascript:</h4>
 				<img class="img-sample" src="./img/carbon/code-012.png" alt="code preview">
 			</div>
 
 			<div>
-				<h3>Appending an element and text</h3>
-				<h4>Javascript:</h4>
+				<h3 class="mb-6 font-bold">Appending an element and text</h3>
+				<h4 class="font-bold">Javascript:</h4>
 				<img class="img-sample" src="./img/carbon/code-013.png" alt="code preview">
 			</div>
 
 			<div>
-				<h3>The append method is unscopable</h3>
+				<h3 class="mb-6 font-bold">The append method is unscopable</h3>
 				<div class="warning"><b>The append() method is not scoped into the with statement.</b> See <b>Symbol.unscopables</b> for more information.</div>
-				<h4>Javascript:</h4>
+				<h4 class="font-bold">Javascript:</h4>
 				<img class="img-sample" src="./img/carbon/code-014.png" alt="code preview">
 			</div>
 
@@ -603,39 +604,39 @@
 
 			<!-- ELEMENT PREPEND -->
 			<div>
-				<h2>Element: prepend() method</h2>
+				<h2 class="mb-6 font-bold">Element: prepend() method</h2>
 				<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend">MDN info 📚</a>
 				<p><b>The Element.prepend()</b> method inserts a set of Node objects or string objects before the first child of the Element. <b>String objects are inserted as equivalent Text nodes.</b></p>
 				<img class="img-sample" src="./img/carbon/code-016.png" alt="code preview">
 			</div>
 
 			<div>
-				<h3>Prepending an element</h3>
+				<h3 class="mb-6 font-bold">Prepending an element</h3>
 				<img class="img-sample" src="./img/carbon/code-017.png" alt="code preview">
 			</div>
 
 			<div>
-				<h3>Prepending an element and text</h3>
+				<h3 class="mb-6 font-bold">Prepending an element and text</h3>
 				<img class="img-sample" src="./img/carbon/code-018.png" alt="code preview">
 			</div>
 
 			<div>
-				<h3 class="warning">The prepend method is unscopable</h3>
+				<h3 class="font-bold warning">The prepend method is unscopable</h3>
 				<img class="img-sample" src="./img/carbon/code-019.png" alt="code preview">
 			</div>
 		</section>
 
 		<hr>
 
-		<section>
-			<h2>Element: insertAdjacentHTML() method</h2>
+		<section class="p-6 my-20 bg-slate-300">
+			<h2 class="mb-6 font-bold">Element: insertAdjacentHTML() method</h2>
 			<p>The <strong>insertAdjacentHTML() method</strong> of the Element interface parses the specified text as HTML or XML and <mark>inserts the resulting nodes into the DOM tree at a specified position.</mark></p>
 
-			<h3>Syntax</h3>
+			<h3 class="mb-6 font-bold">Syntax</h3>
 			<p class="preview">insertAdjacentHTML(position, text)</p>
 
-			<h3>Parameters</h3>
-			<h4>position</h4>
+			<h3 class="mb-6 font-bold">Parameters</h3>
+			<h4 class="font-bold">position</h4>
 			<p>A string representing the position <strong>relative to the element</strong>. Must be one of the following strings:</p>
 			<ul>
 				<li>"beforebegin"</li>
@@ -644,38 +645,38 @@
 				<li>"afterend"</li>
 			</ul>
 
-			<h4>text</h4>
+			<h4 class="font-bold">text</h4>
 			<p>The string to be parsed as HTML or XML and <strong>inserted into the tree</strong>.</p>
 
-			<h4 class="warning">Exceptions</h4>
+			<h4 class="font-bold warning">Exceptions</h4>
 			<p>This method <strong>may raise a DOMException</strong> of one of the following types:</p>
 
-			<h4>NoModificationAllowedError</h4>
+			<h4 class="font-bold">NoModificationAllowedError</h4>
 			<p>Thrown if position is "beforebegin" or "afterend" and <strong>the element either does not have a parent or its parent is the Document object</strong>.</p>
 
-			<h4>SyntaxError</h4>
+			<h4 class="font-bold">SyntaxError</h4>
 			<p>Thrown if position is <strong>not one of the four listed values</strong>.</p>
 
-			<h4 class="warning">Security considerations</h4>
+			<h4 class="font-bold warning">Security considerations</h4>
 			<p>When inserting HTML into a page by using insertAdjacentHTML(), be careful not to use user input that hasn't been escaped.</p>
 			<p>You should not use insertAdjacentHTML() when inserting plain text. Instead, use the Node.textContent property or the Element.insertAdjacentText() method. This doesn't interpret the passed content as HTML, but instead inserts it as raw text.</p>
 
-			<h3>Javascript :</h3>
+			<h3 class="mb-6 font-bold">Javascript :</h3>
 			<img class="img-sample" src="./img/carbon/code-020.png" alt="code preview">
-			<h4>Result :</h4>
+			<h4 class="font-bold">Result :</h4>
 			<img class="img-sample" src="./img/sample-dom-010.png" alt="code preview">
 		</section>
 
 		<hr>
 
 		<!-- CLASSLIST PRACTICE -->
-		<section>
+		<section class="p-6 my-20 bg-slate-200">
 			<h2>100 Button Insanity Exercise</h2>
 			<img src="./img/sample-dom-011.png" alt="sample exercise" class="img-sample">
 		</section>
 
-		<section class="practice">
-			<h3>Let's get some practice using <strong>append, appendChild, innerText and some loop iteration</strong>.</h3>
+		<section class="p-6 my-20 bg-slate-300">
+			<h3 class="mb-6 font-bold">Let's get some practice using <strong>append, appendChild, innerText and some loop iteration</strong>.</h3>
 
 			<ul>
 				<li>Create exactly 100 new button elements.</li>
@@ -684,20 +685,20 @@
 			</ul>
 
 			<img class="img-sample" src="./img/carbon/code-021.png" alt="code preview">
-			<h3>Result:</h3>
+			<h3 class="mb-6 font-bold">Result:</h3>
 			<img src="./img/sample-dom-012.png" alt="sample exercise" class="img-sample">
 		</section>
 
 		<hr>
 
 		<!-- CLASSLIST PRACTICE -->
-		<section>
-			<h2>Change event</h2>
+		<section class="p-6 my-20 bg-slate-200">
+			<h2 class="mb-6 font-bold">Change event</h2>
 			<img src="./img/sample-dom-013.png" alt="sample exercise" class="img-sample">
 		</section>
 
-		<section class="practice">
-			<h3>Let's get some practice using <strong>querySelector, addEventListener, innerText and some loop iteration</strong>.</h3>
+		<section class="p-6 my-20 bg-slate-300">
+			<h3 class="mb-6 font-bold">Let's get some practice using <strong>querySelector, addEventListener, innerText and some loop iteration</strong>.</h3>
 
 			<ul>
 				<li>The h1 should start with the text <mark>"Enter Your Username"</mark> (I've done that for you, already in the markup)</li>
@@ -706,15 +707,15 @@
 			</ul>
 
 			<img class="img-sample" src="./img/carbon/code-022.png" alt="code preview">
-			<h3>Result:</h3>
+			<h3 class="mb-6 font-bold">Result:</h3>
 			<img src="./img/sample-dom-014.png" alt="sample exercise" class="img-sample">
 		</section>
 
 		<hr>
 
 		<!-- EVENT DELEGATION -->
-		<section>
-			<h2>Event Delegation</h2>
+		<section class="p-6 my-20 bg-slate-200">
+			<h2 class="mb-6 font-bold">Event Delegation</h2>
 			<img src="../DOM-Events/Delegation/del-html-sample.png" alt="sample exercise" class="img-sample">
 			<img src="../DOM-Events/Delegation/del-js-sample.png" alt="sample exercise" class="img-sample">
 			<img src="../DOM-Events/Delegation/del-sample.png" alt="sample exercise" class="img-sample">
