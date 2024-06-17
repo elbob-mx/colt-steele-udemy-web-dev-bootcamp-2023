@@ -723,6 +723,49 @@
 		</section>
 
 		<hr>
+
+		<!-- CREATE A PROMISE -->
+		<section class="p-6 my-20 bg-slate-300">
+			<h2 class="mb-6 font-bold">Creating a Promise</h2>
+			<img src="../DOM/img/carbon/code-023.png" alt="sample exercise" class="img-sample">
+			<h3 class="mb-6 font-bold">Try this code on your browser's console</h3>
+			<p class="preview">const firstPromise = (msg) => { <br>
+				return new Promise((resolve, reject) => { <br>
+				const randomNumber = Math.floor(Math.random() * 10); <br>
+				console.log(randomNumber); <br>
+				setTimeout(() => { <br>
+				if (randomNumber > 5) { <br>
+				resolve(); <br>
+				} <br>
+				reject(); <br>
+				}, 1000);<br>
+				});<br>
+				};<br>
+				<br>
+				firstPromise("letswork.com")<br>
+				.then((data) => {<br>
+				console.log("done with math");<br>
+				console.log("more than 5 indeed...", data);<br>
+				document.body.style.backgroundColor = "teal";<br>
+				const newDiv = document.createElement("div");<br>
+				const newContent = document.createTextNode("IT's ALIVE!");<br>
+				newDiv.appendChild(newContent);<br>
+				const actualDiv = document.getElementById("div");<br>
+				document.body.insertBefore(newDiv, actualDiv);<br>
+				})<br>
+				.catch((err) => {<br>
+				console.log("aqui esta tu error...", err);<br>
+				document.body.style.backgroundColor = "tomato";<br>
+				const newDiv = document.createElement("div");<br>
+				const newContent = document.createTextNode("ERROR!");<br>
+				newDiv.appendChild(newContent);<br>
+				const actualDiv = document.getElementById("div");<br>
+				document.body.insertBefore(newDiv, actualDiv);<br>
+				});<br>
+			</p>
+		</section>
+
+		<hr>
 	</main>
 </body>
 
