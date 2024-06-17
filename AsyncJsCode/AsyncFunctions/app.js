@@ -20,14 +20,14 @@ const login = async (username, password) => {
     throw "Invalid Password";
 };
 
-login("todd", "corgifeetarecute")
+login("todd!", "corgifeetarecute")
     .then((msg) => {
-        console.log("LOGGED IN!");
-        console.log(msg);
+        console.log("yeah!");
+        document.body.style.backgroundColor = "cyan";
     })
     .catch((err) => {
-        console.log("ERROR!");
-        console.log(err);
+        console.log("que error!");
+        document.body.style.backgroundColor = "purple";
     });
 
 const delayedColorChange = (color, delay) => {
@@ -48,13 +48,13 @@ const delayedColorChange = (color, delay) => {
 //     .then(() => delayedColorChange('violet', 1000))
 
 async function rainbow() {
-    await delayedColorChange("red", 1000);
-    await delayedColorChange("orange", 1000);
-    await delayedColorChange("yellow", 1000);
-    await delayedColorChange("green", 1000);
-    await delayedColorChange("blue", 1000);
-    await delayedColorChange("indigo", 1000);
-    await delayedColorChange("violet", 1000);
+    await delayedColorChange("red", 100);
+    await delayedColorChange("orange", 100);
+    await delayedColorChange("yellow", 100);
+    await delayedColorChange("green", 100);
+    await delayedColorChange("blue", 100);
+    await delayedColorChange("indigo", 100);
+    await delayedColorChange("cyan", 100);
     return "ALL DONE!";
 }
 
