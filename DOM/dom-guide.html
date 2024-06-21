@@ -728,6 +728,16 @@
 		<!-- CREATE A PROMISE -->
 		<section class="p-6 my-20 bg-slate-300">
 			<h2 class="mb-6 font-bold">Creating a Promise</h2>
+			<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">MDN info 📚</a>
+			<p>The <mark>Promise</mark> object <strong>represents the eventual completion (or failure) of an asynchronous operation and its resulting value.</strong></p>
+			<p>A <mark>Promise</mark> is a proxy for a value not necessarily known when the promise is created. <strong>It allows you to associate handlers with an asynchronous action's eventual success value or failure reason</strong>. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method <strong>returns a promise to supply the value at some point in the future.</strong></p>
+			<p><mark>A Promise is in one of these states:</mark></p>
+			<ul class="p-4">
+				<li>• <strong>pending:</strong> initial state, neither fulfilled nor rejected.</li>
+				<li>• <strong>fulfilled:</strong> meaning that the operation was completed successfully.</li>
+				<li>• <strong>rejected:</strong> meaning that the operation failed.</li>
+			</ul>
+			<p><strong>e.g.</strong></p>
 			<img src="../DOM/img/carbon/code-023.png" alt="sample exercise" class="img-sample">
 			<h3 class="mb-6 font-bold">Try this code on your browser's console</h3>
 			<p class="preview">const firstPromise = (msg) => { <br>
