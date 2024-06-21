@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DOM introduction</title>
-	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="../public/style.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-gray-400">
@@ -43,7 +43,7 @@
 	<main class="w-11/12 mx-auto 2xl:w-4/6">
 
 		<!-- DOM INTRO -->
-		<section class="my-10 intro" id="intro">
+		<section class="my-20 intro" id="intro">
 			<h1 class="font-bold">DOM: Document Object Model</h1>
 			<p>The DOM is a JavaScript representation of a webpage It's your JS "window" into the contents of a webpage.</p>
 			<p>It's a bunch of objects that you can interact with via JS.</p>
@@ -737,9 +737,11 @@
 				<li>• <strong>fulfilled:</strong> meaning that the operation was completed successfully.</li>
 				<li>• <strong>rejected:</strong> meaning that the operation failed.</li>
 			</ul>
+
 			<p><strong>e.g.</strong></p>
 			<img src="../DOM/img/carbon/code-023.png" alt="sample exercise" class="img-sample">
 			<h3 class="mb-6 font-bold">Try this code on your browser's console</h3>
+
 			<p class="preview">const firstPromise = (msg) => { <br>
 				return new Promise((resolve, reject) => { <br>
 				const randomNumber = Math.floor(Math.random() * 10); <br>
@@ -777,6 +779,71 @@
 		</section>
 
 		<hr>
+
+		<section class="p-6 my-20 bg-slate-200">
+			<h2>Async Functions</h2>
+			<h3>asysnc, throw, await & other fun stuff:</h3>
+			<br>
+			<a class="mdn-info" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function">MDN info 📚</a>
+			<p>The async function declaration <strong>creates a binding of a new async function to a given name</strong>. The <mark>await</mark> keyword is <strong>permitted within the function body</strong>, enabling asynchronous, promise-based behavior to be written in a cleaner style and avoiding the need to explicitly configure promise chains.</p>
+			<br>
+			<p>An async function declaration creates an <mark>AsyncFunction</mark> object. <span class="underline">Each time when an async function is called</span>, <strong>it returns a new Promise which will be resolved with the value returned by the async function, or rejected with an exception uncaught within the async function.</strong></p>
+			<br>
+
+			<p class="preview">function foo() {
+				return Promise.resolve(1);
+				}</p>
+
+			<h4 class="warning">Even though the return value of an async function behaves as if it's wrapped in a Promise.resolve, they are not equivalent.
+
+				An async function will return a different reference, whereas Promise.resolve returns the same reference if the given value is a promise.
+
+				<span class="underline">It can be a problem when you want to check the equality of a promise and a return value of an async function.</span>
+			</h4>
+
+			<p class="preview">
+				const p = new Promise((res, rej) => { <br>
+				res(1);<br>
+				});<br>
+
+				async function asyncReturn() {<br>
+				return p;<br>
+				}<br>
+
+				function basicReturn() {<br>
+				return Promise.resolve(p);<br>
+				}<br>
+
+				console.log(p === basicReturn()); // true<br>
+				console.log(p === asyncReturn()); // false</p><br>
+
+			<h2>Await keyword</h2>
+			<h3>The await operator is used to wait for a Promise and get its fulfillment value. It can only be used inside an async function or at the top level of a module.</h3>
+
+			<ul>
+				<li>• <span class="line-through">We can only use the await keyword inside of functions declared with async.</span> *LATEST UPDATE</li>
+				<li>• <mark>await</mark> <strong class="underline">will pause the execution of the function, waiting for a promise to be resolved.</strong></li>
+			</ul>
+
+			<h2 class="mt-10">try...catch</h2>
+			<h3 class="warning">Async error management</h3>
+			<h3>The try...catch statement is comprised of a try block and either a catch block, a finally block, or both. The code in the try block is executed first, and if it throws an exception, the code in the catch block will be executed. The code in the finally block will always be executed before control flow exits the entire construct.</h3>
+			<p class="pt-5">The <mark>try statement</mark> always starts with a try block. Then, a catch block or a finally block must be present. It's also possible to have both catch and finally blocks. This gives us three forms for the try statement:</p>
+
+			<ul>
+				<li class="font-semibold">• try...catch</li>
+				<li class="font-semibold">• try...finally</li>
+				<li class="font-semibold">• try...catch...finally</li>
+			</ul>
+
+			<p class="italic font-bold warning">Unlike other constructs such as if or for, the try, catch, and finally blocks must be blocks, instead of single statements.</p>
+
+			<p>A <mark>catch</mark> block contains statements that <strong>specify what to do if an exception is thrown in the try block</strong>. If any statement within the try block (or in a function called from within the try block) throws an exception, <strong>control is immediately shifted to the catch block</strong>. <span class="underline">If no exception is thrown in the try block, the catch block is skipped</span>.</p>
+
+			<p>The <mark>finally</mark> block will always <strong>execute before control flow exits the try...catch...finally construct</strong>. It always executes, <span class="underline">regardless of whether an exception was thrown or caught.</span></p>
+
+		</section>
+
 	</main>
 </body>
 

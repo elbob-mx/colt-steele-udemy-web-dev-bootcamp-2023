@@ -17,7 +17,7 @@ sing()
 const login = async (username, password) => {
     if (!username || !password) throw "Missing Credentials";
     if (password === "corgifeetarecute") return "WELCOME!";
-    throw "Invalid Password";
+    throw "Invalid Password"; /* custom text user defined for errors */
 };
 
 login("todd!", "corgifeetarecute")
