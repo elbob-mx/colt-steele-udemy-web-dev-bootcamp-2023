@@ -3,7 +3,7 @@ const fakeRequest = (url) => {
         const rand = Math.random();
         setTimeout(() => {
             if (rand < 0.7) {
-                resolve("YOUR FAKE DATA HERE");
+                resolve("charming colors everybody!");
             }
             reject("Request Error!");
         }, 1000);
