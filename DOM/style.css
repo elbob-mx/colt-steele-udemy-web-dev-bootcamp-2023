@@ -21,7 +21,7 @@ body {
 }
 #arrowup:hover {
     font-size: 21px;
-    background-color: gray;
+    background-color: greenyellow;
     transition: background-color 300ms;
     color: black;
 }
@@ -38,7 +38,7 @@ body {
 }
 #arrowdown:hover {
     font-size: 21px;
-    background-color: gray;
+    background-color: goldenrod;
     transition: background-color 300ms;
     color: black;
 }
