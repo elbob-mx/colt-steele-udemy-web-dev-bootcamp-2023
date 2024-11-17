@@ -26,7 +26,8 @@ const jokeBtn = document.querySelector("#jokeBtn");
 const addNewJoke = async () => {
     const jokeText = await getDadJoke();
     console.log(jokeText);
-    const newLi = document.createElement("Li");
+    let newLi;
+    newLi = document.createElement("Li");
     newLi.append(jokeText);
     jokes.append(newLi);
 };
