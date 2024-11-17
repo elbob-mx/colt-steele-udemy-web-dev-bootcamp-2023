@@ -1,0 +1,56 @@
+body {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url("https://wallpapers.com/images/hd/windows-98-yaa4sbkls0sleaqm.jpg");
+    background-repeat: no-repeat;
+}
+
+a {
+    background-color: cyan;
+    padding: 10px 30px;
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: bisque;
+    padding: 10px 30px;
+}
+
+button {
+    color: black;
+    background-color: hotpink;
+    border: none;
+    padding: 10px 30px;
+    font-family: monospace;
+    font-size: large;
+    font-weight: 600;
+    cursor: cell;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkmagenta;
+    color: white;
+}
+
+ul {
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    padding: 20px;
+    font-weight: 700;
+    list-style-position: inside;
+    padding-top: 10px;
+}
+
+li {
+    padding-bottom: 12px;
+}

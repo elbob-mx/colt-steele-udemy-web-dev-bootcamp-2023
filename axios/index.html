@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axios / HTTP Library for Requests</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: lightblue; display: flex; flex-direction: column; justify-content: center; align-items: center; height:100%; background-image: url('https://wallpapers.com/images/hd/windows-98-yaa4sbkls0sleaqm.jpg'); background-repeat: no-repeat;">
+<body>
+    <a href="../index.html">back to start</a>
 
-    <a href="../index.html" style="background-color: cyan; padding: 10px; font-family: monospace; font-size:xx-large;">back to start</a>
+    <h1>Click. Get a joke. A dad joke.</h1>
+    <button id="jokeBtn" type="button">Give me a joke...</button>
 
-    <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif; background: bisque; padding: 10px;">Click. Get a joke. A dad joke.</h1>
-    <button id="jokeBtn" type="button" style="background-color: hotpink; border: none; padding: 10px; font-family: monospace; font-size: large; font-weight: 600; cursor:cell;">Give me a joke...</button>
-
-    <ul id="jokes" style="height:auto; font-family: Arial, Helvetica, sans-serif; background-color: white; padding: 10px; font-weight: 700; list-style-position: inside;"></ul>
+    <ul id="jokes"></ul>
 
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
