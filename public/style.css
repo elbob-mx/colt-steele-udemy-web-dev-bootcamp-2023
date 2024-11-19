@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -793,10 +793,6 @@ video {
   display: none;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .h-2\.5 {
   height: 0.625rem;
 }
@@ -807,10 +803,6 @@ video {
 
 .w-11\/12 {
   width: 91.666667%;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .w-2\.5 {
