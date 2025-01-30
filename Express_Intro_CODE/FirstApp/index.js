@@ -4,17 +4,19 @@ const express = require("express");
 const app = express();
 
 // app.use((req, res) => {
-//     console.log("WE GOT A NEW REQUEST!!")
-//     res.send('<h1>This is my webpage!</h1>')
-// })
+//     console.log("ana says: 'i died'!");
+//     res.send("<h1>This is my webpage!</h1>");
+// });
 
 app.get("/", (req, res) => {
-    res.send("Welcome to the home page!");
+    res.send(
+        `<h1 style="font-family:monospace; background-color:cyan;">Esto es un servidor local en el cuarto!</h1><p style="font-family:monospace; background-color:lightgray;">texto cualquiera sin propósito como la vida misma</p>`
+    );
 });
 
 app.get("/r/:subreddit", (req, res) => {
     const { subreddit } = req.params;
-    res.send(`<h1>Browsing the ${subreddit} subreddit</h1>`);
+    res.send(`<h1>Esto es un titulo h1 ${subreddit} subreddit</h1>`);
 });
 
 app.get("/r/:subreddit/:postId", (req, res) => {
@@ -51,5 +53,5 @@ app.get("*", (req, res) => {
 // '/'
 
 app.listen(8080, () => {
-    console.log("LISTENING ON PORT 8080, by the way Graciela loves chismesito...");
+    console.log("LISTENING ON PORT 8080 beep bop beep bop!");
 });
